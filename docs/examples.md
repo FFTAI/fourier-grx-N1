@@ -11,7 +11,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 本文档提供了丰富的示例代码，帮助您快速掌握 Fourier-GRX SDK 的使用方法。
 
-- N1 系列机器人的示例代码位于 [Github Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy.git) 的 `mini` 分支中。
+- N1 系列机器人的示例代码位于 [Github Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy.git) 的 `FourierN1` 分支中。
 
 示例代码包含用户接口（User API）和开发者接口（Developer API）两类。
 
@@ -23,7 +23,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 ```bash
 # 在机器人主控电脑 $HOME 目录下执行
-git clone https://github.com/FFTAI/Wiki-GRx-Deploy.git --branch=mini
+git clone https://github.com/FFTAI/Wiki-GRx-Deploy.git --branch=FourierN1
 cd $HOME/Wiki-GRx-Deploy
 ```
 

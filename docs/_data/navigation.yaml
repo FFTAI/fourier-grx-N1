@@ -5,7 +5,7 @@ docs:
     has_children: true
     children:
       - title: N1
-        url: /docs/quickstart/grmini1
+        url: /docs/quickstart/n1
         nav_order: 1.1
 
   - title: 示例代码

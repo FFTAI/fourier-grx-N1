@@ -26,8 +26,6 @@ has_toc: true
 
 **问题描述**：运行安装程序过程中请求输入数字以配置机型，但输入后报配置错误，退出安装。
 
-![config_enter_error.png](/assets/images/config_enter_error.png)
-
 **解决方案**：
 
 1. 检查输入的 **数字** 是否正确，不是输入具体的选项名称
