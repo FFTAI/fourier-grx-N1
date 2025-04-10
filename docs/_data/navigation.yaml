@@ -4,7 +4,7 @@ docs:
     nav_order: 1
     has_children: true
     children:
-      - title: GRMini1
+      - title: N1
         url: /docs/quickstart/grmini1
         nav_order: 1.1
 

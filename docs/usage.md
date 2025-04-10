@@ -29,8 +29,8 @@ fourier-grx install
 
 | robot_type 机器人型号 | robot_version 机器人版本 | test_version 测试版本 | 适配的机器人型号    |
 |------------------|---------------------|-------------------|-------------|
-| GRMini1          | T1                  | 否                 | GRMini1T1   |
-| GRMini1          | T2                  | 否                 | GRMini1T2   |
+| N1          | T1                  | 否                 | N1T1   |
+| N1          | T2                  | 否                 | N1T2   |
 
 ## 关节零位校准
 
@@ -63,8 +63,8 @@ fourier-grx start
 
 | 机器人型号     | 校准任务          | 任务编号 | 说明      |
 |-----------|---------------|------|---------|
-| GRMini1T1 | TASK_SET_HOME | 999  | 全关节零位校准 |
-| GRMini1T2 | TASK_SET_HOME | 999  | 全关节零位校准 |
+| N1T1 | TASK_SET_HOME | 999  | 全关节零位校准 |
+| N1T2 | TASK_SET_HOME | 999  | 全关节零位校准 |
 
 2. **校准验证**
     - 成功标志
