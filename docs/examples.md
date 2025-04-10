@@ -27,14 +27,6 @@ git clone https://github.com/FFTAI/Wiki-GRx-Deploy.git --branch=mini
 cd $HOME/Wiki-GRx-Deploy
 ```
 
-### GR2 系列机器人
-
-```bash
-# 在机器人主控电脑 $HOME 目录下执行
-git clone https://github.com/FFTAI/Wiki-GRx-Deploy.git --branch=gr2
-cd $HOME/Wiki-GRx-Deploy
-```
-
 ## 二次开发环境配置
 
 `fourier-grx` 工具提供了 `fourier-grx setup_conda` 命令用于一键配置 conda 开发环境用于机器人二次开发。

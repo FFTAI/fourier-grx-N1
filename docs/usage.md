@@ -65,7 +65,6 @@ fourier-grx start
 |-----------|---------------|------|---------|
 | GRMini1T1 | TASK_SET_HOME | 999  | 全关节零位校准 |
 | GRMini1T2 | TASK_SET_HOME | 999  | 全关节零位校准 |
-| GR2T3     | TASK_SET_HOME | 999  | 全关节零位校准 |
 
 2. **校准验证**
     - 成功标志
