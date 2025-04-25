@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Fourier-GRX SDK
+title: Fourier-GRX-N1 SDK
 nav_order: 1
 has_children: false
 toc: true          # 启用目录
@@ -8,19 +8,19 @@ toc_min_header: 2  # 最小显示标题层级（如 H2）
 toc_max_header: 3  # 最大显示标题层级（如 H3）
 ---
 
-# 欢迎来到 Fourier-GRX SDK 开发文档
+# 欢迎来到 Fourier-GRX-N1 SDK 开发文档
 
 ## 介绍
 
-Fourier-GRX SDK 是傅利叶智能提供的一个软件开发工具包，
-提供了一套 API 用于安装、配置、控制傅利叶智能的通用机器人产品的应用程序。
+Fourier-GRX-N1 SDK 是傅利叶智能提供的一个软件开发工具包，
+提供了一套 API 用于安装、配置、控制傅利叶智能的 N1 机器人产品的应用程序。
 
 该 SDK 设计简洁易用，提供高级接口来控制机器人运动并读取传感器数据。
 SDK 目前主要支持 Python 语言二次开发使用。
 
 ## 开始使用
 
-[快速开始](/docs/quickstart.md) 是开始使用 Fourier-GRX SDK 库的推荐方式。
+[快速开始](/docs/quickstart.md) 是开始使用 Fourier-GRX-N1 SDK 库的推荐方式。
 这份分步指南将帮助您安装所需库文件并运行简单程序来控制机器人。
 
 [示例代码](/docs/examples.md) 演示了 SDK 库的使用方法，可作为您开发应用程序的参考程序。
@@ -40,7 +40,7 @@ SDK 目前主要支持 Python 语言二次开发使用。
 | MacOS            | Python 3.11 |     |      |
 
 > **说明**：
-> Fourier-GRX SDK 具备 User 和 Developer 两类不同层级的接口。
+> Fourier-GRX-N1 SDK 具备 User 和 Developer 两类不同层级的接口。
 > User 接口基于 [Zenoh](https://zenoh.io) 协议开发，Developer 接口基于 Python 库开发。
 > 基于 [Zenoh](https://zenoh.io) 协议调用 User 接口，无明确平台和语言限制，但仍推荐在 Ubuntu 系统上进行开发。
 

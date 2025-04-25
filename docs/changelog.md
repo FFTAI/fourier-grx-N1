@@ -9,7 +9,7 @@ has_toc: true
 
 {:toc}
 
-本文档记录了 Fourier-GRX SDK 及其文档的所有重要更新。
+本文档记录了 Fourier-GRX-N1 SDK 及其文档的所有重要更新。
 
 ## 2025 年 3 月
 
@@ -25,7 +25,7 @@ has_toc: true
 
 **重要里程碑**
 
-- 🎉 发布 Fourier-GRX SDK 文档第一个正式版本
+- 🎉 发布 Fourier-GRX-N1 SDK 文档第一个正式版本
 - 💡 支持 N1 系列机器人开发
 - 📖 完整的 API 文档和使用指南
 

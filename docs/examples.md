@@ -9,7 +9,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 # 示例代码
 
-本文档提供了丰富的示例代码，帮助您快速掌握 Fourier-GRX SDK 的使用方法。
+本文档提供了丰富的示例代码，帮助您快速掌握 Fourier-GRX-N1 SDK 的使用方法。
 
 - N1 系列机器人的示例代码位于 [Github Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy.git) 的 `FourierN1` 分支中。
 
