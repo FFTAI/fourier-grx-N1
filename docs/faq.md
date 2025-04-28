@@ -213,6 +213,6 @@ sudo apt install build-essential
 
 如果您遇到未在此文档中列出的问题：
 
-1. 查看[开发文档](/docs/reference.md)
-2. 检查[日志更新](/docs/changelog.md)
+1. 查看[开发文档](/docs/reference)
+2. 检查[日志更新](/docs/changelog)
 3. 联系公司技术支持：[xin.chen@fftai.com](mailto:xin.chen@fftai.com)

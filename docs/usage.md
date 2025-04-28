@@ -14,7 +14,7 @@ has_toc: true
 
 ## 固件安装和更新
 
-Fourier-GRX-N1 SDK 安装文件请从 [固件更新](/docs/update.md) 下载。
+Fourier-GRX-N1 SDK 安装文件请从 [固件更新](/docs/update) 下载。
 下载完后，运行下面的指令完成安装过程：
 
 ```

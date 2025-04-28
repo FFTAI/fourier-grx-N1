@@ -20,16 +20,16 @@ SDK 目前主要支持 Python 语言二次开发使用。
 
 ## 开始使用
 
-[快速开始](/docs/quickstart.md) 是开始使用 Fourier-GRX-N1 SDK 库的推荐方式。
+[快速开始](/docs/quickstart) 是开始使用 Fourier-GRX-N1 SDK 库的推荐方式。
 这份分步指南将帮助您安装所需库文件并运行简单程序来控制机器人。
 
-[示例代码](/docs/examples.md) 演示了 SDK 库的使用方法，可作为您开发应用程序的参考程序。
+[示例代码](/docs/examples) 演示了 SDK 库的使用方法，可作为您开发应用程序的参考程序。
 
-[参考指南](/docs/reference.md) 包含了 SDK 库的详细 API 文档，可作为您开发应用程序的参考文档。
+[参考指南](/docs/reference) 包含了 SDK 库的详细 API 文档，可作为您开发应用程序的参考文档。
 
-[常见问题](/docs/faq.md) 包含了一些常见问题的解答，可帮助您解决一些常见问题。
+[常见问题](/docs/faq) 包含了一些常见问题的解答，可帮助您解决一些常见问题。
 
-[固件更新](/docs/update.md) 包含了发布的新固件以及介绍如何更新固件。
+[固件更新](/docs/update) 包含了发布的新固件以及介绍如何更新固件。
 
 ## 支持平台与版本
 
@@ -53,4 +53,4 @@ SDK 目前主要支持 Python 语言二次开发使用。
 
 ## 贡献
 
-请阅读我们的[贡献指南](/docs/contributing.md)以获取更多信息。
+请阅读我们的[贡献指南](/docs/contributing)以获取更多信息。
