@@ -39,9 +39,12 @@ SDK 目前主要支持 Python 语言二次开发使用。
 | Windows          | Python 3.11 |     |      |
 | MacOS            | Python 3.11 |     |      |
 
-> **说明**：
+> **说明**: 
+> 
 > Fourier-GRX-N1 SDK 具备 User 和 Developer 两类不同层级的接口。
-> User 接口基于 [Zenoh](https://zenoh.io) 协议开发，Developer 接口基于 Python 库开发。
+> - User 接口基于 [Zenoh](https://zenoh.io) 协议开发
+> - Developer 接口基于 Python 库开发。
+> 
 > 基于 [Zenoh](https://zenoh.io) 协议调用 User 接口，无明确平台和语言限制，但仍推荐在 Ubuntu 系统上进行开发。
 
 ## 日志更新
