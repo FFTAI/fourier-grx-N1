@@ -13,7 +13,9 @@ has_toc: true
 
 在获取关节信息或是发送控制指令时，需要整体发送所有关节的信息。因此需要按照机器人的关节序列进行操作。
 
-Fourier-GRX-N1 SDK 中对于关节序列的定义如下。
+Fourier-GRX SDK 提供的关节序列与机器人 URDF 模型文件中的关节序列一致。用户在使用时需要注意关节序列的顺序。
+
+Fourier-GRX SDK 中对于关节序列的定义如下。
 
 ## N1
 
@@ -43,6 +45,3 @@ Fourier-GRX-N1 SDK 中对于关节序列的定义如下。
 | 21 | right_elbow_pitch_joint    | 右肘 pitch 关节 |
 | 22 | right_wrist_yaw_joint      | 右腕 yaw 关节   |
 
-说明：
-
-- 这里的关节名称对应机器人 urdf 模型文件中的关节名称

@@ -13,7 +13,7 @@ has_toc: true
 
 Fourier-GRX user 接口使用 zenoh 进行通信，zenoh 是一个分布式系统的数据共享和协作平台 (https://zenoh.io/)。
 
-fourier-grx 接口主要分为以下4类：
+user 接口主要分为以下4类：
 
 - comm：通信相关信息
 - robot：机器人状态信息
