@@ -41,6 +41,8 @@ conda activate fourier-grx
 # 如果希望自主搭建开发环境，可以在 $HOME/fourier-grx/whl 中找到依赖库文件进行手动安装。
 ```
 
+---
+
 ## 用户接口示例（User API）
 
 用户接口通过 [Zenoh](https://zenoh.io/) 协议与机器人通信，适用于高层应用开发。您可以在任何与机器人同一局域网的计算机上运行这些示例。
@@ -89,6 +91,8 @@ conda activate fourier-grx
 - 运行示例前请仔细阅读相关安全说明
 
 ![终端示例](/assets/images/example_user_terminal.png)
+
+---
 
 ## 开发者接口示例（Developer API）
 
