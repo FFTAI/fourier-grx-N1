@@ -2,12 +2,13 @@
 layout: default
 title: 示例代码
 nav_order: 2
-toc: true          # 启用目录
-toc_min_header: 2  # 最小显示标题层级（如 H2）
-toc_max_header: 3  # 最大显示标题层级（如 H3）
+has_toc: true
 ---
 
 # 示例代码
+
+* TOC
+{:toc}
 
 本文档提供了丰富的示例代码，帮助您快速掌握 Fourier-GRX-N1 SDK 的使用方法。
 
