@@ -65,7 +65,7 @@ conda activate fourier-grx
 | 准备姿态 | 进入准备状态（微曲膝） | `user/demo_ready_state.py` |
 | 行走控制 | 使用手柄控制机器人行走 | `user/demo_walk.py`        |
 
-### 运行用户接口示例
+### 运行方法
 
 1. 在机器人主控电脑上启动 Fourier-GRX 主程序：
     ```bash
@@ -115,7 +115,7 @@ conda activate fourier-grx
 | 准备姿态 | 进入准备状态 | `developer/demo_ready_state.py` |
 | 行走控制 | 手柄控制行走 | `developer/demo_walk.py`        |
 
-### 运行开发者接口示例
+### 运行方法
 
 ```bash
 # 激活 conda 环境
