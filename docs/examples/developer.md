@@ -24,6 +24,8 @@ Developer 接口目前提供的开发示例有：
 
 该代码展示如何通过调用 policy.pt 文件来完成机器人的行走运动控制。
 
+关于 policy.pt 文件的生成和使用，请参考 [模型训练](/docs/training) 的相关内容。
+
 ```python
 import os
 import numpy
@@ -301,6 +303,5 @@ def algorithm():
 
 if __name__ == "__main__":
     main()
-
-
 ```
+
