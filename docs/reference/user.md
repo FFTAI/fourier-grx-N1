@@ -26,6 +26,8 @@ user 接口主要分为以下4类：
 - `fourier-grx/dynalink_interface/{key}/server` ：机器人主控程序发出状态信息
 - `fourier-grx/dynalink_interface/{key}/client` ：机器人主控程序接收指令信息
 
+---
+
 ## 状态信息
 
 ### comm/server 接口协议 (状态信息)
@@ -82,6 +84,8 @@ key 说明列表：
 | `fourier_core_version` | 核心库版本  | string | 核心库版本号                  |
 | `fourier_grx_version`  | GRX库版本 | string | GRX库版本号                 |
 | `robot_error_codes`    | 机器人错误码 | int    | 机器人错误码，0: 无错误，其他: 具体错误码 |
+
+---
 
 ## 指令信息
 
