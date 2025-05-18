@@ -123,7 +123,7 @@ key 说明列表：
 | `robot_component_command`       | 模块指令       | int  | 机器人模块指令，具体指令见下表 |
 | `robot_component_command_data`  | 模块指令数据     | dict | 机器人模块指令数据       |
 
-**机器人任务指令列表**：
+机器人任务指令列表 🚩：
 
 - 任务指令通过 fourier_grx.TaskCommand 枚举类定义，具体定义如下：
 - 具体任务值可能会根据机器人的不同，或 `fourier-grx` 版本的不同而有所变化，具体值以实际为准。
