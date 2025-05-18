@@ -40,9 +40,3 @@ has_toc: true
 
 - 目前主要支持 N1 系列机器人
 - 其他机型支持将陆续添加
-
-## 反馈与建议
-
-我们重视您的反馈，如果您有任何建议或发现问题，请：
-
-1. 在 [GitHub Issues](https://github.com/FFTAI/Wiki-GRx-Deploy/issues) 提交问题
