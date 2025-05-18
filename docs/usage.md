@@ -143,7 +143,7 @@ fourier-grx start
 | 行走功能       | 965  | 是、包含多个上肢固定动作 | 站立、行走自然切换任务    | Y<br/>(XBOX 键位)    |
 | 跑步功能       | 966  | 是、包含多个上肢固定动作 | 站立、行走、跑步自然切换任务 | B<br/>(XBOX 键位)    |
 
-更多任务功能信息请参阅 [参考指南 User 接口-接口协议-指令信息](docs/reference/user.html#taskclient-接口协议-指令信息)
+更多任务功能信息请参阅 [参考指南 User 接口-接口协议-指令信息](docs/reference/user#taskclient-接口协议-指令信息)
 
 ### 开发者模式
 
