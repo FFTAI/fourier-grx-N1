@@ -12,6 +12,21 @@ has_toc: true
 
 本文档收集了使用 Fourier-GRX-N1 SDK 时常见的问题和解决方案。如果您遇到的问题未在此列出，请联系技术支持。
 
+## 硬件问题
+
+### 电池充电充不进去
+
+**问题描述**：机器人插线充电充不进去。充了很久，一上电机器仍然自动断电了。
+
+**解决方案**：
+
+1. 检查充电线是否正确稳定连接到充电口
+2. 检查充电器是否正常工作（显示红灯充电状态，绿灯充满电）
+3. 检查电池开关按钮是否按下，**只有按下状态**，电池才会充电。否则是电源线只给机器人供电，不给电池充电。
+4. 检查是否保险丝烧断。
+    - 保险丝在电池盒内，打开电池盒后可以看到保险丝的状态
+    - 如果烧断了，需更换保险丝
+
 ## 安装问题
 
 ### 安装过程中断
@@ -78,13 +93,13 @@ has_toc: true
 
 1. 检查 IMU 连接线是否正确连接到机器人主控板
 2. 检查是否 fourier-grx 程序重复启动 （重复启动，会竞争设备权属，导致数据出错）
-   - 终端输入 `ps -ef | grep fourier-grx` 查看是否有多个 fourier-grx 进程
-   - 杀死已启动的 fourier-grx 程序：`sudo killall fourier-grx`
-   - 重新启动 fourier-grx 程序
+    - 终端输入 `ps -ef | grep fourier-grx` 查看是否有多个 fourier-grx 进程
+    - 杀死已启动的 fourier-grx 程序：`sudo killall fourier-grx`
+    - 重新启动 fourier-grx 程序
 3. 检查是否配置了 fourier-grx 开机自启动
-   - 终端输入 `crontab -e`，查看是否配置了 fourier-grx 开机自启动
-   - 如果配置了，可终端运行 `fourier-grx disable_service` 关闭开机自启动
-   - 重启机器人控制电脑 💻
+    - 终端输入 `crontab -e`，查看是否配置了 fourier-grx 开机自启动
+    - 如果配置了，可终端运行 `fourier-grx disable_service` 关闭开机自启动
+    - 重启机器人控制电脑 💻
 
 ## 网络配置
 
@@ -157,7 +172,7 @@ sudo reboot
 **解决方案**：
 
 1. 尝试使用判断休眠等待时间更长，或者是可以配置无休眠的手柄
-    - 例如：Gamesir 的 G8+ Pro 手柄 
+    - 例如：Gamesir 的 G8+ Pro 手柄
     - 例如：北通星闪手柄
 2. 重连手柄后重启机器人控制程序
 
