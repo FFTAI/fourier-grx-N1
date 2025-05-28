@@ -28,16 +28,16 @@ has_toc: true
     ```yaml
     actuator:
         comm_enable: [
-      # left leg
-      true, true, true, true, true, true, 
-      # right leg
-      true, true, true, true, true, true,
-      # waist
-      true,
-      # left arm
-      false, false, false, false, false,
-      # right arm
-      false, false, false, false, false
+        # left leg
+        true, true, true, true, true, true, 
+        # right leg
+        true, true, true, true, true, true,
+        # waist
+        true,
+        # left arm
+        false, false, false, false, false,
+        # right arm
+        false, false, false, false, false
     ]
     ```
 
@@ -50,9 +50,9 @@ has_toc: true
    run_type="mobile"
    ```
 
-> **注意**：
->
-> 如果后续希望机器人恢复为正常的操作模式，可以通过 `fourier-grx config` 命令来修改配置文件，或是修改 `run.sh` 文件中的 `run_type` 字段为原来的值。
+   > **注意**：
+   >
+   > 如果后续希望机器人恢复为正常的操作模式，可以通过 `fourier-grx config` 命令来修改配置文件，或是修改 `run.sh` 文件中的 `run_type` 字段为原来的值。
 
 4. 启动机器人：
 
