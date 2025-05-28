@@ -80,7 +80,7 @@ has_toc: true
 2. 修改配置文件：
     - 打开 `config_N1__upper.yaml` 文件。
     - 找到 `peripheral` 字段下的 `use_virtual_joystick` 字段，将其修改为以下内容：
-        - 该配置表示使用虚拟手柄来控制上半身关节。
+        - 该配置表示关闭所有外设或虚拟外设对 `fourier-grx` 库的输入。
 
     ```yaml
     peripheral:
