@@ -50,15 +50,19 @@ has_toc: true
    run_type="mobile"
    ```
 
+> **注意**：
+>
+> 如果后续希望机器人恢复为正常的操作模式，可以通过 `fourier-grx config` 命令来修改配置文件，或是修改 `run.sh` 文件中的 `run_type` 字段为原来的值。
+
 4. 启动机器人：
 
    ```bash
    fourier-grx start
    ```
-   
+
 5. 手柄控制：
-   - 参考： https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/user/demo_walk.py
-   - 手柄遥控程序可以参考 fourier-grx SDK user 接口中的 demo_walk.py 程序。
+    - 参考： https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/user/demo_walk.py
+    - 手柄遥控程序可以参考 fourier-grx SDK user 接口中的 demo_walk.py 程序。
 
    ```bash
    # 构建消息
