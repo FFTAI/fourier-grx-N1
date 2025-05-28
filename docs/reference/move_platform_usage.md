@@ -56,17 +56,19 @@ has_toc: true
 
 4. 启动机器人：
 
-   ```bash
-   fourier-grx start
-   ```
+    ```bash
+    # 在 终端1 中执行以下命令
+    fourier-grx start
+    ```
 
 5. 手柄控制：
     - 参考： https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/user/demo_walk.py
     - 手柄遥控程序可以参考 fourier-grx SDK **User** 接口中的 demo_walk.py 程序。
 
-   ```bash
-   python demo_walk.py
-   ```
+    ```bash
+    # 在 终端2 中执行以下命令
+    python demo_walk.py
+    ```
 
 ## 上半身进行关节层面控制
 
@@ -124,6 +126,7 @@ has_toc: true
     - 启动时需指定配置文件为上肢控制专用配置文件，可以让机器人关节上肢部分移动到准备状态位置。
 
     ```bash
+    # 在 终端3 中执行以下命令
     python demo_ready_state.py --config=config_N1__upper.yaml
     ```
 
