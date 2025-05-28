@@ -64,6 +64,10 @@ has_toc: true
     - 参考： https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/user/demo_walk.py
     - 手柄遥控程序可以参考 fourier-grx SDK **User** 接口中的 demo_walk.py 程序。
 
+   ```bash
+   python demo_walk.py
+   ```
+
 ## 上半身进行关节层面控制
 
 在 Fourier-GRX SDK 中，用户可以通过修改机器人的配置文件来完成上半身关节的控制。
