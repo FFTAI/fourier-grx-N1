@@ -23,7 +23,7 @@ has_toc: true
 2. 修改配置文件：
     - 打开 `config_N1__mobile.yaml` 文件。
     - 找到 `actuator` 字段下的 `comm_enable` 字段，将其修改为以下内容：
-        - 该配置表示左腿、右腿、腰部的所有关节都启用通信，左臂和右臂的关节则不启用通信。
+        - 该配置表示在使用该配置文件启动 `fourier-grx` 时，左腿、右腿、腰部的所有关节都启用通信，左臂和右臂的关节则不启用通信。
 
     ```yaml
     actuator:
@@ -80,7 +80,7 @@ has_toc: true
 2. 修改配置文件：
     - 打开 `config_N1__upper.yaml` 文件。
     - 找到 `peripheral` 字段下的 `use_virtual_joystick` 字段，将其修改为以下内容：
-        - 该配置表示关闭所有外设或虚拟外设对 `fourier-grx` 库的输入。
+        - 该配置表示在使用该配置文件启动 `fourier-grx` 时，关闭所有外设或虚拟外设对 `fourier-grx` 库的输入。
 
     ```yaml
     peripheral:
@@ -91,7 +91,7 @@ has_toc: true
     ```
 
     - 找到 `sensor_usb_imu` 字段下的 `comm_enable` 字段，将其修改为以下内容:
-        - 该配置表示 USB IMU 传感器不启用通信。**（防止与下半身运动控制任务设备读取冲突）**
+        - 该配置表示在使用该配置文件启动 `fourier-grx` 时，USB IMU 传感器不启用通信。**（防止与下半身运动控制任务设备读取冲突）**
 
     ```yaml
     sensor_usb_imu:
@@ -101,7 +101,7 @@ has_toc: true
     ```
 
     - 找到 `actuator` 字段下的 `comm_enable` 字段，将其修改为以下内容：
-        - 该配置表示左臂和右臂的所有关节都启用通信，左腿、右腿和腰部的关节则不启用通信。
+        - 该配置表示在使用该配置文件启动 `fourier-grx` 时，左臂和右臂的所有关节都启用通信，左腿、右腿和腰部的关节则不启用通信。
 
     ```yaml
     actuator:
