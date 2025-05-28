@@ -70,7 +70,7 @@ has_toc: true
     python demo_walk.py
     ```
 
-## 上半身进行关节层面控制
+## 上半身进行关节层面控制实现
 
 在 Fourier-GRX SDK 中，用户可以通过修改机器人的配置文件来完成上半身关节的控制。
 
