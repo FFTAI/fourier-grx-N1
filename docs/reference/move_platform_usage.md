@@ -62,15 +62,7 @@ has_toc: true
 
 5. 手柄控制：
     - 参考： https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/user/demo_walk.py
-    - 手柄遥控程序可以参考 fourier-grx SDK user 接口中的 demo_walk.py 程序。
-
-   ```bash
-   # 构建消息
-    message = {
-        "robot_task_command": fourier_grx.TaskCommand.TASK_WALK,
-        "flag_task_command_update": True,
-    }
-   ```
+    - 手柄遥控程序可以参考 fourier-grx SDK **User** 接口中的 demo_walk.py 程序。
 
 ## 上半身进行关节层面控制
 
@@ -82,12 +74,25 @@ has_toc: true
 
 2. 修改配置文件：
     - 打开 `config_N1__upper.yaml` 文件。
+    - 找到 `peripheral` 字段下的 `use_virtual_joystick` 字段，将其修改为以下内容：
+        - 该配置表示使用虚拟手柄来控制上半身关节。
+
+    ```yaml
+    peripheral:
+        use_joystick: false  # 关闭手柄控制
+        use_keyboard: false  # 关闭键盘控制
+        use_virtual_joystick: false  # 关闭虚拟手柄
+        use_virtual_teleoperation: false  # 关闭虚拟遥操作
+    ```
+
     - 找到 `sensor_usb_imu` 字段下的 `comm_enable` 字段，将其修改为以下内容:
         - 该配置表示 USB IMU 传感器不启用通信。**（防止与下半身运动控制任务设备读取冲突）**
 
     ```yaml
     sensor_usb_imu:
-        comm_enable: false
+        comm_enable: [
+        false
+    ]
     ```
 
     - 找到 `actuator` 字段下的 `comm_enable` 字段，将其修改为以下内容：
@@ -111,10 +116,13 @@ has_toc: true
 
 3. 启动上肢控制程序：
     - 参考： https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/developer/demo_ready_state.py
+    - 上肢关节控制程序可以参考 fourier-grx SDK **Developer** 接口中的 demo_ready_state.py 程序。
     - 启动时需指定配置文件为上肢控制专用配置文件，可以让机器人关节上肢部分移动到准备状态位置。
 
     ```bash
     python demo_ready_state.py --config=config_N1__upper.yaml
     ```
 
+## 注意事项
 
+如果遇到问题，欢迎给我们提 [issue](https://github.com/FFTAI/Wiki-GRx-Deploy/issues)，谢谢！
