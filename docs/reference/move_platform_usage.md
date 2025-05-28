@@ -23,6 +23,7 @@ has_toc: true
 2. 修改配置文件：
     - 打开 `config_N1__mobile.yaml` 文件。
     - 找到 `actuator` 字段下的 `comm_enable` 字段，将其修改为以下内容：
+        - 该配置表示左腿、右腿、腰部的所有关节都启用通信，左臂和右臂的关节则不启用通信。
 
     ```yaml
     actuator:
@@ -40,7 +41,6 @@ has_toc: true
     ]
     ```
 
-    - 该配置表示左腿、右腿、腰部的所有关节都启用通信，左臂和右臂的关节则不启用通信。
 
 3. 修改启动脚本：
     - 打开文件夹 `~/fourier-grx`，找到 `run.sh` 文件。
@@ -73,3 +73,48 @@ has_toc: true
    ```
 
 ## 上半身进行关节层面控制
+
+在 Fourier-GRX SDK 中，用户可以通过修改机器人的配置文件来完成上半身关节的控制。
+
+1. 创建机器人的启动配置文件：
+    - 打开文件夹 `~/fourier-grx/config/n1` 文件夹，找到 `config_N1__release.yaml` 文件。
+    - 将该文件复制一份，命名为 `config_N1__upper.yaml`。
+
+2. 修改配置文件：
+    - 打开 `config_N1__upper.yaml` 文件。
+    - 找到 `sensor_usb_imu` 字段下的 `comm_enable` 字段，将其修改为以下内容:
+        - 该配置表示 USB IMU 传感器不启用通信。**（防止与下半身运动控制任务设备读取冲突）**
+
+    ```yaml
+    sensor_usb_imu:
+        comm_enable: false
+    ```
+
+    - 找到 `actuator` 字段下的 `comm_enable` 字段，将其修改为以下内容：
+        - 该配置表示左臂和右臂的所有关节都启用通信，左腿、右腿和腰部的关节则不启用通信。
+
+    ```yaml
+    actuator:
+         comm_enable: [
+      # left leg
+      false, false, false, false, false, false, 
+      # right leg
+      false, false, false, false, false, false,
+      # waist
+      false,
+      # left arm
+      true, true, true, true, true,
+      # right arm
+      true, true, true, true, true
+    ]
+    ```
+
+3. 启动上肢控制程序：
+    - 参考： https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/developer/demo_ready_state.py
+    - 启动时需指定配置文件为上肢控制专用配置文件，可以让机器人关节上肢部分移动到准备状态位置。
+
+    ```bash
+    python demo_ready_state.py --config=config_N1__upper.yaml
+    ```
+
+
