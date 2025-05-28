@@ -34,6 +34,9 @@ docs:
       - title: 机器人关节序列
         url: /docs/reference/joint_sequence
         nav_order: 3.3
+      - title: 作为移动平台使用
+        url: /docs/reference/move_platform_usage
+        nav_order: 3.4
 
   - title: 模型训练
     url: /docs/training
