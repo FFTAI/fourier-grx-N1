@@ -50,7 +50,7 @@ has_toc: true
    run_type="mobile"
    ```
 
-   > **注意**：
+   > ⚠ **注意**：
    >
    > 如果后续希望机器人恢复为正常的操作模式，可以通过 `fourier-grx config` 命令来修改配置文件，或是修改 `run.sh` 文件中的 `run_type` 字段为原来的值。
 
