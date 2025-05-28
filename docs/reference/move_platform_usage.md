@@ -105,17 +105,17 @@ has_toc: true
 
     ```yaml
     actuator:
-         comm_enable: [
-      # left leg
-      false, false, false, false, false, false, 
-      # right leg
-      false, false, false, false, false, false,
-      # waist
-      false,
-      # left arm
-      true, true, true, true, true,
-      # right arm
-      true, true, true, true, true
+        comm_enable: [
+        # left leg
+        false, false, false, false, false, false, 
+        # right leg
+        false, false, false, false, false, false,
+        # waist
+        false,
+        # left arm
+        true, true, true, true, true,
+        # right arm
+        true, true, true, true, true
     ]
     ```
 
