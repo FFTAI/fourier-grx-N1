@@ -167,7 +167,23 @@ fourier-grx disable_service # 关闭程序开机自启动
 如果机器人已经配置为用手柄进行遥控操作。
 开启开机自启动后，请确保机器人手柄在开机前已连接到主控电脑的 USB 端口，并处于唤醒状态。
 
-## 启用数据日志记录功能
+## 启用/关闭 程序运行日志记录功能
+
+fourier-grx 提供了程序运行日志记录功能，但是默认情况下是开启的，且不提供关闭功能。
+
+如果希望关闭程序运行日志记录功能，可以修改程序启动脚本 `run.sh` 中的以下字段：
+
+```bash
+# 原始脚本内容
+stdbuf -oL $FOURIER_GRX_HOME/run.bin --config=${config_file_path} \
+| tee $FOURIER_GRX_HOME/log/${log_file_name}
+
+# 修改后的脚本内容
+stdbuf -oL $FOURIER_GRX_HOME/run.bin --config=${config_file_path} \
+| tee /dev/null
+```
+
+## 启用/关闭 机器人数据日志记录功能
 
 fourier-grx 提供了数据日志记录功能，但是默认情况下是关闭的，以减少对系统性能的影响。
 
@@ -207,3 +223,5 @@ fourier-grx 提供了数据日志记录功能，但是默认情况下是关闭�
     # 在 终端1 中执行以下命令
     fourier-grx start
     ```
+
+如果需要关闭数据记录功能，可以将配置文件中的 `record.enable` 设置为 `false`，或是删除 `record` 字段。
