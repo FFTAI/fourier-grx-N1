@@ -20,20 +20,20 @@ SDK 目前主要支持 Python 语言二次开发使用。
 
 ## 开始使用
 
-[快速开始](/docs/quickstart) 是开始使用 Fourier-GRX-N1 SDK 库的推荐方式。
+[快速开始](/fourier-grx-N1/docs/quickstart) 是开始使用 Fourier-GRX-N1 SDK 库的推荐方式。
 这份分步指南将帮助您安装所需库文件并运行简单程序来控制机器人。
 
-[示例代码](/docs/examples) 演示了 SDK 库的使用方法，可作为您开发应用程序的参考程序。
+[示例代码](/fourier-grx-N1/docs/examples) 演示了 SDK 库的使用方法，可作为您开发应用程序的参考程序。
 
-[参考指南](/docs/reference) 包含了 SDK 库的详细 API 文档，可作为您开发应用程序的参考文档。
+[参考指南](/fourier-grx-N1/docs/reference) 包含了 SDK 库的详细 API 文档，可作为您开发应用程序的参考文档。
 
-[模型训练](/docs/training) 包含了如何进行机器人强化学习模型训练的说明。
+[模型训练](/fourier-grx-N1/docs/training) 包含了如何进行机器人强化学习模型训练的说明。
 
-[常用操作](/docs/usage) 包含了一些常用操作的说明，包括但不限于固件安装方法，机器人校准方法，以及操作模式的切换等。
+[常用操作](/fourier-grx-N1/docs/usage) 包含了一些常用操作的说明，包括但不限于固件安装方法，机器人校准方法，以及操作模式的切换等。
 
-[常见问题](/docs/faq) 包含了一些常见问题的解答，可帮助您解决一些常见问题。如果您有遇到更多问题，也欢迎[贡献](/docs/contributing)您的一份力量，帮助我们改进。
+[常见问题](/fourier-grx-N1/docs/faq) 包含了一些常见问题的解答，可帮助您解决一些常见问题。如果您有遇到更多问题，也欢迎[贡献](/fourier-grx-N1/docs/contributing)您的一份力量，帮助我们改进。
 
-[固件更新](/docs/update) 包含了发布的新固件以及介绍如何更新固件。
+[固件更新](/fourier-grx-N1/docs/update) 包含了发布的新固件以及介绍如何更新固件。
 
 ## 支持平台与版本
 
@@ -53,8 +53,8 @@ SDK 目前主要支持 Python 语言二次开发使用。
 
 ## 日志更新
 
-请查看 [日志更新](/docs/changelog) 以获取最新版本文档的更新内容。
+请查看 [日志更新](/fourier-grx-N1/docs/changelog) 以获取最新版本文档的更新内容。
 
 ## 贡献指南
 
-请阅读我们的[贡献指南](/docs/contributing)以获取更多信息。
+请阅读我们的[贡献指南](/fourier-grx-N1/docs/contributing)以获取更多信息。

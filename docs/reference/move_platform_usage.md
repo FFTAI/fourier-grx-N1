@@ -15,7 +15,7 @@ has_toc: true
 
 这种情况下，可能用户希望能够自主控制机器人的上半身的关节运动，而下半身又需要保持稳定，且能够及时站立或是行走。
 
-由于这个需求比较特殊，需要既用到机器人的高层控制接口 （[User 接口](/docs/reference/user)），又要用到机器人的关节层面底层控制接口（[Developer 接口](/docs/reference/developer)）。
+由于这个需求比较特殊，需要既用到机器人的高层控制接口 （[User 接口](/fourier-grx-N1/docs/reference/user)），又要用到机器人的关节层面底层控制接口（[Developer 接口](/fourier-grx-N1/docs/reference/developer)）。
 因此，我们在这里提供一个使用指南，供用户参考完成该需求。
 
 ## 下半身作为移动平台控制实现

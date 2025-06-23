@@ -91,7 +91,7 @@ conda activate fourier-grx
 - 远程控制时请确保网络连接稳定
 - 运行示例前请仔细阅读相关安全说明
 
-![终端示例](/assets/images/example_user_terminal.png)
+![终端示例](/fourier-grx-N1/assets/images/example_user_terminal.png)
 
 ---
 

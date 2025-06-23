@@ -54,14 +54,14 @@ has_toc: true
 
 **解决方案**：
 
-1. 确认机器人型号是否配置正确，参见 [固件安装和更新](/docs/usage#固件安装和更新)
+1. 确认机器人型号是否配置正确，参见 [固件安装和更新](/fourier-grx-N1/docs/usage#固件安装和更新)
 2. 重启机器人后重试
 
 ### IMU 初始化失败
 
 **问题描述**：机器人 initialize 失败，提示找不到 IMU 设备
 
-![IMU初始化错误](/assets/images/initialize_imu_error.png)
+![IMU初始化错误](/fourier-grx-N1/assets/images/initialize_imu_error.png)
 
 **解决方案**：
 
@@ -73,7 +73,7 @@ has_toc: true
 
 **问题描述**：机器人 self-check 失败，提示无法访问指定 IP 的执行器
 
-![自检错误](/assets/images/self_check_error.png)
+![自检错误](/fourier-grx-N1/assets/images/self_check_error.png)
 
 **解决方案**：
 
@@ -85,9 +85,9 @@ has_toc: true
 
 **问题描述**：机器人初始化成功，但 IMU 数据异常，一直报错
 
-![IMU 数据错误 1.png](/assets/images/imu_data_error_quat_zero.png)
+![IMU 数据错误 1.png](/fourier-grx-N1/assets/images/imu_data_error_quat_zero.png)
 
-![IMU 数据错误 2.png](/assets/images/imu_data_error_error_frame.png)
+![IMU 数据错误 2.png](/fourier-grx-N1/assets/images/imu_data_error_error_frame.png)
 
 **解决方案**：
 
@@ -228,6 +228,6 @@ sudo apt install build-essential
 
 如果您遇到未在此文档中列出的问题：
 
-1. 查看[开发文档](/docs/reference)
-2. 检查[日志更新](/docs/changelog)
+1. 查看[开发文档](/fourier-grx-N1/docs/reference)
+2. 检查[日志更新](/fourier-grx-N1/docs/changelog)
 3. 联系公司技术支持：[xin.chen@fftai.com](mailto:xin.chen@fftai.com)
