@@ -48,76 +48,78 @@ run_type="custom"
 
 | 配置项              | 说明     | 数据类型    | 默认值     | 可选项                | 用户可修改 |
 |------------------|--------|---------|---------|--------------------|-------|
-| device_connected | 是否连接设备 | boolean | false   | true, false        | 是     |
+| device_connected | 是否连接设备 | boolean | true    | true, false        | 是     |
 | hardware_type    | 硬件类型   | string  | "X64"   |                    | 否     |
 | system           | 系统类型   | string  | "LINUX" |                    | 否     |
 | mode             | 运行模式   | string  | "debug" | "debug", "release" | 否     |
 
 ### 调试相关
 
-| 配置项                                           | 说明                 | 数据类型          | 默认值     | 可选项         | 用户可修改       |
-|-----------------------------------------------|--------------------|---------------|---------|-------------|-------------|
-| debug: print_imu_state                        |                    | 是否打印 IMU 状态信息 | boolean | false       | true, false | 是     |
-| debug: print_joint_position_state             | 是否打印关节状态信息         | boolean       | false   | true, false | 是           |
-| debug: print_joint_velocity_state             | 是否打印关节速度信息         | boolean       | false   | true, false | 是           |
-| debug: print_joint_kinetic_state              | 是否打印关节力矩信息         | boolean       | false   | true, false | 是           |
-| debug: print_joint_current_state              | 是否打印关节电流信息         | boolean       | false   | true, false | 是           |
-| debug: print_imu_urdf_state                   | 是否打印 IMU URDF 状态信息 | boolean       | false   | true, false | 是           |
-| debug: print_joint_urdf_position_state        | 是否打印关节 URDF 位置状态信息 | boolean       | false   | true, false | 是           |
-| debug: print_peripheral_virtual_joystick      | 是否打印外设虚拟摇杆状态信息     | boolean       | false   | true, false | 是           |
-| debug: print_peripheral_virtual_teleoperation | 是否打印外设虚拟遥操作状态信息    | boolean       | false   | true, false | 是           |
+| 配置项                                           | 说明                         | 数据类型    | 默认值   | 可选项         | 用户可修改 |
+|-----------------------------------------------|----------------------------|---------|-------|-------------|-------|
+| debug: print_imu_state                        | 是否打印 IMU 原始状态信息            | boolean | false | true, false | 是     |
+| debug: print_joint_position_state             | 是否打印 关节 原始位置状态信息           | boolean | false | true, false | 是     |
+| debug: print_joint_velocity_state             | 是否打印 关节 原始速度状态信息           | boolean | false | true, false | 是     |
+| debug: print_joint_kinetic_state              | 是否打印 关节 原始力矩状态信息           | boolean | false | true, false | 是     |
+| debug: print_joint_current_state              | 是否打印 关节 原始电流状态信息           | boolean | false | true, false | 是     |
+| debug: print_imu_urdf_state                   | 是否打印 IMU 对应 URDF 文件位姿状态信息  | boolean | false | true, false | 是     |
+| debug: print_joint_urdf_position_state        | 是否打印 关节 对应 URDF 文件位姿位置状态信息 | boolean | false | true, false | 是     |
+| debug: print_peripheral_virtual_joystick      | 是否打印 外设 虚拟摇杆状态信息           | boolean | false | true, false | 是     |
+| debug: print_peripheral_virtual_teleoperation | 是否打印 外设 虚拟遥操作状态信息          | boolean | false | true, false | 是     |
 
 ### 子功能模块相关
 
-| 配置项                   | 说明              | 数据类型    | 默认值   | 可选项         | 用户可修改      |
-|-----------------------|-----------------|---------|-------|-------------|------------|
-| dynalink: enable      | 是否启用动态连接数据传输    | boolean | false | true, false | 是          |
-| sync: enable          | 是否启用同步功能        | boolean | false | true, false | 否 (暂未开放使用) |
-| rerun: enable         | 是否启用 rerun 绘图功能 | boolean | false | true, false | 是          |
-| stream: enable        | 是否启用数据流功能       | boolean | false | true, false | 否 (暂未开放使用) |
-| comm: enable          | 是否启用通信功能        | boolean | false | true, false | 否 (暂未开放使用) |
-| teleoperation: enable | 是否启用遥操作功能       | boolean | false | true, false | 否 (暂未开放使用) |
+| 配置项                   | 说明                                           | 数据类型    | 默认值   | 可选项         | 用户可修改           |
+|-----------------------|----------------------------------------------|---------|-------|-------------|-----------------|
+| dynalink: enable      | 是否启用 动态连接数据传输功能                              | boolean | false | true, false | 是               |
+| sync: enable          | 是否启用 数据同步功能（需要 dynalink:enable=true）         | boolean | false | true, false | 否 (暂未开放使用)      |
+| rerun: enable         | 是否启用 rerun 绘图功能（需要 dynalink:enable=true）     | boolean | false | true, false | 是               |
+| streamlit: enable     | 是否启用 streamlit 绘图功能（需要 dynalink:enable=true） | boolean | false | true, false | 否 (暂未开放使用)      |
+| comm: enable          | 是否启用 旧版通信适配功能（需要 dynalink:enable=true）       | boolean | false | true, false | 否 (暂未开放使用)      |
+| teleoperation: enable | 是否启用 遥操作功能（需要 dynalink:enable=true）          | boolean | false | true, false | 是 (请联系技术支持进行使用) |
 
 ### 资源文件相关
 
-| 配置项            | 说明           | 数据类型    | 默认值   | 可选项                    | 用户可修改      |
-|----------------|--------------|---------|-------|------------------------|------------|
-| resource: path | 资源文件路径       | string  | ""    | "path/to/resource"     | 是          |
-| zenoh: path    | Zenoh 配置文件路径 | string  | ""    | "path/to/zenoh_config" | 否 (暂未开放使用) |
-| record: enable | 是否启用数据记录功能   | boolean | false | true, false            | 是          |
-| record: path   | 数据记录文件路径     | string  | ""    | "path/to/record_file"  | 是          |
+| 配置项            | 说明                                                        | 数据类型    | 默认值                            | 可选项                   | 用户可修改      |
+|----------------|-----------------------------------------------------------|---------|--------------------------------|-----------------------|------------|
+| resource: path | 资源文件路径                                                    | string  | "~/fourier-grx/resource/n1"    | "path/to/resource"    | 是          |
+| zenoh: path    | Zenoh 配置文件路径                                              | string  | "~/fourier-grx/resource/zenoh" | "path/to/zenoh"       | 否 (暂未开放使用) |
+| record: enable | 是否启用 数据日志记录功能（记录关节位置、速度等信息，方便调试，需要 dynalink:enable=true ） | boolean | false                          | true, false           | 是          |
+| record: path   | 数据日志记录文件路径                                                | string  | "~/fourier-grx/record/n1"      | "path/to/record_file" | 是          |
 
 ### 外设相关
 
-| 配置项                                   | 说明          | 数据类型    | 默认值   | 可选项         | 用户可修改 |
-|---------------------------------------|-------------|---------|-------|-------------|-------|
-| peripheral: use_joystick              | 是否使用手柄控制    | boolean | false | true, false | 是     |
-| peripheral: use_keyboard              | 是否使用键盘控制    | boolean | false | true, false | 是     |
-| peripheral: use_virtual_joystick      | 是否使用虚拟手柄控制  | boolean | false | true, false | 是     |
-| peripheral: use_virtual_teleoperation | 是否使用虚拟遥操作控制 | boolean | false | true, false | 是     |
+| 配置项                                   | 说明          | 数据类型    | 默认值      | 可选项                  | 用户可修改 |
+|---------------------------------------|-------------|---------|----------|----------------------|-------|
+| peripheral: use_joystick              | 是否使用手柄控制    | boolean | false    | true, false          | 是     |
+| peripheral: joystick_type             | 手柄类型        | string  | "XBOX"   | "XBOX", "PS4", "PS5" | 是     |
+| peripheral: use_keyboard              | 是否使用键盘控制    | boolean | false    | true, false          | 是     |
+| peripheral: keyboard_type             | 键盘类型        | string  | "NORMAL" | "NORMAL"             | 是     |
+| peripheral: use_virtual_joystick      | 是否使用虚拟手柄控制  | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_teleoperation | 是否使用虚拟遥操作控制 | boolean | false    | true, false          | 是     |
 
 ### 机器人相关
 
-| 配置项                         | 说明        | 数据类型   | 默认值  | 可选项    | 用户可修改 |
-|-----------------------------|-----------|--------|------|--------|-------|
-| robot: name                 | 机器人名称     | string | ""   | "N1" 等 | 否     |
-| robot: mechanism            | 机器人机械结构类型 | string | ""   |        | 否     |
-| robot: control_period       | 控制周期      | float  | 0.02 | 单位为秒   | 否     |
-| robot: communication_period | 通信周期      | float  | 0.02 | 单位为秒   | 否     |
+| 配置项                         | 说明        | 数据类型   | 默认值  | 可选项  | 用户可修改 |
+|-----------------------------|-----------|--------|------|------|-------|
+| robot: name                 | 机器人名称     | string | "N1" | "N1" | 否     |
+| robot: mechanism            | 机器人机械结构类型 | string | ""   | ""   | 否     |
+| robot: control_period       | 控制周期      | float  | 0.02 | 单位为秒 | 否     |
+| robot: communication_period | 通信周期      | float  | 0.02 | 单位为秒 | 否     |
 
 ### 传感器相关
 
-| 配置项                            | 说明                  | 数据类型    | 默认值         | 可选项            | 用户可修改   |
-|--------------------------------|---------------------|---------|-------------|----------------|---------|
-| sensor_usb_imu: usb            | IMU 传感器对应的 USB 设备路径 | string  | ""          | "/dev/ttyUSB0" | 是（谨慎修改） |
-| sensor_usb_imu: comm_enable    | 是否启用 USB IMU 传感器通信  | boolean | [true, ...] | true, false    | 是（谨慎修改） |
-| sensor_usb_imu: comm_frequency | USB IMU 传感器通信频率     | float   | 500.0       | 单位为 Hz         | 是（谨慎修改） |
+| 配置项                            | 说明                     | 数据类型           | 默认值            | 可选项            | 用户可修改   |
+|--------------------------------|------------------------|----------------|----------------|----------------|---------|
+| sensor_usb_imu: usb            | IMU 传感器对应的 USB 设备路径    | string         | "/dev/ttyUSB0" | "/path/to/USB" | 是（谨慎修改） |
+| sensor_usb_imu: comm_enable    | 是否启用 USB IMU 传感器通信     | array(boolean) | [true, ...]    | true, false    | 是（谨慎修改） |
+| sensor_usb_imu: comm_frequency | USB IMU 传感器通信频率，单位为 Hz | float          | 500.0          |                | 是（谨慎修改） |
 
 ### 执行器相关
 
-| 配置项                   | 说明        | 数据类型                        | 默认值         | 可选项         | 用户可修改   |
-|-----------------------|-----------|-----------------------------|-------------|-------------|---------|
-| actuator: comm_enable | 是否启用执行器通信 | array(bool * num_of_joints) | [true, ...] | true, false | 是（谨慎修改） |
+| 配置项                   | 说明        | 数据类型           | 默认值         | 可选项         | 用户可修改   |
+|-----------------------|-----------|----------------|-------------|-------------|---------|
+| actuator: comm_enable | 是否启用执行器通信 | array(boolean) | [true, ...] | true, false | 是（谨慎修改） |
 
 | 配置项             | 说明       | 数据类型   | 默认值        | 可选项 | 用户可修改 |
 |-----------------|----------|--------|------------|-----|-------|
