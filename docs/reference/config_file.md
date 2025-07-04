@@ -109,11 +109,11 @@ run_type="custom"
 
 ### 传感器相关
 
-| 配置项                            | 说明                     | 数据类型           | 默认值            | 可选项            | 用户可修改   |
-|--------------------------------|------------------------|----------------|----------------|----------------|---------|
-| sensor_usb_imu: usb            | IMU 传感器对应的 USB 设备路径    | string         | "/dev/ttyUSB0" | "/path/to/USB" | 是（谨慎修改） |
-| sensor_usb_imu: comm_enable    | 是否启用 USB IMU 传感器通信     | array(boolean) | [true, ...]    | true, false    | 是（谨慎修改） |
-| sensor_usb_imu: comm_frequency | USB IMU 传感器通信频率，单位为 Hz | float          | 500.0          |                | 是（谨慎修改） |
+| 配置项                            | 说明                     | 数据类型           | 默认值                   | 可选项            | 用户可修改   |
+|--------------------------------|------------------------|----------------|-----------------------|----------------|---------|
+| sensor_usb_imu: usb            | IMU 传感器对应的 USB 设备路径    | array(string)  | ["/dev/ttyUSB0", ...] | "/path/to/USB" | 是（谨慎修改） |
+| sensor_usb_imu: comm_enable    | 是否启用 USB IMU 传感器通信     | array(boolean) | [true, ...]           | true, false    | 是（谨慎修改） |
+| sensor_usb_imu: comm_frequency | USB IMU 传感器通信频率，单位为 Hz | array(float)   | [500.0, ...]          |                | 是（谨慎修改） |
 
 ### 执行器相关
 
