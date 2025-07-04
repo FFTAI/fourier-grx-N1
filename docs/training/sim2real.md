@@ -40,8 +40,8 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
     - 确保您的模型中涉及传感器以及执行器输入的部分内容是次序正确的：
         - IMU 数据的输入顺序应为
             - `imu_quat`: x, y, z, w
-            - `imu_euler_angle`: roll, pitch, yaw
-            - `imu_angular_velocity`: roll, pitch, yaw
+            - `imu_euler_angle`: roll, pitch, yaw，单位为度（deg）
+            - `imu_angular_velocity`: roll, pitch, yaw，单位为度每秒（deg/s）
         - 执行器数据的输入顺序应为
             - `joint_position`: 参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence)，单位为度（deg）
             - `joint_velocity`: 参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence)，单位为度每秒（deg/s）
@@ -57,3 +57,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
         - 请使用我们仿真训练代码中的关节的 `stiffness`, `damping` 等参数。
         - 请使用我们仿真训练代码中的的 `noise`, `noise_scale` 等参数。
     - 请确保您的训练代码没有错误，在 RL 训练中，训练代码中有 bug 是导致 Sim2Real 失败的常见原因之一。
+
+8. 具体到 Sim2Real 的 Gap 大小：
+   - 如果您的机器人是 **乱抽乱动**，大概率是输入到神经网络的数据不正确，或是与仿真中的数据有较大差异。
+   - 如果机器人只是运动不协调，或是运动不平稳，则可能是训练过程中设计的奖赏参数或是环境参数不合适。
