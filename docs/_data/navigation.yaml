@@ -43,6 +43,9 @@ docs:
       - title: 运行模式
         url: /docs/reference/run_type
         nav_order: 3.6
+      - title: 命令行工具
+        url: /docs/reference/command_line_tool
+        nav_order: 3.7
 
   - title: 模型训练
     url: /docs/training
