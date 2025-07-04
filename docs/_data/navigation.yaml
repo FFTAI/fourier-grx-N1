@@ -40,6 +40,9 @@ docs:
       - title: 启动配置文件
         url: /docs/reference/config_file
         nav_order: 3.5
+      - title: 运行模式
+        url: /docs/reference/run_type
+        nav_order: 3.6
 
   - title: 模型训练
     url: /docs/training
