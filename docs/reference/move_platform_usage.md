@@ -71,10 +71,10 @@ has_toc: true
     fourier-grx start
     ```
 
-> ℹ️ **说明**：
->
-> 启动程序如果不希望修改 fourier-grx 的 run.sh 脚本，也可以通过 `--config` 参数指定配置文件来启动机器人。如：
-> `python run.py --config=config_N1__mobile.yaml`。
+   > ℹ️ **说明**：
+   >
+   > 启动程序如果不希望修改 fourier-grx 的 run.sh 脚本，也可以通过 `--config` 参数指定配置文件来启动机器人。如：
+   > `python run.py --config=config_N1__mobile.yaml`。
 
 5. 手柄控制：
     - 手柄遥控程序可以参考 fourier-grx SDK **User** 接口中的 [demo_walk.py](https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/user/demo_walk.py) 程序。
