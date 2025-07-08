@@ -29,7 +29,7 @@ defaults:
 # 外部链接配置
 aux_links:
   "GitHub 仓库":
-    - "//github.com/FFTAI/Wiki-GRx-Pipeline"
+    - "//github.com/FFTAI/Wiki-GRx-Pipeline/tree/FourierN1"
 aux_links_new_tab: true
 
 # Markdown 配置
