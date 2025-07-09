@@ -63,7 +63,6 @@ has_toc: true
 | 前进速度 | `joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
 | 转向速度 | `joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
-| 模块选择 | `R1` `R2` 按键完成选择和确认                          |
 
 - 映射到物理键盘
 
@@ -91,11 +90,10 @@ has_toc: true
 
 - 映射到虚拟面板
 
-| 接口参数 | 接口映射关系                               |
-|------|--------------------------------------|
-| 前进速度 | `grx.virtual_panel_command_param_1`  |
-| 侧向速度 | `grx.virtual_panel_command_param_2`  |
-| 转向速度 | `grx.virtual_panel_command_param_3`  |
-| 模块选择 | `grx.virtual_panel_command_picker_1` |
+| 接口参数 | 接口映射关系                              |
+|------|-------------------------------------|
+| 前进速度 | `grx.virtual_panel_command_param_1` |
+| 侧向速度 | `grx.virtual_panel_command_param_2` |
+| 转向速度 | `grx.virtual_panel_command_param_3` |
 
 ## 更新日志
