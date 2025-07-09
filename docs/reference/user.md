@@ -127,10 +127,10 @@ key 说明列表：
 | key                             | 说明         | 数据类型 | 具体描述            |
 |---------------------------------|------------|------|-----------------|
 | `flag_task_command_update`      | 任务指令请求更新标志 | bool | 0: 不更新，1: 更新    |
-| `robot_task_command`            | 任务指令       | int  | 机器人任务指令，具体指令见下表 |
+| `robot_task_command`            | 任务指令       | int  | 机器人 `任务值 (TID)` |
 | `robot_task_command_data`       | 任务指令数据     | dict | 机器人任务指令数据       |
 | `flag_component_command_update` | 模块指令请求更新标志 | bool | 0: 不更新，1: 更新    |
-| `robot_component_command`       | 模块指令       | int  | 机器人模块指令，具体指令见下表 |
+| `robot_component_command`       | 模块指令       | int  | 机器人 `模块值 (MID)` |
 | `robot_component_command_data`  | 模块指令数据     | dict | 机器人模块指令数据       |
 
 ### grx/client 接口协议 (指令信息)
