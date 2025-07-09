@@ -63,10 +63,10 @@ N1 机器人模块指令列表：
 
 在使用不同方式进行机器人控制时，任务切换的方式可能会有所不同，以下是常见的任务切换方式：
 
-|      | 物理手柄    | 物理键盘          | 通信接口                                           |
-|------|---------|---------------|------------------------------------------------|
-| 任务选择 | `L1` 按键 | `up`/`down` 键 | `task.robot_task_command` 发送 `任务值 (TID)`       |
-| 任务确认 | `L2` 按键 | `enter` 键     | `task.flag_task_command_update` 发送 1 确认更新      |
-| 组件选择 | `R1` 按键 |               | `task.robot_component_command` 发送 `模块值 (MID)`  |
-| 组件确认 | `R2` 按键 |               | `task.flag_component_command_update` 发送 1 确认更新 |
+|      | 物理手柄    | 物理键盘          | 通信 User 接口                                     | 通信 Client 接口                                                          |
+|------|---------|---------------|------------------------------------------------|-----------------------------------------------------------------------|
+| 任务选择 | `L1` 按键 | `up`/`down` 键 | `task.robot_task_command` 发送 `任务值 (TID)`       |                                                                       |
+| 任务确认 | `L2` 按键 | `enter` 键     | `task.flag_task_command_update` 发送 1 确认更新      | `control_system.robot_control_set_task_command(TID)` 发送 `任务值 (TID)`   |
+| 组件选择 | `R1` 按键 |               | `task.robot_component_command` 发送 `模块值 (MID)`  |                                                                       |
+| 组件确认 | `R2` 按键 |               | `task.flag_component_command_update` 发送 1 确认更新 | `control_system.robot_control_set_task_component(MID)` 发送 `模块值 (MID)` |
 
