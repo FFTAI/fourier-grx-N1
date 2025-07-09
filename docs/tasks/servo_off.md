@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 执行器失能
-nav_order: 4.1
+nav_order: 4.0
 parent: 任务描述
 has_toc: true
 ---

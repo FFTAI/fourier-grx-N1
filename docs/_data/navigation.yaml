@@ -52,15 +52,24 @@ docs:
     nav_order: 4
     has_children: true
     children:
+      - title: 执行器失能
+        url: /docs/tasks/servo_off
+        nav_order: 4.0
+      - title: 执行器使能
+        url: /docs/tasks/servo_on
+        nav_order: 4.1
+      - title: 执行器重启
+        url: /docs/tasks/servo_reboot
+        nav_order: 4.2
       - title: 设置零点
         url: /docs/tasks/set_home
-        nav_order: 4.0
+        nav_order: 4.10
       - title: 站立/行走
         url: /docs/tasks/stand_walk
-        nav_order: 4.1
+        nav_order: 4.20
       - title: 站立/行走/跑步
         url: /docs/tasks/stand_walk_run
-        nav_order: 4.2
+        nav_order: 4.21
 
   - title: 模型训练
     url: /docs/training

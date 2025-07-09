@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 执行器使能
-nav_order: 4.2
+nav_order: 4.1
 parent: 任务描述
 has_toc: true
 ---
