@@ -15,14 +15,14 @@ has_toc: true
 任务描述：
 
 - 机器人通过给定速度指令，执行站立、行走或跑步的动作。
-    - 速度指令包含 lin_vel_x、lin_vel_y、ang_vel_z 三个分量。
-        - lin_vel_x 表示前进速度
-        - lin_vel_y 表示侧向速度
-        - ang_vel_z 表示转向速度
-    - lin_vel_x 和 lin_vel_y 的模在 [-0.1, 0.1] m/s 范围内时，机器人执行站立动作。
-    - ang_vel_z 在 [-0.1, 0.1] rad/s 范围内时，机器人执行站立动作。
-    - lin_vel_x 和 lin_vel_y 的模在 [-0.5, 0.75] m/s 或 ang_vel_z 在 [-1.0, 1.0] rad/s 时，机器人执行行走动作。
-    - lin_vel_x 和 lin_vel_y 的模大于 0.75 m/s 时，机器人执行跑步动作。
+    - 速度指令包含 `lin_vel_x`、`lin_vel_y`、`ang_vel_z` 三个分量。
+        - `lin_vel_x` 表示前进速度
+        - `lin_vel_y` 表示侧向速度
+        - `ang_vel_z` 表示转向速度
+    - `lin_vel_x` 和 `lin_vel_y` 的模在 [-0.1, 0.1] m/s 范围内时，机器人执行站立动作。
+    - `ang_vel_z` 在 [-0.1, 0.1] rad/s 范围内时，机器人执行站立动作。
+    - `lin_vel_x` 和 `lin_vel_y` 的模在 [-0.5, 0.75] m/s 或 `ang_vel_z` 在 [-1.0, 1.0] rad/s 时，机器人执行行走动作。
+    - `lin_vel_x` 和 `lin_vel_y` 的模大于 0.75 m/s 时，机器人执行跑步动作。
 
 任务参数：
 
