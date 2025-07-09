@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 日志更新
-nav_order: 8
+nav_order: 9
 has_toc: true
 ---
 

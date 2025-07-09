@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sim2Real
-nav_order: 4.2
+nav_order: 5.2
 parent: 模型训练
 toc: true          # 启用目录
 toc_min_header: 2  # 最小显示标题层级（如 H2）
