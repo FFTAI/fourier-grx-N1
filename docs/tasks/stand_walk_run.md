@@ -10,7 +10,7 @@ has_toc: true
 
 ## 任务信息
 
-任务 ID: `4022` / `966`
+任务值(TID): `4022` / `966`
 
 任务描述：
 
@@ -31,6 +31,17 @@ has_toc: true
 | 前进速度 | `float` | 0.0 | [-0.5, 0.5] | 机器人前进的速度，单位为 m/s。   |
 | 侧向速度 | `float` | 0.0 | [-0.5, 1.5] | 机器人侧向移动的速度，单位为 m/s。 |
 | 转向速度 | `float` | 0.0 | [-1.0, 1.0] | 机器人转向的速度，单位为 rad/s。 |
+
+## 模块信息
+
+| 模块值(MID) | 模块指令                         | 模块描述  |
+|----------|------------------------------|-------|
+| 3407     | COMPONENT_NATURAL_WAVE       | 自然摆臂  |
+| 2412     | COMPONENT_WAVE_LEFT_HAND     | 左手打招呼 |
+| 2411     | COMPONENT_WAVE_RIGHT_HAND    | 右手打招呼 |
+| 3408     | COMPONENT_RAISE_RIGHT_BOXING | 右手握拳  |
+| 3409     | COMPONENT_RAISE_RIGHT_HAND   | 右手举起  |
+| 3410     | COMPONENT_SPREAD_HAND        | 双手张开  |
 
 ## 接口信息
 
