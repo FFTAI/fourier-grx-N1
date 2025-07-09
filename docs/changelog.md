@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 日志更新
+title: 更新日志
 nav_order: 9
 has_toc: true
 ---
 
-# 日志更新
+# 更新日志
 
 {:toc}
 

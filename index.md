@@ -51,9 +51,9 @@ SDK 目前主要支持 Python 语言二次开发使用。
 >
 > 基于 [Zenoh](https://zenoh.io) 协议调用 User 接口，无明确平台和语言限制，但仍推荐在 Ubuntu 系统上进行开发。
 
-## 日志更新
+## 更新日志
 
-请查看 [日志更新](/fourier-grx-N1/docs/changelog) 以获取最新版本文档的更新内容。
+请查看 [更新日志](/fourier-grx-N1/docs/changelog) 以获取最新版本文档的更新内容。
 
 ## 贡献指南
 

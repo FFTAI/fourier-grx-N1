@@ -95,6 +95,6 @@ docs:
     url: /docs/update
     nav_order: 8
 
-  - title: 日志更新
+  - title: 更新日志
     url: /docs/changelog
     nav_order: 9
