@@ -34,15 +34,39 @@ has_toc: true
 涉及指令接口：
 
 - 优先级：
-    - 虚拟面板 > 虚拟手柄 > 物理手柄
+    - 虚拟面板 > 虚拟键盘 > 虚拟手柄 > 物理键盘 > 物理手柄
+
+- 映射到物理手柄
+
+| 接口参数 | 接口映射关系                                       |
+|------|----------------------------------------------|
+| 前进速度 | `joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
+| 侧向速度 | `joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
+| 转向速度 | `joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+
+- 映射到物理键盘
+
+| 接口参数 | 接口映射关系                                                   |
+|------|----------------------------------------------------------|
+| 前进速度 | `keyboard_key_w` `keyboard_key_s`，映射到 [-0.25, 0.25] 速度范围 |
+| 侧向速度 | `keyboard_key_a` `keyboard_key_d`，映射到 [-0.25, 0.25] 速度范围 |
+| 转向速度 | `keyboard_key_q` `keyboard_key_e`，映射到 [-0.25, 0.25] 速度范围 |
 
 - 映射到虚拟手柄
 
-| 接口参数 | 接口映射关系                               |
-|------|--------------------------------------|
-| 前进速度 | `grx.virtual_joystick_axis_left` y轴  |
-| 侧向速度 | `grx.virtual_joystick_axis_left` x轴  |
-| 转向速度 | `grx.virtual_joystick_axis_right` y轴 |
+| 接口参数 | 接口映射关系                                                   |
+|------|----------------------------------------------------------|
+| 前进速度 | `grx.virtual_joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
+| 侧向速度 | `grx.virtual_joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
+| 转向速度 | `grx.virtual_joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+
+- 映射到虚拟键盘
+
+| 接口参数 | 接口映射关系                                                                           |
+|------|----------------------------------------------------------------------------------|
+| 前进速度 | `grx.virtual_keyboard_key_w` `grx.virtual_keyboard_key_s`，映射到 [-0.25, 0.25] 速度范围 |
+| 侧向速度 | `grx.virtual_keyboard_key_a` `grx.virtual_keyboard_key_d`，映射到 [-0.25, 0.25] 速度范围 |
+| 转向速度 | `grx.virtual_keyboard_key_q` `grx.virtual_keyboard_key_e`，映射到 [-0.25, 0.25] 速度范围 |
 
 - 映射到虚拟面板
 
