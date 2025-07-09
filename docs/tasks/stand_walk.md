@@ -33,6 +33,12 @@ has_toc: true
 
 ## 接口信息
 
+涉及状态接口：
+
+| 接口参数 | 接口映射关系 |
+|------|--------|
+|      |        |
+
 涉及指令接口：
 
 - 优先级：
@@ -77,11 +83,5 @@ has_toc: true
 | 前进速度 | `grx.virtual_panel_command_param_1` |
 | 侧向速度 | `grx.virtual_panel_command_param_2` |
 | 转向速度 | `grx.virtual_panel_command_param_3` |
-
-涉及状态接口：
-
-| 接口参数 | 接口映射关系 |
-|------|--------|
-|      |        |
 
 ## 更新日志
