@@ -63,6 +63,7 @@ has_toc: true
 | 前进速度 | `joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
 | 转向速度 | `joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+| 模块选择 | `R1` `R2` 按键完成选择和确认                          |
 
 - 映射到物理键盘
 
