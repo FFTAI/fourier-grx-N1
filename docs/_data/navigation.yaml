@@ -52,6 +52,9 @@ docs:
     nav_order: 4
     has_children: true
     children:
+      - title: 设置零点
+        url: /docs/tasks/set_home
+        nav_order: 4.0
       - title: 站立/行走
         url: /docs/tasks/stand_walk
         nav_order: 4.1
