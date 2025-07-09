@@ -209,18 +209,18 @@ key 说明列表：
 - 一个任务可能允许使用多个虚拟外设进行控制，但是由于输入数据的唯一性，外设之间输入数据会互相覆盖，因此，建议用户参看具体任务中关于外设数据优先级的说明。
     - 优先级高的外设会覆盖优先级低的外设输入数据。
 
-| key                             | 说明           | 数据类型            | 具体描述             |
-|---------------------------------|--------------|-----------------|------------------|
-| `virtual_joystick_button_up`    | 虚拟手柄上按钮状态    | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_button_down`  | 虚拟手柄下按钮状态    | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_button_left`  | 虚拟手柄左按钮状态    | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_button_right` | 虚拟手柄右按钮状态    | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_button_l1`    | 虚拟手柄 L1 按钮状态 | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_button_l2`    | 虚拟手柄 L2 按钮状态 | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_button_r1`    | 虚拟手柄 R1 按钮状态 | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_button_r2`    | 虚拟手柄 R2 按钮状态 | int             | 0: 未按下，1: 按下     |
-| `virtual_joystick_axis_left`    | 虚拟手柄左摇杆状态    | array(int, int) | 摇杆状态值范围为 [-1, 1] |
-| `virtual_joystick_axis_right`   | 虚拟手柄右摇杆状态    | array(int, int) | 摇杆状态值范围为 [-1, 1] |
+| key                             | 说明           | 数据类型                | 具体描述                 |
+|---------------------------------|--------------|---------------------|----------------------|
+| `virtual_joystick_button_up`    | 虚拟手柄上按钮状态    | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_button_down`  | 虚拟手柄下按钮状态    | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_button_left`  | 虚拟手柄左按钮状态    | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_button_right` | 虚拟手柄右按钮状态    | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_button_l1`    | 虚拟手柄 L1 按钮状态 | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_button_l2`    | 虚拟手柄 L2 按钮状态 | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_button_r1`    | 虚拟手柄 R1 按钮状态 | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_button_r2`    | 虚拟手柄 R2 按钮状态 | int                 | 0: 未按下，1: 按下         |
+| `virtual_joystick_axis_left`    | 虚拟手柄左摇杆状态    | array(float, float) | 摇杆状态值范围为 [-1.0, 1.0] |
+| `virtual_joystick_axis_right`   | 虚拟手柄右摇杆状态    | array(float, float) | 摇杆状态值范围为 [-1.0, 1.0] |
 
 | key                          | 说明           | 数据类型 | 具体描述         |
 |------------------------------|--------------|------|--------------|

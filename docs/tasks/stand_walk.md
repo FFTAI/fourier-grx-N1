@@ -33,11 +33,11 @@ has_toc: true
 
 1. 映射到虚拟手柄
 
-| 接口参数 | 接口映射关系                              |
-|------|-------------------------------------|
-| 前进速度 | `grx.virtual_panel_command_param_1` |
-| 侧向速度 | `grx.virtual_panel_command_param_2` |
-| 转向速度 | `grx.virtual_panel_command_param_3` |
+| 接口参数 | 接口映射关系                               |
+|------|--------------------------------------|
+| 前进速度 | `grx.virtual_joystick_axis_left` y轴  |
+| 侧向速度 | `grx.virtual_joystick_axis_left` x轴  |
+| 转向速度 | `grx.virtual_joystick_axis_right` y轴 |
 
 2. 映射到虚拟面板
 
