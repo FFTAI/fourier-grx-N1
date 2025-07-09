@@ -33,14 +33,15 @@ has_toc: true
 
 ## 模块信息
 
-| 模块值 (MID) | 模块指令                         | 模块描述  |
-|-----------|------------------------------|-------|
-| 3407      | COMPONENT_NATURAL_WAVE       | 自然摆臂  |
-| 2412      | COMPONENT_WAVE_LEFT_HAND     | 左手打招呼 |
-| 2411      | COMPONENT_WAVE_RIGHT_HAND    | 右手打招呼 |
-| 3408      | COMPONENT_RAISE_RIGHT_BOXING | 右手握拳  |
-| 3409      | COMPONENT_RAISE_RIGHT_HAND   | 右手举起  |
-| 3410      | COMPONENT_SPREAD_HAND        | 双手张开  |
+| 模块值 (MID) | 模块指令                            | 模块描述  | 涉及关节     |
+|-----------|---------------------------------|-------|----------|
+| 3216      | COMPONENT_MAIN_BODY_RL_WALK_MIX | 站立/行走 | 左腿、右腿、腰部 |
+| 3407      | COMPONENT_NATURAL_WAVE          | 自然摆臂  | 左臂、右臂    |
+| 2412      | COMPONENT_WAVE_LEFT_HAND        | 左手打招呼 | 左臂、右臂    |
+| 2411      | COMPONENT_WAVE_RIGHT_HAND       | 右手打招呼 | 左臂、右臂    |
+| 3408      | COMPONENT_RAISE_RIGHT_BOXING    | 右手握拳  | 左臂、右臂    |
+| 3409      | COMPONENT_RAISE_RIGHT_HAND      | 右手举起  | 左臂、右臂    |
+| 3410      | COMPONENT_SPREAD_HAND           | 双手张开  | 左臂、右臂    |
 
 ## 接口信息
 
@@ -89,10 +90,11 @@ has_toc: true
 
 - 映射到虚拟面板
 
-| 接口参数 | 接口映射关系                              |
-|------|-------------------------------------|
-| 前进速度 | `grx.virtual_panel_command_param_1` |
-| 侧向速度 | `grx.virtual_panel_command_param_2` |
-| 转向速度 | `grx.virtual_panel_command_param_3` |
+| 接口参数 | 接口映射关系                               |
+|------|--------------------------------------|
+| 前进速度 | `grx.virtual_panel_command_param_1`  |
+| 侧向速度 | `grx.virtual_panel_command_param_2`  |
+| 转向速度 | `grx.virtual_panel_command_param_3`  |
+| 模块选择 | `grx.virtual_panel_command_picker_1` |
 
 ## 更新日志

@@ -223,6 +223,9 @@ key 说明列表：
 | `virtual_panel_command_switch_3` | 面板命令开关3  | bool  | 0: 不开，1: 开，具体含义由任务决定   |
 | `virtual_panel_command_switch_4` | 面板命令开关4  | bool  | 0: 不开，1: 开，具体含义由任务决定   |
 | `virtual_panel_command_switch_5` | 面板命令开关5  | bool  | 0: 不开，1: 开，具体含义由任务决定   |
+| `virtual_panel_command_picker_1` | 面板命令选择器1 | int   | 面板命令选择器1，具体含义由任务决定     |
+| `virtual_panel_command_picker_2` | 面板命令选择器2 | int   | 面板命令选择器2，具体含义由任务决定     |
+| `virtual_panel_command_picker_3` | 面板命令选择器3 | int   | 面板命令选择器3，具体含义由任务决定     |
 | `virtual_panel_command_start`    | 面板命令开始标志 | bool  | 0: 不开始，1: 开始，具体含义由任务决定 |
 | `virtual_panel_command_stop`     | 面板命令停止标志 | bool  | 0: 不停止，1: 停止，具体含义由任务决定 |
 | `virtual_panel_command_pause`    | 面板命令暂停标志 | bool  | 0: 不暂停，1: 暂停，具体含义由任务决定 |
