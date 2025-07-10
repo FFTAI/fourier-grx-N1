@@ -48,7 +48,7 @@ key 说明列表：
 | `joint_effort`   | 关节力矩 | array(float) | 关节测量力矩，单位为牛顿米  |
 | `joint_current`  | 关节电流 | array(float) | 关节测量电流，单位为安培   |
 
-## task/state 接口协议 (状态信息)
+### task/state 接口协议 (状态信息)
 
 key 说明列表：
 
