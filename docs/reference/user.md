@@ -23,8 +23,8 @@ user 接口主要分为以下4类：
 对应的 zenoh 接口 topic 的 key 格式为：
 
 - key 可以是 ["comm", "robot", "task", "grx"]
-- `fourier-grx/dynalink_interface/{key}/server` ：机器人主控程序发出状态信息 **[机器人作为服务器]**
-- `fourier-grx/dynalink_interface/{key}/client` ：机器人主控程序接收指令信息 **[用户机作为客户端]**
+- `fourier-grx/dynalink_interface/{key}/server` ：机器人主控程序发出的状态信息 **[机器人作为服务器]**
+- `fourier-grx/dynalink_interface/{key}/client` ：机器人主控程序接收的指令信息 **[用户机作为客户端]**
 
 ---
 
