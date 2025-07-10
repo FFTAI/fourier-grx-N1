@@ -17,7 +17,7 @@ Fourier-GRX pubsub 接口使用 zenoh 进行通信，zenoh 是一个分布式系
 
 pubsub 接口主要分为以下4类：
 
-- `robot`：机器人状态信息
+- `robot`：机器人相关信息
 - `task`：任务相关信息
 
 对应的 zenoh 接口 topic 的 key 格式为：
