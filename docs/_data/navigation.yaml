@@ -19,6 +19,9 @@ docs:
       - title: Developer 接口
         url: /docs/examples/developer
         nav_order: 2.2
+      - title: PubSub 接口
+        url: /docs/examples/pubsub
+        nav_order: 2.3
 
   - title: 参考指南
     url: /docs/reference
