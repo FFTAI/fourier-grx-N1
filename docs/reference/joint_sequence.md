@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 机器人关节序列
-nav_order: 3.3
+nav_order: 3.4
 parent: 参考指南
 has_toc: true
 ---
