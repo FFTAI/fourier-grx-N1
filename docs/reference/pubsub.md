@@ -54,8 +54,8 @@ key 说明列表：
 
 | key                 | 说明   | 数据类型 | 具体描述           |
 |---------------------|------|------|----------------|
-| `task_command`      | 任务指令 | int  | 期望机器人任务值 (TID) |
-| `component_command` | 模块指令 | int  | 期望机器人模块值 (MID) |
+| `task_command`      | 任务指令 | int  | 设置机器人任务值 (TID) |
+| `component_command` | 模块指令 | int  | 设置机器人模块值 (MID) |
 
 ---
 
