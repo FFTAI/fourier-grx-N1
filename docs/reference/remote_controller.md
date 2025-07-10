@@ -15,8 +15,10 @@ has_toc: true
 
 对应的 zenoh 接口的 topic 的 key 格式为：
 
-- `fourier-grx/robot/state`: 机器人主控程序发出的状态信息 **[机器人作为服务器]**
-- `fourier-grx/robot/control`: 远端控制器发出的控制指令 **[用户机作为客户端]**
+- `fourier-grx/robot/state`: 机器人主控程序发出的机器人状态信息 **[机器人作为服务器]**
+- `fourier-grx/task/state`: 机器人主控程序发出的任务状态信息 **[机器人作为服务器]**
+- `fourier-grx/robot/control`: 远端控制器发出的机器人控制指令 **[用户机作为客户端]**
+- `fourier-grx/task/control`: 远端控制器发出的任务控制指令 **[用户机作为客户端]**
 
 > ⚠️ **注意**：
 > 
