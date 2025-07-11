@@ -24,7 +24,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
     allowfullscreen="true">
 </iframe>
 
-## 介绍
+## 基本介绍
 
 Fourier-GRX-N1 SDK 是傅利叶智能提供的一个软件开发工具包，
 提供了一套 API 用于安装、配置、控制傅利叶智能的 N1 机器人产品的应用程序。
