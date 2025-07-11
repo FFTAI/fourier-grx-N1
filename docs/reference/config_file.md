@@ -99,7 +99,10 @@ run_type="custom"
 | peripheral: use_keyboard              | 是否使用键盘控制    | boolean | false    | true, false          | 是     |
 | peripheral: keyboard_type             | 键盘类型        | string  | "NORMAL" | "NORMAL"             | 是     |
 | peripheral: use_virtual_joystick      | 是否使用虚拟手柄控制  | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_keyboard      | 是否使用虚拟键盘控制  | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_mouse         | 是否使用虚拟鼠标控制  | boolean | false    | true, false          | 是     |
 | peripheral: use_virtual_teleoperation | 是否使用虚拟遥操作控制 | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_panel         | 是否使用虚拟面板控制  | boolean | false    | true, false          | 是     |
 
 ### 机器人相关
 
