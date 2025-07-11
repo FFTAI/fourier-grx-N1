@@ -10,6 +10,18 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 # 欢迎来到 Fourier-GRX-N1 SDK 开发文档
 
+<iframe 
+    src="//player.bilibili.com/player.html?isOutside=true&aid=114318087686944&bvid=BV1hEdSYgEXN&cid=29351805156&p=1" 
+    width="100%"
+    height="500"
+    scrolling="no" 
+    border="0"
+    frameborder="no" 
+    framespacing="0"
+    autoplay="false"
+    allowfullscreen="true">
+</iframe>
+
 ## 介绍
 
 Fourier-GRX-N1 SDK 是傅利叶智能提供的一个软件开发工具包，
