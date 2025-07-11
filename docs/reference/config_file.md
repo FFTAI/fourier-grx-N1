@@ -18,6 +18,8 @@ has_toc: true
 启动 `fourier-grx` 时，需要通过 `--config` 参数指定启动配置文件的路径。
 在使用 `fourier-grx start` 启动机器人时，具体使用的配置文件信息可以在 `~/fourier-grx/run.sh` 文件中找到。
 
+默认情况下，`fourier-grx` 针对 `FourierN1` 机器人的启动配置文件位于 `~/fourier-grx/config/n1/` 目录下。
+
 启动时使用哪个配置文件，取决于 `run.sh` 文件中的 `robot_type`, `robot_version` 和 `run_type` 字段。
 这些字段的值既可以通过 `fourier-grx config` 命令行工具进行修改，也可以直接在 `run.sh` 文件中修改。
 
