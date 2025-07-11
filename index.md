@@ -13,7 +13,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 ## N1 机器人
 
 <iframe 
-    src="//player.bilibili.com/player.html?isOutside=true&aid=114318087686944&bvid=BV1hEdSYgEXN&cid=29351805156&p=1&autoplay=false" 
+    src="//player.bilibili.com/player.html?isOutside=true&aid=114318087686944&bvid=BV1hEdSYgEXN&cid=29351805156&p=1&autoplay=false&muted=true" 
     width="100%"
     height="500"
     scrolling="no" 
