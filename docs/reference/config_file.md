@@ -18,6 +18,8 @@ has_toc: true
 启动 `fourier-grx` 时，需要通过 `--config` 参数指定启动配置文件的路径。
 在使用 `fourier-grx start` 启动机器人时，具体使用的配置文件信息可以在 `~/fourier-grx/run.sh` 文件中找到。
 
+默认情况下，`fourier-grx` 针对 `FourierN1` 机器人的启动配置文件位于 `~/fourier-grx/config/n1/` 目录下。
+
 启动时使用哪个配置文件，取决于 `run.sh` 文件中的 `robot_type`, `robot_version` 和 `run_type` 字段。
 这些字段的值既可以通过 `fourier-grx config` 命令行工具进行修改，也可以直接在 `run.sh` 文件中修改。
 
@@ -77,6 +79,7 @@ run_type="custom"
 | streamlit: enable     | 是否启用 streamlit 绘图功能（需要 dynalink:enable=true） | boolean | false | true, false | 否 (暂未开放使用)      |
 | comm: enable          | 是否启用 旧版通信适配功能（需要 dynalink:enable=true）       | boolean | false | true, false | 否 (暂未开放使用)      |
 | teleoperation: enable | 是否启用 遥操作功能（需要 dynalink:enable=true）          | boolean | false | true, false | 是 (请联系技术支持进行使用) |
+| pubsub: enable        | 是否启用 发布订阅功能，用于将机器人程序作为服务器，远程启动控制器作为客户端使用     | boolean | false | true, false | 是               |
 
 ### 资源文件相关
 
@@ -96,7 +99,10 @@ run_type="custom"
 | peripheral: use_keyboard              | 是否使用键盘控制    | boolean | false    | true, false          | 是     |
 | peripheral: keyboard_type             | 键盘类型        | string  | "NORMAL" | "NORMAL"             | 是     |
 | peripheral: use_virtual_joystick      | 是否使用虚拟手柄控制  | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_keyboard      | 是否使用虚拟键盘控制  | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_mouse         | 是否使用虚拟鼠标控制  | boolean | false    | true, false          | 是     |
 | peripheral: use_virtual_teleoperation | 是否使用虚拟遥操作控制 | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_panel         | 是否使用虚拟面板控制  | boolean | false    | true, false          | 是     |
 
 ### 机器人相关
 

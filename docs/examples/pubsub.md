@@ -17,3 +17,5 @@ PubSub 接口目前提供的开发示例有：
 - `demo_print_state`: 打印机器人状态信息。
 - `demo_servo_on`: 机器人全关节上电使能。
 - `demo_servo_off`: 机器人全关节下电失能。
+- `demo_remote_control`: 远端控制器示例。
+- `demo_ready_state`: 机器人准备状态示例。

@@ -27,4 +27,5 @@ has_toc: true
 
 ## 远端控制器环境搭建
 
-用户需要在远端控制器的电脑上安装 Zenoh，无需安装 Fourier-GRX-N1 SDK。
+用户需要在远端控制器的电脑上安装 Zenoh。fourier-grx SDK 可以安装也可以不安装，请根据实际情况进行选择。
+
