@@ -79,6 +79,7 @@ run_type="custom"
 | streamlit: enable     | 是否启用 streamlit 绘图功能（需要 dynalink:enable=true） | boolean | false | true, false | 否 (暂未开放使用)      |
 | comm: enable          | 是否启用 旧版通信适配功能（需要 dynalink:enable=true）       | boolean | false | true, false | 否 (暂未开放使用)      |
 | teleoperation: enable | 是否启用 遥操作功能（需要 dynalink:enable=true）          | boolean | false | true, false | 是 (请联系技术支持进行使用) |
+| pubsub: enable        | 是否启用 发布订阅功能，用于将机器人程序作为服务器，远程启动控制器作为客户端使用     | boolean | false | true, false | 是               |
 
 ### 资源文件相关
 
