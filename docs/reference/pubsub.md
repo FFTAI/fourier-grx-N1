@@ -9,13 +9,13 @@ has_toc: true
 # 参考指南 PubSub 接口
 
 * TOC
-{:toc}
+  {:toc}
 
-(接口准备中...尚未发布)
+Fourier-GRX PubSub 接口使用 zenoh 进行通信，zenoh 是一个分布式系统的数据共享和协作平台 (https://zenoh.io/)。
 
-Fourier-GRX pubsub 接口使用 zenoh 进行通信，zenoh 是一个分布式系统的数据共享和协作平台 (https://zenoh.io/)。
+PubSub 接口是基于 Developer 接口内容，借助于 zenoh 的发布/订阅机制实现的。它允许用户通过订阅特定的主题 (topic) 来接收机器人状态信息，并通过发布特定的主题来发送控制指令。
 
-pubsub 接口主要分为以下4类：
+PubSub 接口主要分为以下4类：
 
 - `robot`：机器人相关信息
 - `task`：任务相关信息
