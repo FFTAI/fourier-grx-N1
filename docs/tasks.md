@@ -13,7 +13,7 @@ nav_order: 4
 
 机器人任务指令列表 🎏：
 
-- 任务指令通过 fourier_grx.TaskCommand 枚举类定义，具体定义如下：
+- 任务指令通过 `fourier_grx.TaskCommand` 枚举类定义，具体定义如下：
 - 具体 `任务值 (TID)` 可能会根据机器人的不同，或 `fourier-grx` 版本的不同而有所变化，**具体值以实际任务信息为准**。
 
 N1 机器人任务指令示例：
