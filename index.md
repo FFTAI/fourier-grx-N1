@@ -12,15 +12,15 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 ## N1 机器人
 
-<iframe 
-    src="//player.bilibili.com/player.html?isOutside=true&aid=114318087686944&bvid=BV1hEdSYgEXN&cid=29351805156&p=1&autoplay=false&muted=true" 
-    width="100%"
-    height="500"
-    scrolling="no" 
-    border="0"
-    frameborder="no" 
-    framespacing="0"
-    allowfullscreen="true">
+<iframe
+src="//player.bilibili.com/player.html?isOutside=true&aid=114318087686944&bvid=BV1hEdSYgEXN&cid=29351805156&p=1&autoplay=false&muted=true"
+width="100%"
+height="500"
+scrolling="no"
+border="0"
+frameborder="no"
+framespacing="0"
+allowfullscreen="true">
 </iframe>
 
 ## 基本介绍
@@ -58,9 +58,10 @@ SDK 目前主要支持 Python 语言二次开发使用。
 
 > ℹ️ **说明**:
 >
-> Fourier-GRX-N1 SDK 具备 User 和 Developer 两类不同层级的接口。
-> - User 接口基于 [Zenoh](https://zenoh.io) 协议开发
-> - Developer 接口基于 Python 库开发。
+> Fourier-GRX-N1 SDK 具备 User、Developer、PubSub 不同层级的接口。
+> - User 接口基于 [Zenoh](https://zenoh.io) 协议通信，主要针对上层应用开发。
+> - Developer 接口基于 Python 库开发，提供了对机器人底层控制的访问，适用于需要直接操作机器人关节运动的开发者。
+> - PubSub 接口基于 [Zenoh](https://zenoh.io) 协议，借鉴 Developer 接口的设计，提供了方便的发布/订阅数据传输机制。
 >
 > 基于 [Zenoh](https://zenoh.io) 协议调用 User 接口，无明确平台和语言限制，但仍推荐在 Ubuntu 系统上进行开发。
 
