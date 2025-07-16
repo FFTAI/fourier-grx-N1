@@ -50,12 +50,13 @@ conda activate fourier-grx
 
 ### 基础控制示例
 
-| 示例名称  | 说明        | 代码路径                       |
-|-------|-----------|----------------------------|
-| 机器人使能 | 控制机器人关节上电 | `user/demo_servo_on.py`    |
-| 机器人失能 | 控制机器人关节下电 | `user/demo_servo_off.py`   |
-| 清除故障  | 清除机器人报警状态 | `user/demo_clear_fault.py` |
-| 设置零位  | 设置当前位置为零位 | `user/demo_set_home.py`    |
+| 示例名称  | 说明        | 代码路径                        |
+|-------|-----------|-----------------------------|
+| 执行器使能 | 使能机器人执行器  | `user/demo_servo_on.py`     |
+| 执行器失能 | 失能机器人执行器  | `user/demo_servo_off.py`    |
+| 执行器重启 | 重启机器人执行器  | `user/demo_servo_reboot.py` |
+| 清除故障  | 清除机器人报警状态 | `user/demo_clear_fault.py`  |
+| 设置零位  | 设置当前位置为零位 | `user/demo_set_home.py`     |
 
 ### 运动控制示例
 
@@ -101,12 +102,14 @@ conda activate fourier-grx
 
 ### 系统控制示例
 
-| 示例名称  | 说明          | 代码路径                            |
-|-------|-------------|---------------------------------|
-| 状态监控  | 打印机器人状态信息   | `developer/demo_print_state.py` |
-| 参数配置  | 设置关节 PID 参数 | `developer/demo_set_pid.py`     |
-| 机器人使能 | 控制机器人使能状态   | `developer/demo_servo_on.py`    |
-| 零位设置  | 设置机器人零位     | `developer/demo_set_home.py`    |
+| 示例名称  | 说明          | 代码路径                             |
+|-------|-------------|----------------------------------|
+| 执行器使能 | 使能机器人执行器    | `developer/demo_servo_on.py`     |
+| 执行器失能 | 失能机器人执行器    | `developer/demo_servo_off.py`    |
+| 执行器重启 | 重启机器人执行器    | `developer/demo_servo_reboot.py` |
+| 状态监控  | 打印机器人状态信息   | `developer/demo_print_state.py`  |
+| 参数配置  | 设置关节 PID 参数 | `developer/demo_set_pid.py`      |
+| 零位设置  | 设置机器人零位     | `developer/demo_set_home.py`     |
 
 ### 运动控制示例
 
@@ -131,3 +134,23 @@ python $HOME/Wiki-GRx-Deploy/developer/demo_{示例名称}.py --config=$HOME/fou
 2. 建议先熟悉用户接口再使用开发者接口
 3. 请注意备份重要的配置文件
 4. 调试时建议在安全环境下进行
+
+## PubSub 接口示例
+
+开发者通过 [Zenoh](https://zenoh.io/) 协议与机器人通信，接口协议类似 Developer API，提供了更为灵活的消息发布和订阅机制进行接口通信。
+
+### 系统控制示例
+
+| 示例名称  | 说明        | 代码路径                            |
+|-------|-----------|---------------------------------|
+| 机器人使能 | 控制机器人使能状态 | `pubsub/demo_servo_on.py`       |
+| 机器人失能 | 控制机器人失能状态 | `pubsub/demo_servo_off.py`      |
+| 状态监控  | 打印机器人状态信息 | `pubsub/demo_print_state.py`    |
+| 远程控制  | 远端控制器示例   | `pubsub/demo_remote_control.py` |
+
+### 运动控制示例
+
+| 示例名称 | 说明     | 代码路径                         |
+|------|--------|------------------------------|
+| 准备姿态 | 进入准备状态 | `pubsub/demo_ready_state.py` |
+| 行走控制 | 手柄控制行走 | `pubsub/demo_walk.py`        |
