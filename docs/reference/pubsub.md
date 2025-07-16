@@ -9,7 +9,7 @@ has_toc: true
 # 参考指南 PubSub 接口
 
 * TOC
-  {:toc}
+{:toc}
 
 Fourier-GRX PubSub 接口使用 zenoh 进行通信，zenoh 是一个分布式系统的数据共享和协作平台 (https://zenoh.io/)。
 
