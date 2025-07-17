@@ -50,23 +50,23 @@ N1 机器人任务指令示例：
 
 N1 机器人模块指令示例：
 
-| 任务指令      | 模块指令                         | 模块值 (MID) | 模块描述  |
-|-----------|------------------------------|-----------|-------|
-| TASK_WALK | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
-| TASK_WALK | COMPONENT_WAVE_LEFT_HAND     | 2412      | 左手打招呼 |
-| TASK_WALK | COMPONENT_WAVE_RIGHT_HAND    | 2411      | 右手打招呼 |
-| TASK_WALK | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
-| TASK_WALK | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
-| TASK_WALK | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
+| 任务指令      | 任务值 (TID) | 模块指令                         | 模块值 (MID) | 模块描述  |
+|-----------|-----------|------------------------------|-----------|-------|
+| TASK_WALK | 965       | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
+| TASK_WALK | 965       | COMPONENT_WAVE_LEFT_HAND     | 2412      | 左手打招呼 |
+| TASK_WALK | 965       | COMPONENT_WAVE_RIGHT_HAND    | 2411      | 右手打招呼 |
+| TASK_WALK | 965       | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
+| TASK_WALK | 965       | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
+| TASK_WALK | 965       | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
 
-| 任务指令      | 模块指令                         | 模块值 (MID) | 模块描述  |
-|-----------|------------------------------|-----------|-------|
-| TASK_RUN  | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
-| TASK_RUN  | COMPONENT_WAVE_LEFT_HAND     | 2412      | 左手打招呼 |
-| TASK_RUN  | COMPONENT_WAVE_RIGHT_HAND    | 2411      | 右手打招呼 |
-| TASK_RUN  | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
-| TASK_RUN  | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
-| TASK_RUN  | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
+| 任务指令     | 任务值 (TID) | 模块指令                         | 模块值 (MID) | 模块描述  |
+|----------|-----------|------------------------------|-----------|-------|
+| TASK_RUN | 966       | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
+| TASK_RUN | 966       | COMPONENT_WAVE_LEFT_HAND     | 2412      | 左手打招呼 |
+| TASK_RUN | 966       | COMPONENT_WAVE_RIGHT_HAND    | 2411      | 右手打招呼 |
+| TASK_RUN | 966       | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
+| TASK_RUN | 966       | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
+| TASK_RUN | 966       | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
 
 ## 任务切换
 
