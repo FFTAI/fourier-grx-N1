@@ -73,6 +73,6 @@ N1 机器人模块指令示例：
 |------|---------|---------------|------------------------------------------------|-----------------------------------------------------------------------|
 | 任务选择 | `L1` 按键 | `up`/`down` 键 | `task.robot_task_command` 发送 `任务值 (TID)`       |                                                                       |
 | 任务确认 | `L2` 按键 | `enter` 键     | `task.flag_task_command_update` 发送 1 确认更新      | `control_system.robot_control_set_task_command(TID)` 发送 `任务值 (TID)`   |
-| 组件选择 | `R1` 按键 |               | `task.robot_component_command` 发送 `模块值 (MID)`  |                                                                       |
-| 组件确认 | `R2` 按键 |               | `task.flag_component_command_update` 发送 1 确认更新 | `control_system.robot_control_set_task_component(MID)` 发送 `模块值 (MID)` |
+| 模块选择 | `R1` 按键 |               | `task.robot_component_command` 发送 `模块值 (MID)`  |                                                                       |
+| 模块确认 | `R2` 按键 |               | `task.flag_component_command_update` 发送 1 确认更新 | `control_system.robot_control_set_task_component(MID)` 发送 `模块值 (MID)` |
 
