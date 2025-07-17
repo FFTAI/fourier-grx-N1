@@ -97,3 +97,6 @@ has_toc: true
 | 转向速度 | `grx.virtual_panel_command_param_3` |
 
 ## 更新日志
+
+- `fourier-grx` v2.0.0 版本新增该功能。
+- `fourier-grx` v4.0.2 版本优化了该行走任务的稳定性，同时加入行走对称特性。

@@ -44,3 +44,5 @@ has_toc: true
 |      |        |
 
 ## 更新日志
+
+- `fourier-grx` v1.0.0 版本新增该功能。

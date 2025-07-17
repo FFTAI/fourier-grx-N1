@@ -98,3 +98,5 @@ has_toc: true
 | 转向速度 | `grx.virtual_panel_command_param_3` |
 
 ## 更新日志
+
+- `fourier-grx` v2.0.0 版本新增该功能。
