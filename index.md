@@ -63,7 +63,7 @@ SDK 目前主要支持 Python 语言二次开发使用。
 > - Developer 接口基于 Python 库开发，提供了对机器人底层控制的访问，适用于需要直接操作机器人关节运动的开发者。
 > - PubSub 接口基于 [Zenoh](https://zenoh.io) 协议，借鉴 Developer 接口的设计，提供了方便的发布/订阅数据传输机制。
 >
-> 基于 [Zenoh](https://zenoh.io) 协议调用 User 接口，无明确平台和语言限制，但仍推荐在 Ubuntu 系统上进行开发。
+> 基于 [Zenoh](https://zenoh.io) 协议调用 User 接口和 PubSub 接口，无明确平台和语言限制，但仍推荐在 Ubuntu 系统上进行开发。
 
 ## 更新日志
 
