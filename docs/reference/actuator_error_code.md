@@ -55,4 +55,4 @@ has_toc: true
 
 > ℹ️ **说明**:
 >
-> 大部分可以通过重启来清除的错误码，可以通过 [清除错误](/fourier-grx-N1/docs/tasks/clear_fault.md) 任务来清除。
+> 大部分可以通过重启来清除的错误码，可以通过 [清除错误](/fourier-grx-N1/docs/tasks/clear_fault) 任务来清除。
