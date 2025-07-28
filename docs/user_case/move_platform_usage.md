@@ -2,7 +2,7 @@
 layout: default
 title: 作为移动平台使用
 nav_order: 6.1
-parent: 参考指南
+parent: 用户案例
 has_toc: true
 ---
 
