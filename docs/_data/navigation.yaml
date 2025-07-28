@@ -40,24 +40,18 @@ docs:
       - title: 机器人关节序列
         url: /docs/reference/joint_sequence
         nav_order: 3.4
-      - title: 作为移动平台使用
-        url: /docs/reference/move_platform_usage
-        nav_order: 3.5
       - title: 启动配置文件
         url: /docs/reference/config_file
-        nav_order: 3.6
+        nav_order: 3.5
       - title: 运行模式
         url: /docs/reference/run_type
-        nav_order: 3.7
+        nav_order: 3.6
       - title: 命令行工具
         url: /docs/reference/command_line_tool
-        nav_order: 3.8
-      - title: 远端控制器
-        url: /docs/reference/remote_controller
-        nav_order: 3.9
+        nav_order: 3.7
       - title: 执行器错误码
         url: /docs/reference/actuator_error_code
-        nav_order: 3.99
+        nav_order: 3.8
 
   - title: 任务描述
     url: /docs/tasks
@@ -95,18 +89,30 @@ docs:
         url: /docs/training/sim2real
         nav_order: 5.2
 
+  - title: 应用案例
+    url: /docs/user_case
+    nav_order: 6
+    has_children: true
+    children:
+      - title: 作为移动平台使用
+        url: /docs/user_case/move_platform_usage
+        nav_order: 6.1
+      - title: 远端控制器
+        url: /docs/user_case/remote_controller
+        nav_order: 6.2
+
   - title: 常用操作
     url: /docs/usage
-    nav_order: 6
+    nav_order: 7
 
   - title: 常见问题
     url: /docs/faq
-    nav_order: 7
+    nav_order: 8
 
   - title: 固件更新
     url: /docs/update
-    nav_order: 8
+    nav_order: 9
 
   - title: 更新日志
     url: /docs/changelog
-    nav_order: 9
+    nav_order: 10

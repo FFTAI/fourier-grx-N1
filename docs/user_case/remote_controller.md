@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 远端控制器
-nav_order: 3.9
+nav_order: 6.2
 parent: 参考指南
 has_toc: true
 ---
