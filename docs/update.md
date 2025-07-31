@@ -18,7 +18,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 | 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                     |
 |------------|--------|----------------------------------------------------------------------------------------------|------------------------------------------|
-| 2025-08-01 | 4.1.8  |                                                                                              | [详情](/fourier-grx-N1/docs/update#4.1.8)  |
+| 2025-08-01 | 4.x.y  |                                                                                              | [详情](/fourier-grx-N1/docs/update#4.x.y)  |
 | 2025-05-19 | 2.3.24 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.24.deb) | [详情](/fourier-grx-N1/docs/update#2.3.24) |
 | 2025-05-15 | 2.3.22 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.22.deb) | [详情](/fourier-grx-N1/docs/update#2.3.22) |
 | 2025-04-30 | 2.3.19 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.19.deb) | [详情](/fourier-grx-N1/docs/update#2.3.19) |
@@ -35,7 +35,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 ## 更新内容
 
-### 4.1.8
+### 4.x.y
 
 新增：
 
