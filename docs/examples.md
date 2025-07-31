@@ -168,16 +168,16 @@ python $HOME/Wiki-GRx-Deploy/developer/demo_{示例名称}.py --config=$HOME/fou
 
 ### 系统控制示例
 
-| 示例名称  | 说明        | 代码路径                            |
-|-------|-----------|---------------------------------|
-| 机器人使能 | 控制机器人使能状态 | `pubsub/demo_servo_on.py`       |
-| 机器人失能 | 控制机器人失能状态 | `pubsub/demo_servo_off.py`      |
-| 状态监控  | 打印机器人状态信息 | `pubsub/demo_print_state.py`    |
-| 远程控制  | 远端控制器示例   | `pubsub/demo_remote_control.py` |
+| 示例名称  | 说明        | 代码路径                                   |
+|-------|-----------|----------------------------------------|
+| 机器人使能 | 控制机器人使能状态 | `pubsub_radian/demo_servo_on.py`       |
+| 机器人失能 | 控制机器人失能状态 | `pubsub_radian/demo_servo_off.py`      |
+| 状态监控  | 打印机器人状态信息 | `pubsub_radian/demo_print_state.py`    |
+| 远程控制  | 远端控制器示例   | `pubsub_radian/demo_remote_control.py` |
 
 ### 运动控制示例
 
-| 示例名称 | 说明     | 代码路径                         |
-|------|--------|------------------------------|
-| 准备姿态 | 进入准备状态 | `pubsub/demo_ready_state.py` |
-| 行走控制 | 手柄控制行走 | `pubsub/demo_walk.py`        |
+| 示例名称 | 说明     | 代码路径                                |
+|------|--------|-------------------------------------|
+| 准备姿态 | 进入准备状态 | `pubsub_radian/demo_ready_state.py` |
+| 行走控制 | 手柄控制行走 | `pubsub_radian/demo_walk.py`        |
