@@ -31,4 +31,4 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
 通常情况下，`user.yaml` 和 `credentials.yaml` 中的用户名和密码是相同的，以确保程序本地正常通信。
 
-具体的内容可以参考 https://zenoh.io/docs/manual/user-password/
+具体的内容可以参考 [https://zenoh.io/docs/manual/user-password/](https://zenoh.io/docs/manual/user-password/)
