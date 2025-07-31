@@ -11,6 +11,10 @@ has_toc: true
 * TOC
 {:toc}
 
+> ℹ️ **说明**：
+> 
+> 使用 Fourier-GRX-N1 SDK Developer API 前，请将 `fourier-grx` 配置为 **开发者模式**。
+
 Developer 接口是针对开发者底层开发提供的二次开发接口。需要在 python 环境中安装 fourier_core 和 fourier_grx 库后，直接使用库函数进行开发调用。
 
 ## 状态字典（state dict）
