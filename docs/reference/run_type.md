@@ -15,7 +15,7 @@ has_toc: true
 
 - `fourier-grx list`：列出当前的配置参数，其中包括运行模式
 - `fourier-grx install`：安装程序软件，安装过程中会提示选择运行模式
-- `fourier-grx config`：重新配置启动参数
+- `fourier-grx config`：重新配置启动参数，其中包括运行模式的选择
 
 运行模式清单如下：
 
