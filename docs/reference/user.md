@@ -15,7 +15,7 @@ has_toc: true
 > 
 > 使用 Fourier-GRX-N1 SDK User API 前，请将 `fourier-grx` 配置为 **开发者模式**。
 
-Fourier-GRX User 接口使用 zenoh 进行通信，zenoh 是一个分布式系统的数据共享和协作平台 (https://zenoh.io/)。
+Fourier-GRX User 接口使用 zenoh 进行通信，[zenoh](https://zenoh.io/) 是一个分布式系统的数据共享和协作平台。
 
 User 接口主要分为以下4类：
 
