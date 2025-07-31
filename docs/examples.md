@@ -102,6 +102,19 @@ conda activate fourier-grx
 
 ### 系统控制示例
 
+4.0.0 以上版本：
+
+| 示例名称  | 说明          | 代码路径                                    |
+|-------|-------------|-----------------------------------------|
+| 执行器使能 | 使能机器人执行器    | `developer_radian/demo_servo_on.py`     |
+| 执行器失能 | 失能机器人执行器    | `developer_radian/demo_servo_off.py`    |
+| 执行器重启 | 重启机器人执行器    | `developer_radian/demo_servo_reboot.py` |
+| 状态监控  | 打印机器人状态信息   | `developer_radian/demo_print_state.py`  |
+| 参数配置  | 设置关节 PID 参数 | `developer_radian/demo_set_pid.py`      |
+| 零位设置  | 设置机器人零位     | `developer_radian/demo_set_home.py`     |
+
+4.0.0 以下版本：
+
 | 示例名称  | 说明          | 代码路径                             |
 |-------|-------------|----------------------------------|
 | 执行器使能 | 使能机器人执行器    | `developer/demo_servo_on.py`     |
@@ -112,6 +125,15 @@ conda activate fourier-grx
 | 零位设置  | 设置机器人零位     | `developer/demo_set_home.py`     |
 
 ### 运动控制示例
+
+4.0.0 以上版本：
+
+| 示例名称 | 说明     | 代码路径                                   |
+|------|--------|----------------------------------------|
+| 准备姿态 | 进入准备状态 | `developer_radian/demo_ready_state.py` |
+| 行走控制 | 手柄控制行走 | `developer_radian/demo_walk.py`        |
+
+4.0.0 以下版本：
 
 | 示例名称 | 说明     | 代码路径                            |
 |------|--------|---------------------------------|
@@ -140,7 +162,7 @@ python $HOME/Wiki-GRx-Deploy/developer/demo_{示例名称}.py --config=$HOME/fou
 开发者通过 [Zenoh](https://zenoh.io/) 协议与机器人通信，接口协议类似 Developer API，提供了更为灵活的消息发布和订阅机制进行接口通信。
 
 > ⚠️ **注意**：
-> 
+>
 > 使用 PubSub 接口，其数据是通过有线/无线网络进行传输的，其延时和可靠性会受到网络质量的影响。
 > 因此，用户需要根据实际情况进行调试和测试，以确保控制的稳定性和可靠性。
 
