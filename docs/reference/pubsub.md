@@ -14,6 +14,7 @@ has_toc: true
 > ℹ️ **说明**：
 > 
 > 使用 Fourier-GRX-N1 SDK PubSub API 前，请将 `fourier-grx` 配置为 **服务器模式**。
+> 关于运行模式的配置，请参见 [运行模式](/fourier-grx-N1/docs/reference/run_type)。
 
 Fourier-GRX PubSub 接口使用 zenoh 进行通信，[zenoh](https://zenoh.io/) 是一个分布式系统的数据共享和协作平台。
 
