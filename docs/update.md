@@ -16,14 +16,14 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 版本发布是指 Fourier-GRX-N1 SDK 的新版本发布信息，包含发布日期、版本号、资源链接和更新内容。
 
-| 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                     |
-|------------|--------|----------------------------------------------------------------------------------------------|------------------------------------------|
-| 2025-08-01 | 4.x.y  |                                                                                              | [详情](/fourier-grx-N1/docs/update#4.x.y)  |
-| 2025-05-19 | 2.3.24 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.24.deb) | [详情](/fourier-grx-N1/docs/update#2.3.24) |
-| 2025-05-15 | 2.3.22 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.22.deb) | [详情](/fourier-grx-N1/docs/update#2.3.22) |
-| 2025-04-30 | 2.3.19 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.19.deb) | [详情](/fourier-grx-N1/docs/update#2.3.19) |
-| 2025-03-26 | 2.3.2  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.2.deb)  | [详情](/fourier-grx-N1/docs/update#2.3.2)  |
-| 2025-03-24 | 2.3.1  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.1.deb)  | [详情](/fourier-grx-N1/docs/update#2.3.1)  |
+| 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                   |
+|------------|--------|----------------------------------------------------------------------------------------------|----------------------------------------|
+| 2025-08-01 | 4.x.y  |                                                                                              | [详情](/fourier-grx-N1/docs/update#4xy)  |
+| 2025-05-19 | 2.3.24 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.24.deb) | [详情](/fourier-grx-N1/docs/update#2324) |
+| 2025-05-15 | 2.3.22 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.22.deb) | [详情](/fourier-grx-N1/docs/update#2322) |
+| 2025-04-30 | 2.3.19 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.19.deb) | [详情](/fourier-grx-N1/docs/update#2319) |
+| 2025-03-26 | 2.3.2  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.2.deb)  | [详情](/fourier-grx-N1/docs/update#232)  |
+| 2025-03-24 | 2.3.1  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.1.deb)  | [详情](/fourier-grx-N1/docs/update#231)  |
 
 ## 发布预告
 
