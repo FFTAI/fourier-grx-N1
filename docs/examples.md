@@ -124,8 +124,8 @@ conda activate fourier-grx
 # 激活 conda 环境
 conda activate fourier-grx
 
-# 运行具体机型的示例程序，配置文件需要根据具体机型进行修改，使用带 "_sdk.yaml" 后缀的配置文件
-python $HOME/Wiki-GRx-Deploy/developer/demo_{示例名称}.py --config=$HOME/fourier-grx/config/{具体机型}/config_{具体机型}_sdk.yaml
+# 运行具体机型的示例程序，配置文件需要根据具体机型进行修改，使用带 "_developer.yaml" 后缀的配置文件
+python $HOME/Wiki-GRx-Deploy/developer/demo_{示例名称}.py --config=$HOME/fourier-grx/config/{具体机型}/config_{具体机型}_developer.yaml
 ```
 
 ### 注意事项
