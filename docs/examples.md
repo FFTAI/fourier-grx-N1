@@ -18,7 +18,7 @@ has_toc: true
 
 ## 示例程序下载
 
-可以通过 git 同步机器人的二次开发接口示例程序，同步命令为：
+可以通过 `git` 工具同步机器人的二次开发接口示例程序，同步命令为：
 
 ### N1 系列机器人
 
@@ -30,7 +30,7 @@ cd $HOME/Wiki-GRx-Deploy
 
 ## 二次开发环境配置
 
-`fourier-grx` 工具提供了 `fourier-grx setup_conda` 命令用于一键配置 conda 开发环境用于机器人二次开发。
+`fourier-grx` 工具提供了 `fourier-grx setup_conda` 命令用于一键配置 conda 开发环境用于机器人二次开发。安装环境时，请确保机器网络连接正常。
 
 ```bash
 # 在机器人主控电脑上：
@@ -41,3 +41,5 @@ conda activate fourier-grx
 
 # 如果希望自主搭建开发环境，可以在 $HOME/fourier-grx/whl 中找到依赖库文件进行手动安装。
 ```
+
+运行具体的示例程序，请参考各个接口的示例代码说明。
