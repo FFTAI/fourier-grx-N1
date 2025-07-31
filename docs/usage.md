@@ -23,6 +23,8 @@ sudo dpkg -i fourier-grx-xxx.deb  # xxx 为具体版本号
 
 # 安装 fourier-grx 完整内容
 fourier-grx install
+
+# 安装过程中如果由于网络或是其他原因导致安装失败，可以重新运行上面的指令进行安装。
 ```
 
 安装过程中，会要求输入机器人型号，请根据实际机器人型号进行配置，目前支持的型号如下：
