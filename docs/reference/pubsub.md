@@ -16,9 +16,10 @@ has_toc: true
 > 使用 Fourier-GRX-N1 SDK PubSub API 前，请将 `fourier-grx` 配置为 **服务器模式**。
 > 关于运行模式的配置，请参见 [运行模式](/fourier-grx-N1/docs/reference/run_type)。
 
-Fourier-GRX PubSub 接口使用 zenoh 进行通信，[zenoh](https://zenoh.io/) 是一个分布式系统的数据共享和协作平台。
-
-PubSub 接口是基于 Developer 接口内容，借助于 zenoh 的发布/订阅机制实现的。它允许用户通过订阅特定的主题 (topic) 来接收机器人状态信息，并通过发布特定的主题来发送控制指令。
+Fourier-GRX PubSub 接口使用 [Zenoh](https://zenoh.io/) 协议与机器人通信，
+接口协议类似 Developer API，
+提供了更为灵活的消息发布和订阅机制进行接口通信，
+适用于远端控制或对开发灵活性有更高要求的应用场景。
 
 PubSub 接口主要分为以下4类：
 
