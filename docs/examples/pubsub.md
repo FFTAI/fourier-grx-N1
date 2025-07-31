@@ -19,7 +19,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 ## 运行方法
 
-1. 配置 `fourier-grx` 运行在 `服务器模式`
+1. 在机器人主控电脑上配置 `fourier-grx` 运行在 `服务器模式`
    ```
    # 修改 fourier-grx 配置
    fourier-grx config
