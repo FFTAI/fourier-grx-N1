@@ -57,7 +57,17 @@ has_toc: true
 
 ### 开发者模式
 
-开发者模式下，用户可以参考开源开发接口进行二次开发，
+开发者模式下，用户可以参考 **SDK User API** 接口进行二次开发，使用 **手柄**🎮 调用内部算法完成运动功能任务。
+
+具体的开发接口和示例程序可以参考：
+
+- 开发接口：[参考指南](/fourier-grx-N1/docs/reference)
+- 示例程序：[Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy)
+
+### 服务器模式
+
+服务器模式下，用户可以通过 **SDK PubSub API** 接口进行二次开发，调用内部任务或是控制机器人关节运动。
+
 具体的开发接口和示例程序可以参考：
 
 - 开发接口：[参考指南](/fourier-grx-N1/docs/reference)
