@@ -8,7 +8,7 @@ has_toc: true
 # 示例代码
 
 * TOC
-  {:toc}
+{:toc}
 
 本文档提供了丰富的示例代码，帮助您快速掌握 Fourier-GRX-N1 SDK 的使用方法。
 
