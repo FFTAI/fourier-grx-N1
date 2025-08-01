@@ -30,11 +30,11 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 | 计划发布日期     | 版本号    | 资源链接                                                                                         | 更新内容                                  |
 |------------|--------|----------------------------------------------------------------------------------------------|---------------------------------------|
-| 2025-08-01 | 4.1.10 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.10.deb) | [详情](/fourier-grx-N1/docs/update#4xy) |
+| 2025-08-01 | 4.1.11 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.11.deb) | [详情](/fourier-grx-N1/docs/update#4xy) |
 
 ## 更新内容
 
-### 4.1.10
+### 4.1.11
 
 (预览版本)
 
