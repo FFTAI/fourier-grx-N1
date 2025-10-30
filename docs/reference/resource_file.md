@@ -47,7 +47,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
     ```
     # 机器人1 & 机器人2
-    authentication: true 
+    authentication: true  # 启用用户密码校验
     path: "~/fourier-grx/resource/zenoh"
     ```
 
