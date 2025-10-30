@@ -57,7 +57,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
     password: "fourier-grx-2"
     ```
    
-3. 打开 `~/fourier-grx/resource/zenoh/credentials.yaml` 文件，修改其中的用户名和密码，使其与 `user.yaml` 文件中的用户名和密码相同。例如：
+3. 打开 `~/fourier-grx/resource/zenoh/credentials.txt` 文件，修改其中的用户名和密码，使其与 `user.yaml` 文件中的用户名和密码相同。例如：
 
     ```yaml
     # 第一台机器
