@@ -45,7 +45,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
 1. 修改配置文件，启用 zenoh 用户密码校验（修改启动时调用的 `config_xxx.json` 配置文件）:
 
-    ```
+    ```yaml
     # 机器人1 & 机器人2
     authentication: true  # 启用用户密码校验（默认是关闭校验功能的，局域网内各个节点可以直接通信）
     path: "~/fourier-grx/resource/zenoh"
