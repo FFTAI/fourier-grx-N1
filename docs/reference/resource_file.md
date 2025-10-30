@@ -35,7 +35,13 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
 ### 通过用户名和密码实现 Peer 模式下绑定
 
-可以通过修改 `user.yaml` 和 `credentials.yaml` 文件中的用户名和密码，实现 Zenoh Peer 模式下的绑定。具体步骤如下：
+可以通过修改 `user.yaml` 和 `credentials.yaml` 文件中的用户名和密码，实现 Zenoh Peer 模式下的绑定。
+可以实现在同一个局域网内，
+
+- 控制主机1 -> 控制 -> 机器人1
+- 控制主机2 -> 控制 -> 机器人2
+
+具体步骤如下：
 
 1. 修改配置文件，启用 zenoh 用户密码校验（修改启动时调用的 `config_xxx.json` 配置文件）:
 
@@ -56,7 +62,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
     user: "fourier-grx-2"
     password: "fourier-grx-2"
     ```
-   
+
 3. 打开 `~/fourier-grx/resource/zenoh/credentials.txt` 文件，修改其中的用户名和密码，使其与 `user.yaml` 文件中的用户名和密码相同。例如：
 
     ```yaml
@@ -118,7 +124,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
     # 创建 zenoh 会话
     zenoh_session: zenoh.Session = zenoh.open(zenoh_config)
     ```
-   
+
     ```python
     # 第二台控制主机
     import os, json
