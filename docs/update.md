@@ -18,6 +18,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 | 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                   | 技术支持       |
 |------------|--------|----------------------------------------------------------------------------------------------|----------------------------------------|------------|
+| 2025-10-01 | 4.1.11 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.11.deb) | [详情](/fourier-grx-N1/docs/update#4111) | ✅          |
 | 2025-05-19 | 2.3.24 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.24.deb) | [详情](/fourier-grx-N1/docs/update#2324) | ⚠️  (即将停止) |
 | 2025-05-15 | 2.3.22 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.22.deb) | [详情](/fourier-grx-N1/docs/update#2322) | ❌          |
 | 2025-04-30 | 2.3.19 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.19.deb) | [详情](/fourier-grx-N1/docs/update#2319) | ❌          |
@@ -30,7 +31,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 | 版本号    | 资源链接                                                                                         | 更新内容                                   | 技术支持 |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------|------|
-| 4.1.11 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.11.deb) | [详情](/fourier-grx-N1/docs/update#4111) | ✅    |
+| 4.1.21 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.21.deb) | [详情](/fourier-grx-N1/docs/update#4121) | ✅    |
 
 ## 发布预告
 
@@ -45,6 +46,23 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 固件安装流程请参考 [固件安装和更新](/fourier-grx-N1/docs/usage#固件安装和更新)。
 
 ## 更新内容
+
+### 4.1.21
+
+新增：
+
+- 新增 N1 机器人爬起动作（TID `3551`，如果机器人报错导致摔倒，会自动清除错误信息）
+
+优化：
+
+- 升级 `eclipse-zenoh` 版本从 `1.0.1` 到最新版 `1.6.2`，提升通信稳定性和性能，并修复旧版本中的通信问题。
+- 优化部分 config 模板文件内容，修正了一些不合理的配置选项。
+
+修复：
+
+- 修复 N1 模仿学习任务中途重新启动时，机器人抽动的问题。
+- 修复 N1 模仿学习任务在某些情况下索引越界的问题。
+- 修复通信数据包解析中存在的 bug，提升通信稳定性。
 
 ### 4.1.11
 
