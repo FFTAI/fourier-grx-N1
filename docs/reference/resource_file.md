@@ -67,26 +67,26 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 3. 打开 `~/fourier-grx/resource/zenoh/credentials.txt` 文件，修改其中的用户名和密码，使其与 `user.yaml` 文件中的用户名和密码相同。例如：
 
     ```yaml
-    # credentials.txt
     # 机器人1
+    # credentials.txt
     fourier_grx_1:fourier_grx_1
     ```
     ```yaml
-    # credentials.txt
     # 机器人2
+    # credentials.txt
     fourier_grx_2:fourier_grx_2
     ```
 
 4. 修改调用接口代码 `Wiki-GRx-Deploy` 中的 `credentials.txt` 内容，以及可能需要修改文件命名。例如：
 
     ```yaml
-    # credentials-1.txt
     # 控制主机1
+    # credentials-1.txt
     fourier-grx-1:fourier-grx-1
     ```
     ```yaml
-    # credentials-2.txt
     # 控制主机2
+    # credentials-2.txt
     fourier-grx-2:fourier-grx-2
     ```
 
