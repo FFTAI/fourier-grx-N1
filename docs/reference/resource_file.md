@@ -69,12 +69,12 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
     ```yaml
     # 机器人1
     # credentials.txt
-    fourier_grx_1:fourier_grx_1
+    fourier-grx-1:fourier-grx-1
     ```
     ```yaml
     # 机器人2
     # credentials.txt
-    fourier_grx_2:fourier_grx_2
+    fourier-grx-2:fourier-grx-2
     ```
 
 4. 修改调用接口代码 `Wiki-GRx-Deploy` 中的 `credentials.txt` 内容，以及可能需要修改文件命名。例如：
