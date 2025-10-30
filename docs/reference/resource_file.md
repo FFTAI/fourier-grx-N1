@@ -53,12 +53,12 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 2. 打开 `~/fourier-grx/resource/zenoh/user.yaml` 文件，修改其中的用户名和密码。例如：
 
     ```yaml
-    # 第一台机器人
+    # 机器人1
     user: "fourier-grx-1"
     password: "fourier-grx-1"
     ```
     ```yaml
-    # 第二台机器人
+    # 机器人2
     user: "fourier-grx-2"
     password: "fourier-grx-2"
     ```
@@ -67,12 +67,12 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
     ```yaml
     # credentials.txt
-    # 第一台机器人
+    # 机器人1
     fourier_grx_1:fourier_grx_1
     ```
     ```yaml
     # credentials.txt
-    # 第二台机器人
+    # 机器人2
     fourier_grx_2:fourier_grx_2
     ```
 
@@ -80,19 +80,19 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
     ```yaml
     # credentials-1.txt
-    # 第一台控制主机
+    # 控制主机1
     fourier-grx-1:fourier-grx-1
     ```
     ```yaml
     # credentials-2.txt
-    # 第二台控制主机
+    # 控制主机2
     fourier-grx-2:fourier-grx-2
     ```
 
 5. 打开调用接口代码 `Wiki-GRx-Deploy` ，修改 Zenoh 的连接参数，指定用户名和密码。例如：
 
     ```python
-    # 第一台控制主机
+    # 控制主机1
     import os, json
     import zenoh
    
@@ -126,7 +126,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
     ```
 
     ```python
-    # 第二台控制主机
+    # 控制主机2
     import os, json
     import zenoh
    
