@@ -40,8 +40,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 1. 修改配置文件，启用 zenoh 用户密码校验（修改启动时调用的 `config_xxx.json` 配置文件）：
 
     ```json
-    // zenoh 配置项目
-    authentication: true
+    authentication: true 
     path: "~/fourier-grx/resource/zenoh"
     ```
 
