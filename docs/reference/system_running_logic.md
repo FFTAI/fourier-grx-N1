@@ -63,6 +63,8 @@ graph TD
     CZ --> Z
 ```
 
+(为防止浏览器渲染问题，这里添加了图片附件 [系统运行逻辑](/fourier-grx-N1/assets/images/system_running_logic_1.png))
+
 1. 启动配置文件加载 (参考：[启动配置文件](/fourier-grx-N1/docs/reference/config_file))
     - 系统启动时，会根据用户指定的配置文件路径加载启动配置文件。该文件通常为 YAML 格式，包含了机器人运行所需的各种参数配置。
     - 配置文件中的关键参数包括但不限于：`机器人名称`、`机器人机械结构类型`、子功能模块相关配置、日志相关配置、控制系统相关配置等。
@@ -137,6 +139,8 @@ graph TD
     D_exit --> Z
 ```
 
+(为防止浏览器渲染问题，这里添加了图片附件 [主任务启动逻辑](/fourier-grx-N1/assets/images/system_running_logic_2.png))
+
 - `机器人名称` + `机器人机械结构类型`：共同决定了程序启动时以哪个型号的机器人进行初始化和后续的控制。如果配置错误，程序将可能无法正确启动。
 - 程序启动后，默认会启动三个周期任务：底层数据更新任务、控制任务和通信任务。
     - 底层数据更新任务负责与机器人底层硬件进行数据交互，获取传感器数据并发送执行器指令。
@@ -147,10 +151,11 @@ graph TD
 ## 开发者模式启动逻辑
 
 在开发者模式（developer）下，启动逻辑与普通模式类似，但会有如下一些区别点：
+
 - 系统会关闭辅助任务和外设任务，以便防止干扰主任务的调试和测试。
 - 系统会关闭通信任务，以便用户可以专注于控制任务的开发和调试。
-- 由于开发者模式下主要有用户完成算法任务的调度和控制算法的推理，因此 fourier-grx 本身的控制任务调度默认会运行在 `TASK_IDLE` 待机状态，以便用户可以专注于自己的算法开发。 
-  - 只在用户通过 `control_system.robot_control_set_task_command` 接口显式设置任务命令时，才会执行相应的任务调度逻辑。
+- 由于开发者模式下主要有用户完成算法任务的调度和控制算法的推理，因此 fourier-grx 本身的控制任务调度默认会运行在 `TASK_IDLE` 待机状态，以便用户可以专注于自己的算法开发。
+    - 只在用户通过 `control_system.robot_control_set_task_command` 接口显式设置任务命令时，才会执行相应的任务调度逻辑。
 
 ```mermaid
 graph TD
@@ -160,12 +165,12 @@ graph TD
     C --> D[打印配置, 环境, 版本信息等]
     D --> E[机器人控制系统初始化]
     E --> F[启动周期任务]
-    
+
     subgraph 主任务
         AA[主任务启动入口]
         AZ[主任务异常处理, 退出处理]
         F --> AA
-        
+
         subgraph 底层数据更新任务
             B_entry[底层数据更新任务入口]
             B1[获取传感器状态数据]
@@ -182,10 +187,10 @@ graph TD
             B2 -.-> B_exit
             B4 -.-> B_exit
         end
-        
+
         AA --> B_entry
         B_exit --> AZ
-        
+
         subgraph 控制任务
             C_entry[控制任务入口]
             C1[机器人模型初始化]
@@ -206,10 +211,12 @@ graph TD
             C7 --> C3
             C7 -.-> C_exit
         end
-        
+
         AA --> C_entry
         C_exit --> AZ
     end
 
     AZ --> Z
 ```
+
+(为防止浏览器渲染问题，这里添加了图片附件 [开发者模式启动逻辑](/fourier-grx-N1/assets/images/system_running_logic_3.png))
