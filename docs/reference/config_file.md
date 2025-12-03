@@ -106,12 +106,12 @@ run_type="custom"
 
 ### 机器人相关
 
-| 配置项                         | 说明        | 数据类型   | 默认值  | 可选项  | 用户可修改 |
-|-----------------------------|-----------|--------|------|------|-------|
-| robot: name                 | 机器人名称     | string | "N1" | "N1" | 否     |
-| robot: mechanism            | 机器人机械结构类型 | string | ""   | ""   | 否     |
-| robot: control_period       | 控制周期      | float  | 0.02 | 单位为秒 | 否     |
-| robot: communication_period | 通信周期      | float  | 0.02 | 单位为秒 | 否     |
+| 配置项                         | 说明        | 数据类型   | 默认值  | 可选项        | 用户可修改 |
+|-----------------------------|-----------|--------|------|------------|-------|
+| robot: name                 | 机器人名称     | string | "N1" | "N1"       | 否     |
+| robot: mechanism            | 机器人机械结构类型 | string | ""   | ""         | 否     |
+| robot: control_period       | 控制周期      | float  | 0.02 | 自定义时间，单位为秒 | 否     |
+| robot: communication_period | 通信周期      | float  | 0.02 | 自定义时间，单位为秒 | 否     |
 
 ### 传感器相关
 
