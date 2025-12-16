@@ -32,12 +32,32 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 | 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                   | 技术支持 |
 |------------|--------|----------------------------------------------------------------------------------------------|----------------------------------------|------|
 | 2025-10-30 | 4.1.21 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.21.deb) | [详情](/fourier-grx-N1/docs/update#4121) | ✅    |
+| 2025-12-16 | 4.2.2  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.2.2.deb)  | [详情](/fourier-grx-N1/docs/update#422)  | ✅    |
 
 ## 安装方法
 
 固件安装流程请参考 [固件安装和更新](/fourier-grx-N1/docs/usage#固件安装和更新)。
 
 ## 更新内容
+
+### 4.2.2
+
+新增：
+
+- 新增在 Developer 接口中调用内置外设状态监控任务的示例代码，位于 `developer_radian/demo_print_peripheral.py`。
+- 新增在 Developer 接口中调用内置进入准备姿态任务的示例代码，位于 `developer_radian/demo_ready_builtin.py`。
+- 新增在 Developer 接口中调用内置行走任务的示例代码，位于 `developer_radian/demo_walk_builtin.py`。
+- 新增优化后的行走策略任务，位于 `developer_radian/demo_walk_refined.py`。
+
+优化：
+
+- 允许接口获取外设（手柄和键盘）的数据状态，方便开发者进行二次开发。
+- 允许接口调用内置复杂算法任务，方便开发者进行二次开发。
+
+已知问题，待将来修复：
+
+- 在部分 ARM 平台运行 `fourier-grx` 时，zenoh 可能会出现通信不稳定的问题，导致程序出现短时间的阻塞卡顿现象，影响机器人运动的流畅性。建议在 x86 平台运行 `fourier-grx` 以获得更好的性能表现。
+  - 此问题来自 zenoh 底层库在 ARM 平台的适配问题，傅利叶智能团队已向 zenoh 团队反馈该问题，期待未来版本能解决该问题。
 
 ### 4.1.21
 
