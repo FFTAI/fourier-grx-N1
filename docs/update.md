@@ -16,23 +16,23 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 
 正式版本是 Fourier-GRX-N1 SDK 的新版本发布信息，包含发布日期、版本号、资源链接和更新内容。
 
-| 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                   | 技术支持       |
-|------------|--------|----------------------------------------------------------------------------------------------|----------------------------------------|------------|
-| 2025-10-01 | 4.1.11 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.11.deb) | [详情](/fourier-grx-N1/docs/update#4111) | ✅          |
-| 2025-05-19 | 2.3.24 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.24.deb) | [详情](/fourier-grx-N1/docs/update#2324) | ⚠️  (即将停止) |
-| 2025-05-15 | 2.3.22 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.22.deb) | [详情](/fourier-grx-N1/docs/update#2322) | ❌          |
-| 2025-04-30 | 2.3.19 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.19.deb) | [详情](/fourier-grx-N1/docs/update#2319) | ❌          |
-| 2025-03-26 | 2.3.2  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.2.deb)  | [详情](/fourier-grx-N1/docs/update#232)  | ❌          |
-| 2025-03-24 | 2.3.1  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.1.deb)  | [详情](/fourier-grx-N1/docs/update#231)  | ❌          |
+| 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                   | 技术支持 |
+|------------|--------|----------------------------------------------------------------------------------------------|----------------------------------------|------|
+| 2025-10-30 | 4.1.21 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.21.deb) | [详情](/fourier-grx-N1/docs/update#4121) | ✅    |
+| 2025-10-01 | 4.1.11 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.11.deb) | [详情](/fourier-grx-N1/docs/update#4111) | ❌    |
+| 2025-05-19 | 2.3.24 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.24.deb) | [详情](/fourier-grx-N1/docs/update#2324) | ❌    |
+| 2025-05-15 | 2.3.22 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.22.deb) | [详情](/fourier-grx-N1/docs/update#2322) | ❌    |
+| 2025-04-30 | 2.3.19 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.19.deb) | [详情](/fourier-grx-N1/docs/update#2319) | ❌    |
+| 2025-03-26 | 2.3.2  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.2.deb)  | [详情](/fourier-grx-N1/docs/update#232)  | ❌    |
+| 2025-03-24 | 2.3.1  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-2.3.1.deb)  | [详情](/fourier-grx-N1/docs/update#231)  | ❌    |
 
 ## 预览版本
 
 预览版本是指尚未正式发布的版本，可能包含新功能或修复，但不保证稳定性。请谨慎使用。如果使用中发现问题，请在 [GitHub Issues](https://github.com/FFTAI/Wiki-GRx-Deploy/issues) 提交反馈。
 
-| 发布日期       | 版本号    | 资源链接                                                                                         | 更新内容                                   | 技术支持 |
-|------------|--------|----------------------------------------------------------------------------------------------|----------------------------------------|------|
-| 2025-10-30 | 4.1.21 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.1.21.deb) | [详情](/fourier-grx-N1/docs/update#4121) | ✅    |
-| 2025-12-16 | 4.2.2  | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.2.2.deb)  | [详情](/fourier-grx-N1/docs/update#422)  | ✅    |
+| 发布日期       | 版本号   | 资源链接                                                                                        | 更新内容                                  | 技术支持 |
+|------------|-------|---------------------------------------------------------------------------------------------|---------------------------------------|------|
+| 2025-12-16 | 4.2.2 | [下载](https://fourier-grx-1302548221.cos.ap-shanghai.myqcloud.com/grx/fourier-grx-4.2.2.deb) | [详情](/fourier-grx-N1/docs/update#422) | ✅    |
 
 ## 安装方法
 
@@ -57,7 +57,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 已知问题，待将来修复：
 
 - 在部分 ARM 平台运行 `fourier-grx` 时，zenoh 可能会出现通信不稳定的问题，导致程序出现短时间的阻塞卡顿现象，影响机器人运动的流畅性。建议在 x86 平台运行 `fourier-grx` 以获得更好的性能表现。
-  - 此问题来自 zenoh 底层库在 ARM 平台的适配问题，傅利叶智能团队已向 zenoh 团队反馈该问题，期待未来版本能解决该问题。
+    - 此问题来自 zenoh 底层库在 ARM 平台的适配问题，傅利叶智能团队已向 zenoh 团队反馈该问题，期待未来版本能解决该问题。
 
 ### 4.1.21
 
