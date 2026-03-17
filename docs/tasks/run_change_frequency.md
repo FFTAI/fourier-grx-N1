@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 站立/行走/快跑(动态步频)
-nav_order: 4.22
+nav_order: 4.23
 parent: 任务描述
 has_toc: true
 ---

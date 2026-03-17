@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 资源文件
-nav_order: 3.5
+nav_order: 3.7
 parent: 参考指南
 has_toc: true
 ---

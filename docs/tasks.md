@@ -2,9 +2,13 @@
 layout: default
 title: 任务描述
 nav_order: 4
+has_children: true
+has_toc: true
 ---
 
 # 任务描述
+
+本章汇总 Fourier-GRX-N1 SDK 中常用任务与模块的说明，适合在查找任务值（TID）、模块值（MID）及任务切换方式时快速参考。
 
 * TOC
 {:toc}
@@ -79,3 +83,12 @@ N1 机器人模块指令示例：
 | 模块选择 | `R1` 按键 |               | `task.robot_component_command` 发送 `模块值 (MID)`  |                                                                       |
 | 模块确认 | `R2` 按键 |               | `task.flag_component_command_update` 发送 1 确认更新 | `control_system.robot_control_set_task_component(MID)` 发送 `模块值 (MID)` |
 
+## 常见任务入口
+
+- [执行器失能](/fourier-grx-N1/docs/tasks/servo_off)
+- [执行器使能](/fourier-grx-N1/docs/tasks/servo_on)
+- [清除错误](/fourier-grx-N1/docs/tasks/clear_fault)
+- [设置零位](/fourier-grx-N1/docs/tasks/set_home)
+- [准备姿态](/fourier-grx-N1/docs/tasks/ready_state)
+- [站立/行走](/fourier-grx-N1/docs/tasks/stand_walk)
+- [站立/行走/跑步](/fourier-grx-N1/docs/tasks/stand_walk_run)

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 停止运动
-nav_order: 4.1
+nav_order: 4.04
 parent: 任务描述
 has_toc: true
 ---

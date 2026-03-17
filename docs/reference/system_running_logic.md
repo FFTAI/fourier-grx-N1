@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 系统运行逻辑
-nav_order: 3.5
+nav_order: 3.6
 parent: 参考指南
 has_toc: true
 ---

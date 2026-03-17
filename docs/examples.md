@@ -2,19 +2,20 @@
 layout: default
 title: 示例代码
 nav_order: 2
+has_children: true
 has_toc: true
 ---
 
 # 示例代码
 
-* TOC
-{:toc}
-
-本文档提供了丰富的示例代码，帮助您快速掌握 Fourier-GRX-N1 SDK 的使用方法。
+本章汇总 Fourier-GRX-N1 SDK 的示例代码入口，帮助您根据不同接口层快速定位可参考的示例程序。
 
 - N1 系列机器人的示例代码位于 [Github Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy.git) 的 `FourierN1` 分支中。
 
 示例代码包含用户接口（User API）、开发者接口（Developer API）、以及 PubSub 接口的示例，适用于不同层次的开发需求。
+
+* TOC
+{:toc}
 
 ## 二次开发环境配置
 
@@ -43,3 +44,9 @@ cd $HOME/Wiki-GRx-Deploy
 建议同步到 `$HOME` 目录下，同步完成后，可以通过 `cd $HOME/Wiki-GRx-Deploy` 进入该目录查看。
 
 运行具体的示例程序，请参考各个接口的示例代码说明。
+
+## 子章节
+
+- [User 接口](/fourier-grx-N1/docs/examples/user)：面向高层应用开发的示例。
+- [Developer 接口](/fourier-grx-N1/docs/examples/developer)：面向底层控制开发的示例。
+- [PubSub 接口](/fourier-grx-N1/docs/examples/pubsub)：面向远端发布/订阅通信开发的示例。

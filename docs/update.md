@@ -2,12 +2,12 @@
 layout: default
 title: 固件更新
 nav_order: 9
-toc: true          # 启用目录
-toc_min_header: 2  # 最小显示标题层级（如 H2）
-toc_max_header: 3  # 最大显示标题层级（如 H3）
+has_toc: true
 ---
 
 # 固件更新
+
+本章汇总 Fourier-GRX-N1 SDK 的正式版本与预览版本发布信息，并提供下载安装入口与版本变更说明。
 
 * TOC
 {:toc}

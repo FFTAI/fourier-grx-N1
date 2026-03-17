@@ -7,9 +7,10 @@ has_toc: true
 
 # 更新日志
 
-{:toc}
+本章记录 Fourier-GRX-N1 SDK 文档站点的重要更新，便于快速了解文档结构和内容的调整情况。
 
-本文档记录了 Fourier-GRX-N1 SDK 及其文档的所有重要更新。
+* TOC
+{:toc}
 
 ## 2025 年 3 月
 
