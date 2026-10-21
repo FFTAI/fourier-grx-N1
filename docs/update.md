@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 固件更新
-nav_order: 9
+nav_order: 10
 has_toc: true
 ---
 
@@ -47,7 +47,7 @@ has_toc: true
 - 新增在 Developer 接口中调用内置外设状态监控任务的示例代码，位于 `developer_radian/demo_print_peripheral.py`。
 - 新增在 Developer 接口中调用内置进入准备姿态任务的示例代码，位于 `developer_radian/demo_ready_builtin.py`。
 - 新增在 Developer 接口中调用内置行走任务的示例代码，位于 `developer_radian/demo_walk_builtin.py`。
-- 新增优化后的行走策略任务，位于 `developer_radian/demo_walk_refined.py`。
+- 新增优化后的行走策略任务，位于 `developer_radian/demo_walk_refine.py`。
 
 优化：
 
@@ -63,7 +63,7 @@ has_toc: true
 
 新增：
 
-- 新增 N1 机器人爬起动作（TID `3551`，如果机器人报错导致摔倒，会自动清除错误信息）
+- 新增 N1 机器人爬起动作（TID `968`，如果机器人报错导致摔倒，会自动清除错误信息）
 
 优化：
 

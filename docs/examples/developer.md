@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Developer 接口
-nav_order: 2.2
+nav_order: 3.2
 parent: 示例代码
 toc: true          # 启用目录
 toc_min_header: 2  # 最小显示标题层级（如 H2）
@@ -59,7 +59,7 @@ Fourier-GRX Developer 接口是针对开发者底层开发提供的二次开发�
 | 状态监控  | 打印机器人状态信息               | `developer/demo_print_state.py`      |
 | 参数配置  | 设置关节 PID 参数             | `developer/demo_set_pid.py`          |
 | 零位设置  | 设置机器人零位                 | `developer/demo_set_home.py`         |
-| 外设状态  | 打印外设状态信息，要求在配置文件中使能相应外设 | `developer/demo_print_peripheral.py` |
+| 外设状态  | 打印外设状态信息，要求在配置文件中使能相应外设 | `developer_radian/demo_print_peripheral.py` |
 
 ### 运动控制示例
 
@@ -69,6 +69,7 @@ Fourier-GRX Developer 接口是针对开发者底层开发提供的二次开发�
 |------|--------|----------------------------------------|
 | 准备姿态 | 进入准备状态 | `developer_radian/demo_ready_state.py` |
 | 行走控制 | 手柄控制行走 | `developer_radian/demo_walk.py`        |
+| 优化行走控制 | 调用优化后的行走策略任务 | `developer_radian/demo_walk_refine.py` |
 | 调用内置准备姿态 | 调用机器人内置准备姿态 | `developer_radian/demo_ready_builtin.py` |
 | 调用内置行走控制 | 调用机器人内置行走控制 | `developer_radian/demo_walk_builtin.py`  |
 

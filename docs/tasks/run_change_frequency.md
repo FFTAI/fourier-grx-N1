@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 站立/行走/快跑(动态步频)
-nav_order: 4.23
+nav_order: 5.23
 parent: 任务描述
 has_toc: true
 ---
@@ -35,7 +35,7 @@ has_toc: true
 
 | 接口参数 | 类型      | 默认值 | 参数范围        | 描述                  |
 |------|---------|-----|-------------|---------------------|
-| 前进速度 | `float` | 0.0 | [-0.5, 3.5] | 机器人前进的速度，单位为 m/s。   |
+| 前进速度 | `float` | 0.0 | [0.0, 3.5] | 机器人前进的速度，单位为 m/s。   |
 | 侧向速度 | `float` | 0.0 | [-0.5, 0.5] | 机器人侧向移动的速度，单位为 m/s。 |
 | 转向速度 | `float` | 0.0 | [-1.0, 1.0] | 机器人转向的速度，单位为 rad/s。 |
 
@@ -64,7 +64,7 @@ has_toc: true
 |------|----------------------------------------------|
 | 前进速度 | `joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
-| 转向速度 | `joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+| 转向速度 | `joystick_axis_right` x轴，映射到 [min, max] 速度范围 |
 
 - 映射到物理键盘
 
@@ -80,7 +80,7 @@ has_toc: true
 |------|----------------------------------------------------------|
 | 前进速度 | `grx.virtual_joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `grx.virtual_joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
-| 转向速度 | `grx.virtual_joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+| 转向速度 | `grx.virtual_joystick_axis_right` x轴，映射到 [min, max] 速度范围 |
 
 - 映射到虚拟键盘
 

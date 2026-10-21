@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 执行器错误码
-nav_order: 3.10
+nav_order: 4.10
 parent: 参考指南
 has_toc: true
 ---
@@ -33,7 +33,7 @@ has_toc: true
 | OverPhaseBCurrent    | 8   | 256             | 0x100           | B相电流过大      | 实时检测 | 无法使能电机 | 重启                    |
 | OverPhaseCCurrent    | 9   | 512             | 0x200           | C相电流过大      | 实时检测 | 无法使能电机 | 重启                    |
 | OverHardPhaseCurrent | 10  | 1024            | 0x400           | 驱动芯片硬件过流    | 实时检测 | 无法使能电机 | 需要排查硬件故障，修复并重启        |
-| OPDFault             | 11  | 2049            | 0x800           | 缺相          |      |        |                       |
+| OPDFault             | 11  | 2048            | 0x800           | 缺相          |      |        |                       |
 | EncoderNotCali       | 12  | 4096            | 0x1000          | 电角度磁编码未校准   | 开机检测 | 无法使能电机 | 重新校准                  |
 | EncoderLoss          | 13  | 8192            | 0x2000          | 电角度磁编码丢失    | 实时检测 | 无法使能电机 | 需要排查硬件故障修复并重启         |
 | FlashErr             | 14  | 16384           | 0x4000          | Flash错误     | 开机检测 | 无法使能电机 | 重启                    |
@@ -56,6 +56,8 @@ has_toc: true
 | EthComTimeOut        | 31  | 2147483648      | 0x80000000      | 以太网通信超时     | 实时检测 | 无法使能电机 | 用户主动发起恢复/重启           |
 
 > ℹ️ **说明**:
+>
+> 比特位 20-31 的错误码（EncoderOthersErr ~ EthComTimeOut）由执行器固件定义，SDK（fourier-core 的 FSAErrorCode）中暂未包含，具体含义以固件版本为准。
 >
 > 大部分可以通过重启来清除的错误码，可以通过 [清除错误](/fourier-grx-N1/docs/tasks/clear_fault) 任务来清除。
 

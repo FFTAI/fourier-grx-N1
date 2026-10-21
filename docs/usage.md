@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 常用操作
-nav_order: 7
+nav_order: 8
 has_toc: true
 ---
 
@@ -69,6 +69,11 @@ fourier-grx start
     - 使用手柄 L1 键选择 **校准任务**
     - 使用手柄 L2 键确认执行
     - 观察终端输出信息
+
+> ℹ️ **说明**：
+>
+> 手柄的快捷任务（如准备姿态、行走、跑步、急停等）需要通过**双击**对应按键触发（两次按下的间隔需在 0.3 秒以内），单击不会触发任务。
+> 而通过 L1/L2 选择并确认的任务执行方式不受此限制。
 
 校准任务对照表
 
@@ -142,63 +147,10 @@ stdbuf -oL $FOURIER_GRX_HOME/run.bin --config=${config_file_path} \
 
 ## 启用/关闭 机器人数据日志记录功能
 
-fourier-grx 提供了数据日志记录功能，但是默认情况下是关闭的，以减少对系统性能的影响。
-
-如果需要启用数据日志记录功能，需要对 **配置文件** 进行手动修改，具体修改步骤如下：
-
-1. 创建机器人的启动配置文件：
-    - 打开文件夹 `~/fourier-grx/config/n1` 文件夹，找到当前使用的配置文件，比如 `config_N1__debug.yaml`。
-    - 将该文件复制一份，命名为 `config_N1__record.yaml`。
-
-2. 修改配置文件：
-    - 打开 `config_N1__record.yaml` 文件。
-    - 在配置文件中，添加以下内容：
-        - 该配置表示在使用该配置文件启动 `fourier-grx` 时，启用数据记录功能，并将记录数据保存到指定路径。
-
-   ```yaml
-   record:
-      enable: true
-      path: "~/fourier-grx/record/n1"
-   ```
-
-3. 修改启动脚本：
-    - 打开文件夹 `~/fourier-grx`，找到 `run.sh` 文件。
-    - 找到 `run_type` 字段，将其修改为 `record`：
-
-   ```bash
-   run_type="record"
-   ```
-
-   > ⚠️ **注意**：
-   >
-   > 如果后续希望机器人恢复为正常的操作模式，可以通过 `fourier-grx config` 命令来修改配置文件，或是修改 `run.sh` 文件中的 `run_type` 字段为原来的值。
-
-4. 启动机器人：
-    - 此时，机器人将会在启动时启用数据记录功能，并将记录的数据保存到指定路径。
-
-    ```bash
-    # 在 终端1 中执行以下命令
-    fourier-grx start
-    ```
-
-5. 数据分析：
-    - 数据保存格式为 CSV 文件，可以使用 Excel 或其他数据分析工具进行分析。
-    - Excel 导入时需要注意选择正确的分隔符（逗号）和编码格式（UTF-8）。
-    - 数据文件中包含时间戳、关节角度、速度等信息，方便进行后续分析。
-        - `Timestamp`: 时间戳
-        - `imu_quat_{(i * 4) + 0 : (i * 4) + 4}`: IMU i 的四元数
-        - `imu_euler_{(i * 3) + 0 : (i * 3) + 3}`: IMU i 的欧拉角
-        - `imu_ang_vel_{(i * 3) + 0 : (i * 3) + 3}`: IMU i 的角速度
-        - `imu_lin_acc_{(i * 3) + 0 : (i * 3) + 3}`: IMU i 的线性加速度
-        - `jm_pos_{i}`: 关节 i 的测量位置
-        - `jm_vel_{i}`: 关节 i 的测量速度
-        - `jm_tor_{i}`: 关节 i 的测量扭矩
-        - `jm_cur_{i}`: 关节 i 的测量电流
-        - `jt_pos_{i}`: 关节 i 的目标位置
-        - `jt_vel_{i}`: 关节 i 的目标速度
-        - `jt_tor_{i}`: 关节 i 的目标扭矩
-        - 关节序列参考 [关节序列](/fourier-grx-N1/docs/reference/joint_sequence) 文档。
-
-> **说明**：
+> ℹ️ **说明**：
 >
-> 如果需要关闭数据记录功能，可以将配置文件中的 `record.enable` 设置为 `false`，或是删除 `record` 字段。
+> 旧版本文档中介绍的机器人数据日志记录（record）功能，在当前版本的 `fourier-grx` 中暂未提供，
+> 因此没有对应的 `record` 配置字段与 `config_N1__record.yaml` 配置变体。
+> 如有数据记录需求，可以通过 **PubSub 接口** 订阅机器人状态数据自行保存，
+> 具体参考 [PubSub 接口](/fourier-grx-N1/docs/reference/pubsub)。
+

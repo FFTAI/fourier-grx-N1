@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 站立/行走
-nav_order: 4.20
+nav_order: 5.20
 parent: 任务描述
 has_toc: true
 ---
@@ -37,8 +37,8 @@ has_toc: true
 |-----------|---------------------------------|-------|----------|
 | 3216      | COMPONENT_MAIN_BODY_RL_WALK_MIX | 站立/行走 | 左腿、右腿、腰部 |
 | 3407      | COMPONENT_NATURAL_WAVE          | 自然摆臂  | 左臂、右臂    |
-| 2412      | COMPONENT_WAVE_LEFT_HAND        | 左手打招呼 | 左臂、右臂    |
-| 2411      | COMPONENT_WAVE_RIGHT_HAND       | 右手打招呼 | 左臂、右臂    |
+| 3412      | COMPONENT_WAVE_LEFT_HAND        | 左手打招呼 | 左臂、右臂    |
+| 3411      | COMPONENT_WAVE_RIGHT_HAND       | 右手打招呼 | 左臂、右臂    |
 | 3408      | COMPONENT_RAISE_RIGHT_BOXING    | 右手握拳  | 左臂、右臂    |
 | 3409      | COMPONENT_RAISE_RIGHT_HAND      | 右手举起  | 左臂、右臂    |
 | 3410      | COMPONENT_SPREAD_HAND           | 双手张开  | 左臂、右臂    |
@@ -62,7 +62,7 @@ has_toc: true
 |------|----------------------------------------------|
 | 前进速度 | `joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
-| 转向速度 | `joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+| 转向速度 | `joystick_axis_right` x轴，映射到 [min, max] 速度范围 |
 
 - 映射到物理键盘
 
@@ -78,7 +78,7 @@ has_toc: true
 |------|----------------------------------------------------------|
 | 前进速度 | `grx.virtual_joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `grx.virtual_joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
-| 转向速度 | `grx.virtual_joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+| 转向速度 | `grx.virtual_joystick_axis_right` x轴，映射到 [min, max] 速度范围 |
 
 - 映射到虚拟键盘
 

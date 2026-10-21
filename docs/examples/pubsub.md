@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PubSub 接口
-nav_order: 2.3
+nav_order: 3.3
 parent: 示例代码
 toc: true          # 启用目录
 toc_min_header: 2  # 最小显示标题层级（如 H2）
@@ -44,7 +44,7 @@ Fourier-GRX PubSub 接口使用 [Zenoh](https://zenoh.io/) 协议与机器人通
     conda activate fourier-grx
    
     # 运行具体机型的示例程序
-    python $HOME/Wiki-GRx-Deploy/pubsub/demo_{示例名称}.py
+    python $HOME/Wiki-GRx-Deploy/pubsub_radian/demo_{示例名称}.py
     ```
 
 ## 接口示例
@@ -53,13 +53,13 @@ Fourier-GRX PubSub 接口使用 [Zenoh](https://zenoh.io/) 协议与机器人通
 
 | 示例名称  | 说明        | 代码路径                            |
 |-------|-----------|---------------------------------|
-| 机器人使能 | 控制机器人使能状态 | `pubsub/demo_servo_on.py`       |
-| 机器人失能 | 控制机器人失能状态 | `pubsub/demo_servo_off.py`      |
-| 状态监控  | 打印机器人状态信息 | `pubsub/demo_print_state.py`    |
+| 机器人使能 | 控制机器人使能状态 | `pubsub_radian/demo_servo_on.py`       |
+| 机器人失能 | 控制机器人失能状态 | `pubsub_radian/demo_servo_off.py`      |
+| 状态监控  | 打印机器人状态信息 | `pubsub_radian/demo_print_state.py`    |
 
 ### 运动控制示例
 
 | 示例名称 | 说明     | 代码路径                         |
 |------|--------|------------------------------|
-| 准备姿态 | 进入准备状态 | `pubsub/demo_ready_state.py` |
-| 行走控制 | 手柄控制行走 | `pubsub/demo_walk.py`        |
+| 准备姿态 | 进入准备状态 | `pubsub_radian/demo_ready_state.py` |
+| 行走控制 | 手柄控制行走 | `pubsub_radian/demo_walk.py`        |

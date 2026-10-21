@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Developer 接口
-nav_order: 3.2
+nav_order: 4.2
 parent: 参考指南
 has_toc: true
 ---
@@ -37,6 +37,7 @@ Fourier-GRX Developer 接口使用状态字典（state dict）返回机器人当
 | `joint_position`       | 机器人关节的位置信息       | array(float * num_of_joints)   | rad   | 参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `joint_velocity`       | 机器人关节的速度信息       | array(float * num_of_joints)   | rad/s | 参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `joint_effort`         | 机器人关节的力矩信息       | array(float * num_of_joints)   | Nm    | 参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
+| `joint_current`        | 机器人关节的电流信息       | array(float * num_of_joints)   | A     | 参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 
 ### 控制字典（control dict）
 

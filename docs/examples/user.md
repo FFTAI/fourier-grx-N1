@@ -1,7 +1,7 @@
 ---
 layout: default
 title: User 接口
-nav_order: 2.1
+nav_order: 3.1
 parent: 示例代码
 toc: true          # 启用目录
 toc_min_header: 2  # 最小显示标题层级（如 H2）

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 模型训练
-nav_order: 5
+nav_order: 6
 has_children: true
 has_toc: true
 ---

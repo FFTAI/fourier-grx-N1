@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 深蹲任务
-nav_order: 4.36
+nav_order: 5.36
 parent: 任务描述
 has_toc: true
 ---

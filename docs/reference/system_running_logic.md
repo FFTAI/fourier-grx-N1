@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 系统运行逻辑
-nav_order: 3.6
+nav_order: 4.6
 parent: 参考指南
 has_toc: true
 ---
@@ -35,14 +35,8 @@ graph TD
     subgraph 辅助任务
         F --> BA[辅助任务启动入口]
         BA --> BB[sync 同步任务]
-        BA --> BC[rerun 可视化任务]
-        BA --> BD[teleoperation 遥操作任务]
         BB --> BB
-        BC --> BC
-        BD --> BD
         BB -.-> BZ[辅助任务异常处理, 退出处理]
-        BC -.-> BZ
-        BD -.-> BZ
     end
 
     subgraph 外设任务
@@ -74,7 +68,7 @@ graph TD
 2. 周期任务启动
     - 周期任务大致可分为三类：主任务、辅助任务和外设任务。
     - 主任务包括底层数据更新任务、控制任务和通信任务，负责机器人的核心运行逻辑。
-    - 辅助任务包括 sync 同步任务、rerun 可视化任务和 teleoperation 遥操作任务等，负责提供额外的功能支持。
+    - 辅助任务包括 sync 同步任务（将 dynalink 数据通过 zenoh 同步给上位机），负责提供额外的功能支持。
     - 外设任务包括手柄外设更新任务、键盘外设更新任务和其他外设更新任务，负责处理各种外设的输入输出。
 
 ## 主任务启动逻辑

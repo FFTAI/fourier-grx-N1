@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 命令行工具
-nav_order: 3.9
+nav_order: 4.9
 parent: 参考指南
 has_toc: true
 ---
@@ -28,4 +28,5 @@ has_toc: true
 | `enable_service`  | 启用 Fourier-GRX-N1 SDK 的服务功能，电脑重启后会自动启动机器人控制程序  |
 | `disable_service` | 禁用 Fourier-GRX-N1 SDK 的服务功能，电脑重启后不会自动启动机器人控制程序 |
 | `background`      | 将 Fourier-GRX-N1 SDK 运行环境和机器人程序放到后台运行          |
-| `setup_conda`     | 创建用于 Fourier-GRX-N1 SDK 的 Conda 环境，并安装所需的依赖库   |
+| `setup_conda`     | 创建用于 Fourier-GRX-N1 SDK 的 Conda 环境（Python 3.11），并安装所需的依赖库   |
+| `setup_conda_py310` | 创建用于 Fourier-GRX-N1 SDK 的 Conda 环境（Python 3.10），并安装所需的依赖库   |

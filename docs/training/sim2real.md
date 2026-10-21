@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Sim2Real
-nav_order: 5.2
+nav_order: 6.2
 parent: 模型训练
 toc: true          # 启用目录
 toc_min_header: 2  # 最小显示标题层级（如 H2）
@@ -13,14 +13,14 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
 如果您在使用 N1 机器人进行 Sim2Real 部署时遇到问题，可以参考以下步骤来解决：
 
 1. 验证开源仓库开源仓库提供的 [Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy) 中
-   `FourierN1` 分支中 `developer` 文件夹下的 `demo_print_state.py` 程序是否可以完成真机部署并正常运行，打印数据一切正常。
+   `FourierN1` 分支中 `developer_radian`（4.0.0 及以上版本 SDK；4.0.0 以下版本为 `developer`）文件夹下的 `demo_print_state.py` 程序是否可以完成真机部署并正常运行，打印数据一切正常。
 2. 如果上述程序可以正常运行，可以说明以下问题：
     - SDK 环境配置正确。
     - IMU 外设数据采集正常。
     - 关节执行器通信以及数据采集正常。
 
 3. 验证开源仓库开源仓库提供的 [Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy) 中
-   `FourierN1` 分支中 `developer` 文件夹下的 `demo_ready_state.py` 程序是否可以完成真机部署并正常运行。
+   `FourierN1` 分支中 `developer_radian`（4.0.0 及以上版本 SDK；4.0.0 以下版本为 `developer`）文件夹下的 `demo_ready_state.py` 程序是否可以完成真机部署并正常运行。
 4. 如果上述程序可以正常运行，可以说明以下问题：
     - SDK 环境配置正确。
     - IMU 外设数据采集正常。
@@ -28,7 +28,7 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
     - 关节执行器的控制指令可以正常发送并执行。
 
 5. 验证我们在开源仓库提供的 [Wiki-GRx-Deploy](https://github.com/FFTAI/Wiki-GRx-Deploy) 中
-   `FourierN1` 分支中 `developer` 文件夹下的 `demo_walk.py` 程序是否可以完成真机部署并正常运行。
+   `FourierN1` 分支中 `developer_radian`（4.0.0 及以上版本 SDK；4.0.0 以下版本为 `developer`）文件夹下的 `demo_walk.py` 程序是否可以完成真机部署并正常运行。
 6. 如果上述程序可以正常运行，可以说明以下问题：
     - SDK 环境配置正确。
     - IMU 外设数据采集正常。
@@ -37,6 +37,9 @@ toc_max_header: 3  # 最大显示标题层级（如 H3）
     - 神经网络的计算可以正常运行。
 
 7. 部署验证您自己的训练模型和代码，如果仍有问题，请检查以下内容：
+
+    > ℹ️ **说明**：以下单位（deg / deg/s）说明适用于 **4.0.0 以下版本** SDK，4.0.0 及以上版本 SDK 中对应单位均为弧度（rad / rad/s）。
+
     - 确保您的模型中涉及传感器以及执行器输入的部分内容是次序正确的：
         - IMU 数据的输入顺序应为
             - `imu_quat`: x, y, z, w

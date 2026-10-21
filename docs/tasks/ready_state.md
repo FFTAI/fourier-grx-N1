@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 准备站姿
-nav_order: 4.19
+nav_order: 5.19
 parent: 任务描述
 has_toc: true
 ---

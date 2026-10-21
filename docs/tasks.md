@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 任务描述
-nav_order: 4
+nav_order: 5
 has_children: true
 has_toc: true
 ---
@@ -34,10 +34,21 @@ N1 机器人任务指令示例：
 | TASK_SERVO_REBOOT | 41        | All  | 机器人全关节上电使能并重启                   |
 | TASK_CLEAR_FAULT  | 34        | All  | 清除机器人全关节报警                      |
 | TASK_SET_HOME     | 999       | All  | 设置机器人全关节零位位置为当前位置               |
-| TASK_TEST_JOINT   | 902       | All  | 机器人关节运动功能测试，用于检测机器人关节是否能够正常运动   |
+| [TASK_TEST_JOINT](/fourier-grx-N1/docs/tasks/test_joint) | 902 | All | 机器人关节运动功能测试，用于检测机器人关节是否能够正常运动 |
 | TASK_READY_STATE  | 960       | All  | 机器人运行到 **准备状态**，为微曲膝关节的站立姿态     |
 | TASK_WALK         | 965       | All  | 机器人运动到 **行走状态**，可以用手柄控制机器人行走    |
 | TASK_RUN          | 966       | N1   | 机器人运动到 **跑步状态**，可以用手柄控制机器人行走/跑步 |
+| [TASK_CLIMB_UP](/fourier-grx-N1/docs/tasks/climbup_auto) | 968 | N1 | 机器人 **自动爬起**，自动判断使用前向爬起或后向爬起 |
+| [TASK_RUN_CONSTANT_FREQUENCY](/fourier-grx-N1/docs/tasks/run_constant_frequency) | 3223 | N1 | 机器人 **站立/行走/快跑（固定步频）** 任务 |
+| [TASK_RUN_CHANGE_FREQUENCY](/fourier-grx-N1/docs/tasks/run_change_frequency) | 3241 | N1 | 机器人 **站立/行走/快跑（动态步频）** 任务 |
+| [TASK_BEND_KNEE](/fourier-grx-N1/docs/tasks/bend_knee) | 3601 | N1 | 机器人 **屈膝** 任务 |
+| [TASK_CLIMB_UP_FORWARD](/fourier-grx-N1/docs/tasks/climbup_forward) | 3602 | N1 | 机器人 **前向爬起** 任务 |
+| [TASK_STAND_ON_ONE_LEG](/fourier-grx-N1/docs/tasks/stand_on_one_leg) | 3603 | N1 | 机器人 **单腿站立** 任务 |
+| [TASK_CLIMB_UP_BACKWARD](/fourier-grx-N1/docs/tasks/climbup_backward) | 3607 | N1 | 机器人 **后向爬起** 任务 |
+| [TASK_CLIMB_UP_FORWARD_TWO_HAND_SUPPORT](/fourier-grx-N1/docs/tasks/climbup_forward_two_hand_support) | 3608 | N1 | 机器人 **双手支撑前向爬起** 任务 |
+| [TASK_DEEP_BEND_KNEE](/fourier-grx-N1/docs/tasks/deep_bend_knee) | 3609 | N1 | 机器人 **深蹲** 任务 |
+| [TASK_LIE_DOWN_BACKWARD](/fourier-grx-N1/docs/tasks/lie_down_backward) | 3610 | N1 | 机器人 **后向躺下** 任务 |
+| [TASK_LIE_DOWN_FORWARD](/fourier-grx-N1/docs/tasks/lie_down_forward) | 3611 | N1 | 机器人 **前向趴下** 任务 |
 
 - All：表示所有傅利叶智能生产机型
 - N1：表示傅利叶 N1 系列机型
@@ -57,8 +68,8 @@ N1 机器人模块指令示例：
 | 任务指令      | 任务值 (TID) | 模块指令                         | 模块值 (MID) | 模块描述  |
 |-----------|-----------|------------------------------|-----------|-------|
 | TASK_WALK | 965       | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
-| TASK_WALK | 965       | COMPONENT_WAVE_LEFT_HAND     | 2412      | 左手打招呼 |
-| TASK_WALK | 965       | COMPONENT_WAVE_RIGHT_HAND    | 2411      | 右手打招呼 |
+| TASK_WALK | 965       | COMPONENT_WAVE_LEFT_HAND     | 3412      | 左手打招呼 |
+| TASK_WALK | 965       | COMPONENT_WAVE_RIGHT_HAND    | 3411      | 右手打招呼 |
 | TASK_WALK | 965       | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
 | TASK_WALK | 965       | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
 | TASK_WALK | 965       | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
@@ -66,11 +77,18 @@ N1 机器人模块指令示例：
 | 任务指令     | 任务值 (TID) | 模块指令                         | 模块值 (MID) | 模块描述  |
 |----------|-----------|------------------------------|-----------|-------|
 | TASK_RUN | 966       | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
-| TASK_RUN | 966       | COMPONENT_WAVE_LEFT_HAND     | 2412      | 左手打招呼 |
-| TASK_RUN | 966       | COMPONENT_WAVE_RIGHT_HAND    | 2411      | 右手打招呼 |
+| TASK_RUN | 966       | COMPONENT_WAVE_LEFT_HAND     | 3412      | 左手打招呼 |
+| TASK_RUN | 966       | COMPONENT_WAVE_RIGHT_HAND    | 3411      | 右手打招呼 |
 | TASK_RUN | 966       | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
 | TASK_RUN | 966       | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
 | TASK_RUN | 966       | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
+
+> ℹ️ **说明**：
+>
+> 部分模块值 (MID) 在代码中同时注册为可独立触发的任务指令 (TID)，即可以不依赖行走/跑步任务，直接以任务指令的方式单独触发：
+>
+> - `模块值 (MID)` **3216** / **3221**（下身 RL 行走 mix / encoder mix）：可直接作为 TID 触发，仅执行下身行走（含上身保持），无上肢动作。
+> - `模块值 (MID)` **3407 - 3412**（上肢动作）：可直接作为 TID 触发对应的上肢固定动作（自然摆臂、右手握拳、右手举起、双手张开、右手打招呼、左手打招呼）。
 
 ## 任务切换
 
@@ -83,12 +101,18 @@ N1 机器人模块指令示例：
 | 模块选择 | `R1` 按键 |               | `task.robot_component_command` 发送 `模块值 (MID)`  |                                                                       |
 | 模块确认 | `R2` 按键 |               | `task.flag_component_command_update` 发送 1 确认更新 | `control_system.robot_control_set_task_component(MID)` 发送 `模块值 (MID)` |
 
+> ℹ️ **说明**：
+>
+> 除上述选择/确认方式外，物理手柄还支持通过快捷键直接触发预设的快捷任务（如准备姿态、行走、跑步、急停等）。
+> 快捷任务需要通过**双击**对应按键触发（两次按下的间隔需在 0.3 秒以内），单击不会触发任务。
+
 ## 常见任务入口
 
 - [执行器失能](/fourier-grx-N1/docs/tasks/servo_off)
 - [执行器使能](/fourier-grx-N1/docs/tasks/servo_on)
 - [清除错误](/fourier-grx-N1/docs/tasks/clear_fault)
 - [设置零位](/fourier-grx-N1/docs/tasks/set_home)
+- [关节运动功能测试](/fourier-grx-N1/docs/tasks/test_joint)
 - [准备姿态](/fourier-grx-N1/docs/tasks/ready_state)
 - [站立/行走](/fourier-grx-N1/docs/tasks/stand_walk)
 - [站立/行走/跑步](/fourier-grx-N1/docs/tasks/stand_walk_run)

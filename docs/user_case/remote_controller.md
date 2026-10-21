@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 远端控制器
-nav_order: 6.2
+nav_order: 7.2
 parent: 用户案例
 has_toc: true
 ---

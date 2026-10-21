@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 常见问题
-nav_order: 8
+nav_order: 9
 has_toc: true
 ---
 
@@ -152,7 +152,7 @@ sudo reboot
     - 指令接收：50Hz
 
 - **开发者接口（Developer API）**：
-    - 数据更新频率：可配置，默认 400Hz（最高可配置为 500Hz）
+    - 数据更新频率：可配置，默认 50Hz（与 `robot: control_period` 一致，如服务器模式配置变体 `config_N1__server.yaml` 中设为 0.0025 即 400Hz）
     - 算法运行频率：可配置，建议不超过数据更新频率
 
 ### 超时警告处理

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 资源文件
-nav_order: 3.7
+nav_order: 4.7
 parent: 参考指南
 has_toc: true
 ---
@@ -17,7 +17,7 @@ has_toc: true
 
 资源文件通常存储在 `~/fourier-grx/resource/` 目录下。不同机器人的资源文件存储在不同的子目录中。
 
-例如，`FourierN1` 机器人的资源文件存储在 `~/fourier-grx/resource/n1/` 目录下。
+例如，`FourierN1` 机器人的资源文件存储在 `~/fourier-grx/resource/grmini1/` 目录下（`~/fourier-grx/resource/n1/` 是指向 `grmini1/` 的软链接）。
 
 ## Zenoh 资源文件
 
@@ -27,15 +27,15 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
 目前，zenoh 资源文件的内容包括：
 - `user.yaml`: 存储 Zenoh 用户名和密码信息（即本地 Zenoh 用户名和密码）。
-- `credentials.yaml`: 存储 Zenoh 的授权信息（即接受的 Zenoh 用户名和密码）。
+- `credentials.txt`: 存储 Zenoh 的授权信息（即接受的 Zenoh 用户名和密码）。
 
-通常情况下，`user.yaml` 和 `credentials.yaml` 中的用户名和密码是相同的，以确保程序本地正常通信。
+通常情况下，`user.yaml` 和 `credentials.txt` 中的用户名和密码是相同的，以确保程序本地正常通信。
 
 具体的内容可以参考 [https://zenoh.io/docs/manual/user-password/](https://zenoh.io/docs/manual/user-password/)
 
 ### 通过用户名和密码实现 Peer 模式下绑定
 
-可以通过修改 `user.yaml` 和 `credentials.yaml` 文件中的用户名和密码，实现 Zenoh Peer 模式下的绑定。
+可以通过修改 `user.yaml` 和 `credentials.txt` 文件中的用户名和密码，实现 Zenoh Peer 模式下的绑定。
 可以实现在同一个局域网内，
 
 - 控制主机1 <--> 控制指令/状态信息 <--> 机器人1
@@ -43,7 +43,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
 具体步骤如下：
 
-1. 修改配置文件，启用 zenoh 用户密码校验（修改启动时调用的 `config_xxx.json` 配置文件）:
+1. 修改配置文件，启用 zenoh 用户密码校验（修改启动时调用的 `config_xxx.yaml` 配置文件）:
 
     ```yaml
     # 机器人1 & 机器人2

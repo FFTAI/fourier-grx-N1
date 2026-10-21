@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PubSub 接口
-nav_order: 3.3
+nav_order: 4.3
 parent: 参考指南
 has_toc: true
 ---
@@ -47,14 +47,13 @@ key 说明列表：
 | `imu_quat`             | 传感器 IMU 数据 | array(float, float, float, float) |       | 传感器 IMU 数据，四元数表示姿态，顺序为 x, y, z, w       |
 | `imu_euler_angle`      | 传感器 IMU 数据 | array(float, float, float)        | rad   | 传感器 IMU 数据，欧拉角表示姿态，顺序为 roll, pitch, yaw |
 | `imu_angular_velocity` | 传感器 IMU 数据 | array(float, float, float)        | rad/s | 传感器 IMU 数据，角速度，顺序为 x, y, z              |
-| `imu_acceleration`     | 传感器 IMU 数据 | array(float, float, float)        | m/s^2 | 传感器 IMU 数据，线加速度，顺序为 x, y, z             |
+| `imu_linear_acceleration` | 传感器 IMU 数据 | array(float, float, float)     | m/s^2 | 传感器 IMU 数据，线加速度，顺序为 x, y, z             |
 
 | key              | 说明   | 数据类型         | 单位    | 具体描述   |
 |------------------|------|--------------|-------|--------|
 | `joint_position` | 关节位置 | array(float) | rad   | 关节测量位置 |
 | `joint_velocity` | 关节速度 | array(float) | rad/s | 关节测量速度 |
 | `joint_effort`   | 关节力矩 | array(float) | Nm    | 关节测量力矩 |
-| `joint_current`  | 关节电流 | array(float) | A     | 关节测量电流 |
 
 #### task/state 接口协议 (状态信息)
 
@@ -62,8 +61,8 @@ key 说明列表：
 
 | key                 | 说明   | 数据类型 | 具体描述           |
 |---------------------|------|------|----------------|
-| `task_command`      | 任务指令 | int  | 设置机器人任务值 (TID) |
-| `component_command` | 模块指令 | int  | 设置机器人模块值 (MID) |
+| `task_execute`      | 任务状态 | int  | 当前机器人任务值 (TID) |
+| `component_execute` | 模块状态 | int  | 当前机器人模块值 (MID) |
 
 ---
 
@@ -80,6 +79,7 @@ key 说明列表：
 | `kp`           | P 系数  | array(float) |     | 控制的 P 系数，单位为无量纲，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `kd`           | D 系数  | array(float) |     | 控制的 D 系数，单位为无量纲，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `position`     | 位置指令  | array(float) | rad | 关节位置指令，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence)          |
+| `command_id`   | 指令序号  | int          |     | （可选）指令序号，用于指令标识                                                         |
 
 #### task/control 接口协议 (指令信息)
 
@@ -87,5 +87,5 @@ key 说明列表：
 
 | key                 | 说明   | 数据类型 | 具体描述           |
 |---------------------|------|------|----------------|
-| `task_execute`      | 任务状态 | int  | 当前机器人任务值 (TID) |
-| `component_execute` | 模块状态 | int  | 当前机器人模块值 (MID) |
+| `task_command`      | 任务指令 | int  | 设置机器人任务值 (TID) |
+| `component_command` | 模块指令 | int  | 设置机器人模块值 (MID) |

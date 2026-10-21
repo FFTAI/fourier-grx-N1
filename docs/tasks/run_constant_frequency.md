@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 站立/行走/快跑(固定步频)
-nav_order: 4.22
+nav_order: 5.22
 parent: 任务描述
 has_toc: true
 ---
@@ -32,7 +32,7 @@ has_toc: true
 
 | 接口参数 | 类型      | 默认值 | 参数范围        | 描述                  |
 |------|---------|-----|-------------|---------------------|
-| 前进速度 | `float` | 0.0 | [-0.5, 3.0] | 机器人前进的速度，单位为 m/s。   |
+| 前进速度 | `float` | 0.0 | [-0.5, 2.75] | 机器人前进的速度，单位为 m/s。   |
 | 侧向速度 | `float` | 0.0 | [-0.5, 0.5] | 机器人侧向移动的速度，单位为 m/s。 |
 | 转向速度 | `float` | 0.0 | [-1.0, 1.0] | 机器人转向的速度，单位为 rad/s。 |
 
@@ -61,7 +61,7 @@ has_toc: true
 |------|----------------------------------------------|
 | 前进速度 | `joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
-| 转向速度 | `joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+| 转向速度 | `joystick_axis_right` x轴，映射到 [min, max] 速度范围 |
 
 - 映射到物理键盘
 
@@ -77,7 +77,7 @@ has_toc: true
 |------|----------------------------------------------------------|
 | 前进速度 | `grx.virtual_joystick_axis_left` y轴，映射到 [min, max] 速度范围  |
 | 侧向速度 | `grx.virtual_joystick_axis_left` x轴，映射到 [min, max] 速度范围  |
-| 转向速度 | `grx.virtual_joystick_axis_right` y轴，映射到 [min, max] 速度范围 |
+| 转向速度 | `grx.virtual_joystick_axis_right` x轴，映射到 [min, max] 速度范围 |
 
 - 映射到虚拟键盘
 
@@ -98,4 +98,4 @@ has_toc: true
 ## 更新日志
 
 - `fourier-grx` v2.3.19 版本新增该功能。
-- `fourier-grx` v4.0.0 版本优化了该跑步算法的稳定性，目前稳定速度可以维持在 3.0 m/s 左右，更高速度指令可能会导致机器人失去平衡。
+- `fourier-grx` v4.0.0 版本优化了该跑步算法的稳定性，目前稳定速度可以维持在 2.75 m/s 左右，更高速度指令可能会导致机器人失去平衡。

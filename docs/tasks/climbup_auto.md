@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 自动爬起
-nav_order: 4.30
+nav_order: 5.30
 parent: 任务描述
 has_toc: true
 ---
