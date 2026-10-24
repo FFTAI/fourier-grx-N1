@@ -104,8 +104,6 @@ has_toc: true
         use_virtual_joystick: false  # 关闭虚拟手柄
     ```
 
-    > ℹ️ **说明**：旧版本文档中的 `use_virtual_teleoperation` 配置项在当前版本的代码中未提供实现，无需配置。
-
     - 找到 `sensor_usb_imu` 字段下的 `comm_enable` 字段，将其修改为以下内容:
         - 该配置表示在使用该配置文件启动 `fourier-grx` 时，USB IMU 传感器不启用通信。**（防止与下半身运动控制任务设备读取冲突）**
 
@@ -136,7 +134,7 @@ has_toc: true
     ```
 
 3. 启动上肢控制程序：
-    - 上肢关节控制程序可以参考 fourier-grx SDK **Developer** 接口中的 [demo_ready_state.py](https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/developer_radian/demo_ready_state.py) 程序（4.0.0 及以上版本 SDK 位于 `developer_radian` 文件夹，4.0.0 以下版本位于 `developer` 文件夹）。
+    - 上肢关节控制程序可以参考 fourier-grx SDK **Developer** 接口中的 [demo_ready_state.py](https://github.com/FFTAI/Wiki-GRx-Deploy/blob/FourierN1/developer_radian/demo_ready_state.py) 程序。
     - 启动时需指定配置文件为上肢控制专用配置文件，可以让机器人关节上肢部分移动到准备状态位置。
 
     ```bash

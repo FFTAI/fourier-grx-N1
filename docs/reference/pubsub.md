@@ -21,7 +21,7 @@ Fourier-GRX PubSub 接口使用 [Zenoh](https://zenoh.io/) 协议与机器人通
 提供了更为灵活的消息发布和订阅机制进行接口通信，
 适用于远端控制或对开发灵活性有更高要求的应用场景。
 
-PubSub 接口主要分为以下4类：
+PubSub 接口主要分为以下 2 类：
 
 - `robot`：机器人相关信息
 - `task`：任务相关信息
@@ -75,7 +75,7 @@ key 说明列表：
 | key            | 说明    | 数据类型         | 单位  | 具体描述                                                                        |
 |----------------|-------|--------------|-----|-----------------------------------------------------------------------------|
 | `group_name`   | 关节组名称 | string       |     | 关节组名称，目前只支持 `whole_body`                                                    |
-| `control_mode` | 控制模式  | int          |     | 0: 无控制，1: 电流控制，2: 力矩控制，3: 速度控制，4: 位置控制, 6: PD 控制                            |
+| `control_mode` | 控制模式  | array(int)   |     | 当前版本支持 0: 无控制，6: PD 控制；请按关节顺序传入长度为 23 的数组 |
 | `kp`           | P 系数  | array(float) |     | 控制的 P 系数，单位为无量纲，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `kd`           | D 系数  | array(float) |     | 控制的 D 系数，单位为无量纲，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `position`     | 位置指令  | array(float) | rad | 关节位置指令，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence)          |

@@ -74,55 +74,45 @@ run_type="custom"
 | debug: print_ioboard_state                    | 是否打印 IO 板状态信息             | boolean | false | true, false | 是     |
 | debug: print_peripheral_virtual_joystick      | 是否打印 外设 虚拟摇杆状态信息           | boolean | false | true, false | 是     |
 | debug: print_peripheral_virtual_keyboard      | 是否打印 外设 虚拟键盘状态信息           | boolean | false | true, false | 是     |
-| debug: print_peripheral_virtual_mouse         | 是否打印 外设 虚拟鼠标状态信息           | boolean | false | true, false | 是     |
 | debug: print_peripheral_virtual_panel         | 是否打印 外设 虚拟面板状态信息           | boolean | false | true, false | 是     |
 
 ### 子功能模块相关
 
-| 配置项                   | 说明                                           | 数据类型    | 默认值   | 可选项         | 用户可修改           |
-|-----------------------|----------------------------------------------|---------|-------|-------------|-----------------|
-| dynalink: enable      | 是否启用 动态连接数据传输功能                              | boolean | false | true, false | 是               |
-| communication: enable | 是否启用 通信循环功能（用于 dynalink 数据的发布等）              | boolean | false | true, false | 是               |
-| communication: period | 通信循环周期，单位为秒；缺省为 1.0（1Hz）                     | float   | 1.0   | (>0)        | 是               |
-| sync: enable          | 是否启用 数据同步功能，将 dynalink 数据通过 zenoh 同步给上位机（需要 dynalink:enable=true） | boolean | false | true, false | 是               |
-| sync: period          | 数据同步周期，单位为秒；缺省为 1.0（1Hz）                     | float   | 1.0   | (>0)        | 是               |
-| rerun: enable         | 是否启用 rerun 绘图功能（需要 dynalink:enable=true）     | boolean | false | true, false | 否 (当前版本未提供)    |
-| streamlit: enable     | 是否启用 streamlit 绘图功能（需要 dynalink:enable=true） | boolean | false | true, false | 否 (暂未开放使用)      |
-| teleoperation: enable | 是否启用 遥操作功能（需要 dynalink:enable=true）          | boolean | false | true, false | 否 (当前版本未提供) |
-| pubsub: enable        | 是否启用 发布订阅功能，用于将机器人程序作为服务器，远程启动控制器作为客户端使用     | boolean | false | true, false | 是               |
+| 配置项                   | 说明                                                           | 数据类型    | 默认值   | 可选项         | 用户可修改 |
+|-----------------------|--------------------------------------------------------------|---------|-------|-------------|-------|
+| dynalink: enable      | 是否启用 动态连接数据传输功能                                              | boolean | false | true, false | 是     |
+| communication: enable | 是否启用 通信循环功能（用于 dynalink 数据的发布等）                              | boolean | false | true, false | 是     |
+| communication: period | 通信循环周期，单位为秒；缺省为 1.0（1Hz）                                     | float   | 1.0   | (>0)        | 是     |
+| sync: enable          | 是否启用 User API 的 Zenoh 服务端；需要同时启用 dynalink 和 communication | boolean | false | true, false | 是     |
+| sync: period          | 数据同步周期，单位为秒；缺省为 1.0（1Hz）                                     | float   | 1.0   | (>0)        | 是     |
+| pubsub: enable        | 是否启用 发布订阅功能，用于将机器人程序作为服务器，远程启动控制器作为客户端使用                     | boolean | false | true, false | 是     |
 
 ### 资源文件相关
 
-| 配置项            | 说明                                                        | 数据类型    | 默认值                            | 可选项                   | 用户可修改      |
-|----------------|-----------------------------------------------------------|---------|--------------------------------|-----------------------|------------|
-| resource: path | 资源文件路径                                                    | string  | "~/fourier-grx/resource/grmini1" | "path/to/resource"    | 是          |
-| zenoh: path    | Zenoh 配置文件路径                                              | string  | "~/fourier-grx/resource/zenoh" | "path/to/zenoh"       | 否 (暂未开放使用) |
-| zenoh: authentication | 是否启用 Zenoh 用户名/密码认证（凭据文件位于 zenoh: path 目录下） | boolean | false                          | true, false           | 是          |
-
-> ℹ️ **说明**：
->
-> 旧版本文档中提到的 `record: enable` / `record: path`（数据日志记录功能）在当前版本的代码中未提供。
+| 配置项            | 说明                                                        | 数据类型    | 默认值                            | 可选项                   | 用户可修改 |
+|----------------|-----------------------------------------------------------|---------|--------------------------------|-----------------------|-------|
+| resource: path | 资源文件路径                                                    | string  | "~/fourier-grx/resource/grmini1" | "path/to/resource"    | 是     |
+| zenoh: path    | Zenoh 配置文件路径                                              | string  | "~/fourier-grx/resource/zenoh" | "path/to/zenoh"       | 是     |
+| zenoh: authentication | 是否启用 Zenoh 用户名/密码认证（凭据文件位于 zenoh: path 目录下） | boolean | false                          | true, false           | 是     |
 
 ### 外设相关
 
-| 配置项                                   | 说明          | 数据类型    | 默认值      | 可选项                  | 用户可修改 |
-|---------------------------------------|-------------|---------|----------|----------------------|-------|
-| peripheral: use_joystick              | 是否使用手柄控制    | boolean | false    | true, false          | 是     |
-| peripheral: joystick_type             | 手柄类型        | string  | "XBOX"   | "XBOX", "PS4", "PS5" | 是     |
-| peripheral: use_keyboard              | 是否使用键盘控制    | boolean | false    | true, false          | 是     |
-| peripheral: keyboard_type             | 键盘类型        | string  | "STANDARD" | "STANDARD"           | 是     |
-| peripheral: use_virtual_joystick      | 是否使用虚拟手柄控制  | boolean | false    | true, false          | 是     |
-| peripheral: use_virtual_keyboard      | 是否使用虚拟键盘控制  | boolean | false    | true, false          | 是     |
-| peripheral: use_virtual_mouse         | 是否使用虚拟鼠标控制  | boolean | false    | true, false          | 是     |
-| peripheral: use_virtual_user          | 是否使用虚拟用户控制   | boolean | false    | true, false          | 是     |
-| peripheral: use_virtual_panel         | 是否使用虚拟面板控制  | boolean | false    | true, false          | 是     |
+| 配置项                              | 说明          | 数据类型    | 默认值      | 可选项                  | 用户可修改 |
+|----------------------------------|-------------|---------|----------|----------------------|-------|
+| peripheral: use_joystick         | 是否使用手柄控制    | boolean | false    | true, false          | 是     |
+| peripheral: joystick_type        | 手柄类型        | string  | "XBOX"   | "XBOX", "PS4", "PS5" | 是     |
+| peripheral: use_keyboard         | 是否使用键盘控制    | boolean | false    | true, false          | 是     |
+| peripheral: keyboard_type        | 键盘类型        | string  | "STANDARD" | "STANDARD"           | 是     |
+| peripheral: use_virtual_joystick | 是否使用虚拟手柄控制  | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_keyboard | 是否使用虚拟键盘控制  | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_user     | 是否使用虚拟用户控制   | boolean | false    | true, false          | 是     |
+| peripheral: use_virtual_panel    | 是否使用虚拟面板控制   | boolean | false    | true, false          | 是     |
 
 ### 机器人相关
 
 | 配置项                         | 说明        | 数据类型   | 默认值  | 可选项                                                 | 用户可修改 |
 |-----------------------------|-----------|--------|------|-----------------------------------------------------|-------|
 | robot: name                 | 机器人名称     | string | "N1" | "N1"                                                | 否     |
-| robot: mechanism            | 机器人机械结构类型 | string | ""   | ""                                                  | 否     |
 | robot: control_period       | 控制周期      | float  | 0.02 | (>0)，代码无强制下限；为获得稳定的控制效果，建议不低于 0.002 秒（500Hz） | 否     |
 
 ### 传感器相关

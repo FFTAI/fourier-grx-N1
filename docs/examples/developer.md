@@ -49,18 +49,6 @@ Fourier-GRX Developer 接口是针对开发者底层开发提供的二次开发�
 | 参数配置  | 设置关节 PID 参数 | `developer_radian/demo_set_pid.py`      |
 | 零位设置  | 设置机器人零位     | `developer_radian/demo_set_home.py`     |
 
-4.0.0 以下版本 SDK 使用：
-
-| 示例名称  | 说明                      | 代码路径                                 |
-|-------|-------------------------|--------------------------------------|
-| 执行器使能 | 使能机器人执行器                | `developer/demo_servo_on.py`         |
-| 执行器失能 | 失能机器人执行器                | `developer/demo_servo_off.py`        |
-| 执行器重启 | 重启机器人执行器                | `developer/demo_servo_reboot.py`     |
-| 状态监控  | 打印机器人状态信息               | `developer/demo_print_state.py`      |
-| 参数配置  | 设置关节 PID 参数             | `developer/demo_set_pid.py`          |
-| 零位设置  | 设置机器人零位                 | `developer/demo_set_home.py`         |
-| 外设状态  | 打印外设状态信息，要求在配置文件中使能相应外设 | `developer_radian/demo_print_peripheral.py` |
-
 ### 运动控制示例
 
 4.2.2版本 SDK使用：
@@ -79,12 +67,4 @@ Fourier-GRX Developer 接口是针对开发者底层开发提供的二次开发�
 |------|--------|----------------------------------------|
 | 准备姿态 | 进入准备状态 | `developer_radian/demo_ready_state.py` |
 | 行走控制 | 手柄控制行走 | `developer_radian/demo_walk.py`        |
-
-
-4.0.0 以下版本 SDK 使用：
-
-| 示例名称     | 说明          | 代码路径                              |
-|----------|-------------|-----------------------------------|
-| 准备姿态     | 进入准备状态      | `developer/demo_ready_state.py`   |
-| 行走控制     | 手柄控制行走      | `developer/demo_walk.py`          |
 

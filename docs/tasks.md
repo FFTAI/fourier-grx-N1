@@ -22,33 +22,33 @@ has_toc: true
 
 机器人任务指令列表 🎏：
 
-- 任务指令通过 `fourier_grx.TaskCommand` 枚举类定义，具体定义如下：
+- 任务指令通过整数 `任务值 (TID)` 传递，具体定义如下：
 - 具体 `任务值 (TID)` 可能会根据机器人的不同，或 `fourier-grx` 版本的不同而有所变化，**具体值以实际任务信息为准**。
 
 N1 机器人任务指令示例：
 
-| 任务指令              | 任务值 (TID) | 适用机型 | 任务描述                            |
+| 任务名称              | 任务值 (TID) | 适用机型 | 任务描述                            |
 |-------------------|-----------|------|---------------------------------|
-| TASK_SERVO_OFF    | 36        | All  | 机器人全关节下电失能                      |
-| TASK_SERVO_ON     | 35        | All  | 机器人全关节上电使能                      |
-| TASK_SERVO_REBOOT | 41        | All  | 机器人全关节上电使能并重启                   |
-| TASK_CLEAR_FAULT  | 34        | All  | 清除机器人全关节报警                      |
-| TASK_SET_HOME     | 999       | All  | 设置机器人全关节零位位置为当前位置               |
-| [TASK_TEST_JOINT](/fourier-grx-N1/docs/tasks/test_joint) | 902 | All | 机器人关节运动功能测试，用于检测机器人关节是否能够正常运动 |
-| TASK_READY_STATE  | 960       | All  | 机器人运行到 **准备状态**，为微曲膝关节的站立姿态     |
-| TASK_WALK         | 965       | All  | 机器人运动到 **行走状态**，可以用手柄控制机器人行走    |
-| TASK_RUN          | 966       | N1   | 机器人运动到 **跑步状态**，可以用手柄控制机器人行走/跑步 |
-| [TASK_CLIMB_UP](/fourier-grx-N1/docs/tasks/climbup_auto) | 968 | N1 | 机器人 **自动爬起**，自动判断使用前向爬起或后向爬起 |
-| [TASK_RUN_CONSTANT_FREQUENCY](/fourier-grx-N1/docs/tasks/run_constant_frequency) | 3223 | N1 | 机器人 **站立/行走/快跑（固定步频）** 任务 |
-| [TASK_RUN_CHANGE_FREQUENCY](/fourier-grx-N1/docs/tasks/run_change_frequency) | 3241 | N1 | 机器人 **站立/行走/快跑（动态步频）** 任务 |
-| [TASK_BEND_KNEE](/fourier-grx-N1/docs/tasks/bend_knee) | 3601 | N1 | 机器人 **屈膝** 任务 |
-| [TASK_CLIMB_UP_FORWARD](/fourier-grx-N1/docs/tasks/climbup_forward) | 3602 | N1 | 机器人 **前向爬起** 任务 |
-| [TASK_STAND_ON_ONE_LEG](/fourier-grx-N1/docs/tasks/stand_on_one_leg) | 3603 | N1 | 机器人 **单腿站立** 任务 |
-| [TASK_CLIMB_UP_BACKWARD](/fourier-grx-N1/docs/tasks/climbup_backward) | 3607 | N1 | 机器人 **后向爬起** 任务 |
-| [TASK_CLIMB_UP_FORWARD_TWO_HAND_SUPPORT](/fourier-grx-N1/docs/tasks/climbup_forward_two_hand_support) | 3608 | N1 | 机器人 **双手支撑前向爬起** 任务 |
-| [TASK_DEEP_BEND_KNEE](/fourier-grx-N1/docs/tasks/deep_bend_knee) | 3609 | N1 | 机器人 **深蹲** 任务 |
-| [TASK_LIE_DOWN_BACKWARD](/fourier-grx-N1/docs/tasks/lie_down_backward) | 3610 | N1 | 机器人 **后向躺下** 任务 |
-| [TASK_LIE_DOWN_FORWARD](/fourier-grx-N1/docs/tasks/lie_down_forward) | 3611 | N1 | 机器人 **前向趴下** 任务 |
+| 全关节下电失能            | 36        | All  | 机器人全关节下电失能                      |
+| 全关节上电使能            | 35        | All  | 机器人全关节上电使能                      |
+| 全关节重启              | 41        | All  | 机器人全关节上电使能并重启                   |
+| 清除全关节报警            | 34        | All  | 清除机器人全关节报警                      |
+| 设置全关节零位            | 999       | All  | 设置机器人全关节零位位置为当前位置               |
+| [关节运动功能测试](/fourier-grx-N1/docs/tasks/test_joint) | 902 | All | 机器人关节运动功能测试，用于检测机器人关节是否能够正常运动 |
+| 准备姿态               | 960       | All  | 机器人运行到 **准备状态**，为微曲膝关节的站立姿态     |
+| 站立/行走              | 965       | All  | 机器人运动到 **行走状态**，可以用手柄控制机器人行走    |
+| 站立/行走/跑步           | 966       | N1   | 机器人运动到 **跑步状态**，可以用手柄控制机器人行走/跑步 |
+| [自动爬起](/fourier-grx-N1/docs/tasks/climbup_auto) | 968 | N1 | 机器人 **自动爬起**，自动判断使用前向爬起或后向爬起 |
+| [站立/行走/快跑（固定步频）](/fourier-grx-N1/docs/tasks/run_constant_frequency) | 3223 | N1 | 机器人 **站立/行走/快跑（固定步频）** 任务 |
+| [站立/行走/快跑（动态步频）](/fourier-grx-N1/docs/tasks/run_change_frequency) | 3241 | N1 | 机器人 **站立/行走/快跑（动态步频）** 任务 |
+| [屈膝](/fourier-grx-N1/docs/tasks/bend_knee) | 3601 | N1 | 机器人 **屈膝** 任务 |
+| [前向爬起](/fourier-grx-N1/docs/tasks/climbup_forward) | 3602 | N1 | 机器人 **前向爬起** 任务 |
+| [单腿站立](/fourier-grx-N1/docs/tasks/stand_on_one_leg) | 3603 | N1 | 机器人 **单腿站立** 任务 |
+| [后向爬起](/fourier-grx-N1/docs/tasks/climbup_backward) | 3607 | N1 | 机器人 **后向爬起** 任务 |
+| [双手支撑前向爬起](/fourier-grx-N1/docs/tasks/climbup_forward_two_hand_support) | 3608 | N1 | 机器人 **双手支撑前向爬起** 任务 |
+| [深蹲](/fourier-grx-N1/docs/tasks/deep_bend_knee) | 3609 | N1 | 机器人 **深蹲** 任务 |
+| [后向躺下](/fourier-grx-N1/docs/tasks/lie_down_backward) | 3610 | N1 | 机器人 **后向躺下** 任务 |
+| [前向趴下](/fourier-grx-N1/docs/tasks/lie_down_forward) | 3611 | N1 | 机器人 **前向趴下** 任务 |
 
 - All：表示所有傅利叶智能生产机型
 - N1：表示傅利叶 N1 系列机型
@@ -65,23 +65,23 @@ N1 机器人任务指令示例：
 
 N1 机器人模块指令示例：
 
-| 任务指令      | 任务值 (TID) | 模块指令                         | 模块值 (MID) | 模块描述  |
-|-----------|-----------|------------------------------|-----------|-------|
-| TASK_WALK | 965       | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
-| TASK_WALK | 965       | COMPONENT_WAVE_LEFT_HAND     | 3412      | 左手打招呼 |
-| TASK_WALK | 965       | COMPONENT_WAVE_RIGHT_HAND    | 3411      | 右手打招呼 |
-| TASK_WALK | 965       | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
-| TASK_WALK | 965       | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
-| TASK_WALK | 965       | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
+| 任务名称  | 任务值 (TID) | 模块名称                         | 模块值 (MID) | 模块描述  |
+|-------|-----------|------------------------------|-----------|-------|
+| 站立/行走 | 965       | 自然摆臂                         | 3407      | 自然摆臂  |
+| 站立/行走 | 965       | 左手打招呼                        | 3412      | 左手打招呼 |
+| 站立/行走 | 965       | 右手打招呼                        | 3411      | 右手打招呼 |
+| 站立/行走 | 965       | 右手握拳                         | 3408      | 右手握拳  |
+| 站立/行走 | 965       | 右手举起                         | 3409      | 右手举起  |
+| 站立/行走 | 965       | 双手张开                         | 3410      | 双手张开  |
 
-| 任务指令     | 任务值 (TID) | 模块指令                         | 模块值 (MID) | 模块描述  |
-|----------|-----------|------------------------------|-----------|-------|
-| TASK_RUN | 966       | COMPONENT_NATURAL_WAVE       | 3407      | 自然摆臂  |
-| TASK_RUN | 966       | COMPONENT_WAVE_LEFT_HAND     | 3412      | 左手打招呼 |
-| TASK_RUN | 966       | COMPONENT_WAVE_RIGHT_HAND    | 3411      | 右手打招呼 |
-| TASK_RUN | 966       | COMPONENT_RAISE_RIGHT_BOXING | 3408      | 右手握拳  |
-| TASK_RUN | 966       | COMPONENT_RAISE_RIGHT_HAND   | 3409      | 右手举起  |
-| TASK_RUN | 966       | COMPONENT_SPREAD_HAND        | 3410      | 双手张开  |
+| 任务名称    | 任务值 (TID) | 模块名称                         | 模块值 (MID) | 模块描述  |
+|---------|-----------|------------------------------|-----------|-------|
+| 站立/行走/跑步 | 966       | 自然摆臂                         | 3407      | 自然摆臂  |
+| 站立/行走/跑步 | 966       | 左手打招呼                        | 3412      | 左手打招呼 |
+| 站立/行走/跑步 | 966       | 右手打招呼                        | 3411      | 右手打招呼 |
+| 站立/行走/跑步 | 966       | 右手握拳                         | 3408      | 右手握拳  |
+| 站立/行走/跑步 | 966       | 右手举起                         | 3409      | 右手举起  |
+| 站立/行走/跑步 | 966       | 双手张开                         | 3410      | 双手张开  |
 
 > ℹ️ **说明**：
 >

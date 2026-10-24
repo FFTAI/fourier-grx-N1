@@ -144,13 +144,3 @@ stdbuf -oL $FOURIER_GRX_HOME/run.bin --config=${config_file_path} \
 stdbuf -oL $FOURIER_GRX_HOME/run.bin --config=${config_file_path} \
 | tee /dev/null
 ```
-
-## 启用/关闭 机器人数据日志记录功能
-
-> ℹ️ **说明**：
->
-> 旧版本文档中介绍的机器人数据日志记录（record）功能，在当前版本的 `fourier-grx` 中暂未提供，
-> 因此没有对应的 `record` 配置字段与 `config_N1__record.yaml` 配置变体。
-> 如有数据记录需求，可以通过 **PubSub 接口** 订阅机器人状态数据自行保存，
-> 具体参考 [PubSub 接口](/fourier-grx-N1/docs/reference/pubsub)。
-
