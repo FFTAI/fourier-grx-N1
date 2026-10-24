@@ -47,47 +47,48 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
 
     ```yaml
     # 机器人1 & 机器人2
-    authentication: true  # 启用用户密码校验（默认是关闭校验功能的，局域网内各个节点可以直接通信）
-    path: "~/fourier-grx/resource/zenoh"
+    zenoh:
+      authentication: true  # 启用用户密码校验（默认是关闭校验功能的，局域网内各个节点可以直接通信）
+      path: "~/fourier-grx/resource/zenoh"
     ```
 
 2. 打开 `~/fourier-grx/resource/zenoh/user.yaml` 文件，修改其中的用户名和密码。例如：
 
     ```yaml
     # 机器人1
-    user: "fourier-grx-1"
-    password: "fourier-grx-1"
+    username: "fourier-grx-1"
+    password: "<ROBOT1_PASSWORD>"
     ```
     ```yaml
     # 机器人2
-    user: "fourier-grx-2"
-    password: "fourier-grx-2"
+    username: "fourier-grx-2"
+    password: "<ROBOT2_PASSWORD>"
     ```
 
 3. 打开 `~/fourier-grx/resource/zenoh/credentials.txt` 文件，修改其中的用户名和密码，使其与 `user.yaml` 文件中的用户名和密码相同。例如：
 
-    ```yaml
+    ```text
     # 机器人1
     # credentials.txt
-    fourier-grx-1:fourier-grx-1
+    fourier-grx-1:<ROBOT1_PASSWORD>
     ```
-    ```yaml
+    ```text
     # 机器人2
     # credentials.txt
-    fourier-grx-2:fourier-grx-2
+    fourier-grx-2:<ROBOT2_PASSWORD>
     ```
 
 4. 修改调用接口代码 `Wiki-GRx-Deploy` 中的 `credentials.txt` 内容，以及可能需要修改文件命名。例如：
 
-    ```yaml
+    ```text
     # 控制主机1
     # credentials-1.txt
-    fourier-grx-1:fourier-grx-1
+    fourier-grx-1:<ROBOT1_PASSWORD>
     ```
-    ```yaml
+    ```text
     # 控制主机2
     # credentials-2.txt
-    fourier-grx-2:fourier-grx-2
+    fourier-grx-2:<ROBOT2_PASSWORD>
     ```
 
 5. 打开调用接口代码 `Wiki-GRx-Deploy` ，修改 Zenoh 的连接参数，指定用户名和密码。例如：
@@ -113,7 +114,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
                     "auth": {
                         "usrpwd": {
                             "user": "fourier-grx-1",  # 修改为匹配当前通信环境的 username
-                            "password": "fourier-grx-1",  # 修改为匹配当前通信环境的 password
+                            "password": "<ROBOT1_PASSWORD>",  # 修改为匹配当前通信环境的 password
                             "dictionary_file": credentials_path,  # 修改为匹配目标 fourier-grx 的 credentials.txt 路径
                         }
                     },
@@ -147,7 +148,7 @@ Zenoh 资源文件通常存储在 `~/fourier-grx/resource/zenoh/` 目录下。
                     "auth": {
                         "usrpwd": {
                             "user": "fourier-grx-2",  # 修改为匹配当前通信环境的 username
-                            "password": "fourier-grx-2",  # 修改为匹配当前通信环境的 password
+                            "password": "<ROBOT2_PASSWORD>",  # 修改为匹配当前通信环境的 password
                             "dictionary_file": credentials_path,  # 修改为匹配目标 fourier-grx 的 credentials.txt 路径
                         }
                     },

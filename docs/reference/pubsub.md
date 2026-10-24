@@ -74,12 +74,12 @@ key 说明列表：
 
 | key            | 说明    | 数据类型         | 单位  | 具体描述                                                                        |
 |----------------|-------|--------------|-----|-----------------------------------------------------------------------------|
-| `group_name`   | 关节组名称 | string       |     | 关节组名称，目前只支持 `whole_body`                                                    |
+| `group_name`   | 关节组名称 | string       |     | 约定为 `whole_body`；当前版本不校验该字段，始终按全身处理 |
 | `control_mode` | 控制模式  | array(int)   |     | 当前版本支持 0: 无控制，6: PD 控制；请按关节顺序传入长度为 23 的数组 |
 | `kp`           | P 系数  | array(float) |     | 控制的 P 系数，单位为无量纲，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `kd`           | D 系数  | array(float) |     | 控制的 D 系数，单位为无量纲，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence) |
 | `position`     | 位置指令  | array(float) | rad | 关节位置指令，参考 [机器人关节序列](/fourier-grx-N1/docs/reference/joint_sequence)          |
-| `command_id`   | 指令序号  | int          |     | （可选）指令序号，用于指令标识                                                         |
+| `command_id`   | 指令序号  | int          |     | （可选）仅用于指令标识，当前不参与控制逻辑 |
 
 #### task/control 接口协议 (指令信息)
 

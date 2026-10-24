@@ -94,7 +94,7 @@ has_toc: true
 1. 检查 IMU 连接线是否正确连接到机器人主控板
 2. 检查是否 fourier-grx 程序重复启动 （重复启动，会竞争设备权属，导致数据出错）
     - 终端输入 `ps -ef | grep fourier-grx` 查看是否有多个 fourier-grx 进程
-    - 杀死已启动的 fourier-grx 程序：`sudo killall fourier-grx`
+    - 停止已启动的 fourier-grx 程序：`fourier-grx stop`
     - 重新启动 fourier-grx 程序
 3. 检查是否配置了 fourier-grx 开机自启动
     - 终端输入 `crontab -e`，查看是否配置了 fourier-grx 开机自启动

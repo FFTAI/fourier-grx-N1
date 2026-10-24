@@ -24,7 +24,7 @@ Fourier-GRX Developer 接口是针对开发者底层开发提供的二次开发�
     conda activate fourier-grx
     
     # 运行具体机型的示例程序，配置文件需要根据具体机型进行修改，使用带 "_developer.yaml" 后缀的配置文件
-    python $HOME/Wiki-GRx-Deploy/developer/demo_{示例名称}.py --config=$HOME/fourier-grx/config/{具体机型}/config_{具体机型}_developer.yaml
+    python $HOME/Wiki-GRx-Deploy/developer_radian/demo_{示例名称}.py --config=$HOME/fourier-grx/config/n1/config_N1__developer.yaml
     ```
 
 ### 注意事项

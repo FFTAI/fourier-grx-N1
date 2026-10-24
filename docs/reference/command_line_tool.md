@@ -20,7 +20,7 @@ has_toc: true
 |-------------------|------------------------------------------------|
 | `version`         | 显示当前 Fourier-GRX-N1 SDK 的版本信息                  |
 | `install`         | 安装 Fourier-GRX-N1 SDK 运行环境和依赖库                 |
-| `uninstall`       | 卸载 Fourier-GRX-N1 SDK 运行环境和依赖库                 |
+| `uninstall`       | 删除 Fourier-GRX-N1 SDK 安装目录和压缩包，不清理 conda/pip 依赖 |
 | `config`          | 配置 Fourier-GRX-N1 SDK 的启动参数                    |
 | `list`            | 列出 Fourier-GRX-N1 SDK 的启动参数                    |
 | `start`           | 启动 Fourier-GRX-N1 SDK 运行环境和机器人                 |

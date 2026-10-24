@@ -43,17 +43,17 @@ run_type="custom"
 | 配置项        | 说明                             | 数据类型    | 默认值    | 可选项                                          | 用户可修改 |
 |------------|--------------------------------|---------|--------|----------------------------------------------|-------|
 | log_config | 是否打印启动配置信息                     | boolean | false  | true, false                                  | 是     |
-| log_level  | 日志级别                           | string  | "none" | "none", "trace", "debug", "warning", "error" | 是     |
+| log_level  | 日志级别                           | string  | "error" | "none", "trace", "debug", "warning", "error" | 是     |
 | log_file   | 日志文件路径存储路径，仅针对日志中特定打印到日志文件中的内容 | string  | ""     | "filename", null                             | 是     |
 
 ### 控制系统相关
 
 | 配置项              | 说明     | 数据类型    | 默认值     | 可选项                | 用户可修改 |
 |------------------|--------|---------|---------|--------------------|-------|
-| device_connected | 是否连接设备 | boolean | true    | true, false        | 是     |
+| device_connected | 是否连接设备 | boolean | false   | true, false        | 是     |
 | hardware_type    | 硬件类型   | string  | "X64"   |                    | 否     |
 | hardware_layer   | 硬件层库    | string  | "fourier-core" |             | 否     |
-| system           | 系统类型   | string  | "LINUX" |                    | 否     |
+| system           | 系统类型   | string  | "Linux" |                    | 否     |
 | mode             | 运行模式   | string  | "debug" | "debug", "release" | 否     |
 
 ### 调试相关
@@ -83,7 +83,7 @@ run_type="custom"
 | dynalink: enable      | 是否启用 动态连接数据传输功能                                              | boolean | false | true, false | 是     |
 | communication: enable | 是否启用 通信循环功能（用于 dynalink 数据的发布等）                              | boolean | false | true, false | 是     |
 | communication: period | 通信循环周期，单位为秒；缺省为 1.0（1Hz）                                     | float   | 1.0   | (>0)        | 是     |
-| sync: enable          | 是否启用 User API 的 Zenoh 服务端；需要同时启用 dynalink 和 communication | boolean | false | true, false | 是     |
+| sync: enable          | 是否启用 User API 的 Zenoh 服务端；需要同时启用 dynalink 和 communication；sdk 配置默认启用 | boolean | false | true, false | 是     |
 | sync: period          | 数据同步周期，单位为秒；缺省为 1.0（1Hz）                                     | float   | 1.0   | (>0)        | 是     |
 | pubsub: enable        | 是否启用 发布订阅功能，用于将机器人程序作为服务器，远程启动控制器作为客户端使用                     | boolean | false | true, false | 是     |
 
@@ -105,14 +105,14 @@ run_type="custom"
 | peripheral: keyboard_type        | 键盘类型        | string  | "STANDARD" | "STANDARD"           | 是     |
 | peripheral: use_virtual_joystick | 是否使用虚拟手柄控制  | boolean | false    | true, false          | 是     |
 | peripheral: use_virtual_keyboard | 是否使用虚拟键盘控制  | boolean | false    | true, false          | 是     |
-| peripheral: use_virtual_user     | 是否使用虚拟用户控制   | boolean | false    | true, false          | 是     |
 | peripheral: use_virtual_panel    | 是否使用虚拟面板控制   | boolean | false    | true, false          | 是     |
 
 ### 机器人相关
 
 | 配置项                         | 说明        | 数据类型   | 默认值  | 可选项                                                 | 用户可修改 |
 |-----------------------------|-----------|--------|------|-----------------------------------------------------|-------|
-| robot: name                 | 机器人名称     | string | "N1" | "N1"                                                | 否     |
+| robot: name                 | 机器人名称（必填） | string | "N1" | "N1", "N1Zenoh"                                     | 否     |
+| robot: backend              | 机器人后端（必填）；`N1` 配 `Real`，`N1Zenoh` 配 `Zenoh` | string | "Real" | "Real", "Zenoh"                                     | 是     |
 | robot: control_period       | 控制周期      | float  | 0.02 | (>0)，代码无强制下限；为获得稳定的控制效果，建议不低于 0.002 秒（500Hz） | 否     |
 
 ### 传感器相关
