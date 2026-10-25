@@ -51,20 +51,30 @@ Fourier-GRX Developer 接口是针对开发者底层开发提供的二次开发�
 
 ### 运动控制示例
 
-4.2.2版本 SDK使用：
+4.0.0 以上版本 SDK 使用（单位：rad）：
 
-| 示例名称 | 说明     | 代码路径                                   |
-|------|--------|----------------------------------------|
-| 准备姿态 | 进入准备状态 | `developer_radian/demo_ready_state.py` |
-| 行走控制 | 手柄控制行走 | `developer_radian/demo_walk.py`        |
-| 优化行走控制 | 调用优化后的行走策略任务 | `developer_radian/demo_walk_refine.py` |
-| 调用内置准备姿态 | 调用机器人内置准备姿态 | `developer_radian/demo_ready_builtin.py` |
-| 调用内置行走控制 | 调用机器人内置行走控制 | `developer_radian/demo_walk_builtin.py`  |
+| 示例名称 | 说明     | 代码路径                                   | 最低版本 |
+|------|--------|----------------------------------------|------|
+| 准备姿态 | 进入准备状态 | `developer_radian/demo_ready_state.py` | 4.0.0 |
+| 行走控制 | 固定速度指令行走（可自行接入手柄） | `developer_radian/demo_walk.py`        | 4.0.0 |
+| 优化行走控制 | 调用优化后的行走策略任务 | `developer_radian/demo_walk_refine.py` | 4.2.2 |
+| 调用内置准备姿态 | 调用机器人内置准备姿态 | `developer_radian/demo_ready_builtin.py` | 4.2.2 |
+| 调用内置行走控制 | 调用机器人内置行走控制 | `developer_radian/demo_walk_builtin.py`  | 4.2.2 |
+| 调用内置空闲任务 | 调用机器人内置空闲任务 | `developer_radian/demo_idle_builtin.py`  | 4.2.2 |
+| 外设状态打印 | 打印手柄/键盘等外设状态 | `developer_radian/demo_print_peripheral.py` | 4.2.2 |
 
-4.0.0 以上版本 SDK 使用：
+4.0.0 以下版本 SDK 使用（单位：deg）：
 
-| 示例名称 | 说明     | 代码路径                                   |
-|------|--------|----------------------------------------|
-| 准备姿态 | 进入准备状态 | `developer_radian/demo_ready_state.py` |
-| 行走控制 | 手柄控制行走 | `developer_radian/demo_walk.py`        |
+| 示例名称 | 说明     | 代码路径                              |
+|------|--------|-----------------------------------|
+| 执行器使能 | 使能机器人执行器 | `developer/demo_servo_on.py`      |
+| 执行器失能 | 失能机器人执行器 | `developer/demo_servo_off.py`     |
+| 执行器重启 | 重启机器人执行器 | `developer/demo_servo_reboot.py`  |
+| 状态监控 | 打印机器人状态信息 | `developer/demo_print_state.py`   |
+| 参数配置 | 设置关节 PID 参数 | `developer/demo_set_pid.py`       |
+| 零位设置 | 设置机器人零位 | `developer/demo_set_home.py`      |
+| 准备姿态 | 进入准备状态 | `developer/demo_ready_state.py`   |
+| 行走控制 | 固定速度指令行走（可自行接入手柄） | `developer/demo_walk.py`          |
+| 优化行走控制 | 调用优化后的行走策略任务 | `developer/demo_walk_refine.py`   |
+| 调用内置空闲任务 | 调用机器人内置空闲任务 | `developer/demo_idle_builtin.py`  |
 

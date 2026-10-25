@@ -23,13 +23,20 @@ has_toc: true
 
 ```bash
 # 在机器人主控电脑上：
-fourier-grx setup_conda
+fourier-grx setup_conda          # Python 3.11 环境
+# 或
+fourier-grx setup_conda_py310    # Python 3.10 环境（Aurora 框架、部分第三方库要求）
 
 # 程序运行完成后，会搭建出一个名为 `fourier-grx` 的 conda 环境，可以通过以下命令激活该环境
 conda activate fourier-grx
 
 # 如果希望自主搭建开发环境，可以在 $HOME/fourier-grx/whl 中找到依赖库文件进行手动安装。
 ```
+
+> ℹ️ **说明**：
+>
+> - SDK 要求 Python >= 3.10。示例所需依赖 `zenoh`、`msgpack`、`torch`、`ischedule` 随 `fourier-grx` 一并安装；`user/demo_walk.py` 额外依赖 `pygame`（需自行安装）。
+> - 示例程序通过 `--config=<配置文件路径>` 指定启动配置，未指定时使用当前目录下的 `config.yaml`。
 
 ## 示例程序下载
 

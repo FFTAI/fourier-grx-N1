@@ -62,4 +62,8 @@ Fourier-GRX PubSub 接口使用 [Zenoh](https://zenoh.io/) 协议与机器人通
 | 示例名称 | 说明     | 代码路径                         |
 |------|--------|------------------------------|
 | 准备姿态 | 进入准备状态 | `pubsub_radian/demo_ready_state.py` |
-| 行走控制 | 手柄控制行走 | `pubsub_radian/demo_walk.py`        |
+| 行走控制 | 固定速度指令行走（可自行接入手柄） | `pubsub_radian/demo_walk.py`        |
+| 优化行走控制 | 调用优化后的行走策略任务 | `pubsub_radian/demo_walk_refine.py` |
+| 调用内置准备姿态 | 调用机器人内置准备姿态 | `pubsub_radian/demo_ready_builtin.py` |
+| 调用内置行走控制 | 调用机器人内置行走控制 | `pubsub_radian/demo_walk_builtin.py` |
+| 调用内置空闲任务 | 调用机器人内置空闲任务 | `pubsub_radian/demo_idle_builtin.py` |

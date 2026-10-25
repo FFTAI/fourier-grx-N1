@@ -15,11 +15,11 @@ Fourier-GRX User 接口使用 [Zenoh](https://zenoh.io/) 协议与机器人通�
 
 您可以在机器人主控电脑或任何与机器人同一局域网的计算机上运行这些示例。
 
-> ⚠️ **兼容性说明**：
+> ⚠️ **使用说明**：
 >
-> 当前 `Wiki-GRx-Deploy` 的 `FourierN1` 分支示例仍使用 `fourier_grx.sdk.user` 和 `fourier_grx.TaskCommand`，而当前 N1-open 4.4.2 未提供 `fourier_grx.sdk` 子包，示例不能直接运行。协议层（topic、msgpack、TID）与当前实现一致；使用前需要补兼容层或替换为更新后的示例代码。
+> 当前版本已提供 `fourier_grx.sdk` 子包（`fourier_grx.sdk.user` / `fourier_grx.sdk.developer` / `fourier_grx.sdk.pubsub`），示例代码可直接导入使用。
 >
-> 另外，`demo_walk.py` 的模块指令当前误发到 `grx/client`，不会生效；该示例还额外依赖未包含在 N1-open 运行依赖中的 `pygame`。
+> `demo_walk.py` 需在运行配置中启用 `peripheral.use_virtual_joystick: true` 才可远程控制行走，且额外依赖未包含在 N1-open 运行依赖中的 `pygame`；该示例的模块指令当前误发到 `grx/client`（应发往 `task/client`），模块动作可能不生效。
 
 ## 运行方法
 
